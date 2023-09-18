@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://applio.org/sitemap.xml.gz
+Sitemap: https://docs.applio.org/sitemap.xml.gz
