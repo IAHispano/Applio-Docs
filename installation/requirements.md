@@ -50,7 +50,7 @@ After installing everything, it is recommended to restart your PC.
     
     - When it says installed, click "Close."
 
-!!!warning Python 3.9.X
+!!!warning
 Ensuring the proper configuration of Python in your system is of paramount importance. It is imperative to have a single instance of Python 3.9.X exclusively within your system's path. Any presence of multiple Python versions or alternative versions could lead to system instability and undesirable crashes. 
 
 If you prefer not to uninstall other Python versions from your path, an alternative approach is available. You can modify your system settings to explicitly specify the path to Python 3.9.X in order to maintain system stability and consistency.
