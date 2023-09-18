@@ -4,5 +4,3 @@ expanded: true
 ---
 
 # RVC
-
-

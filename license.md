@@ -29,6 +29,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ### The licenses for related libraries are as follows:
+
 - [ContentVec](https://github.com/auspicious3000/contentvec/blob/main/LICENSE) - MIT License
 - [VITS](https://github.com/jaywalnut310/vits/blob/main/LICENSE) - MIT License
 - [HIFIGAN](https://github.com/jik876/hifi-gan/blob/master/LICENSE) - MIT License
@@ -37,6 +38,6 @@ SOFTWARE.
 - [UVR5](https://github.com/Anjok07/ultimatevocalremovergui/blob/master/LICENSE) - MIT License
 - [audio-slicer](https://github.com/openvpi/audio-slicer/blob/main/LICENSE) - MIT License
 
-!!!warning 
+!!!warning
 Please note that under this license, the software and its derivatives can only be used for non-commercial purposes, and any commercial use, sale, or distribution is prohibited.
 !!!

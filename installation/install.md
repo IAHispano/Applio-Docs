@@ -1,4 +1,5 @@
 # Installation
+
 ### Automatic installation:
 
 To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.
@@ -20,7 +21,7 @@ git clone https://github.com/IAHispano/Applio-RVC-Fork
 ```
 
 2. Install dependencies (Python 3.9.8):
-   
+
 +++ NVDIA
 
 ```bash
