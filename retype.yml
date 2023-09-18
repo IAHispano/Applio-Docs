@@ -13,19 +13,19 @@ output: .retype               # Custom path to the output directory
 
 # -----------------------------------------------------------------------------
 
-url: example.com              # The base URL of your website
-url: docs.example.com         # Can also be a sub-domain
+url: applio.org              # The base URL of your website
+url: docs.applio.org       # Can also be a sub-domain
 url: example.com/docs         # Can also include a sub-folder path
-url: https://example.com/docs # Can also include a protocol
+url: https://docs.applio.org # Can also include a protocol
 
 # -----------------------------------------------------------------------------
 
 branding:
   title: Applio              # Your custom website title; keep it short
-  logo: assets/logo.png             # Path to a logo file
-  logoDark: assets/logo.png    # Path to a logo file to use in dark mode
+  logo: ../assets/logo.png             # Path to a logo file
+  logoDark: ../assets/logo.png    # Path to a logo file to use in dark mode
   logoAlign: left            # Align the logo to the right or the left
-  label: V2                 # Optional label
+  label: BETA                 # Optional label
                               # To remove the label, remove this config
   colors:
     label:                    # Label colors
@@ -37,7 +37,8 @@ branding:
 links:                        # Custom links to add to the top bar
                               # See also: footer.links
   - text: Home                # The text to use for the link
-    link: / # Link to an internal file or external URL
+    link: / 
+    icon: home
   - text: Github
     link: https://github.com/IAHispano/Applio-RVC-Fork # Link to an internal file
     icon: mark-github                # A custom icon name, :emoji:, <svg>, or
@@ -49,7 +50,7 @@ links:                        # Custom links to add to the top bar
 # -----------------------------------------------------------------------------
 
 footer:
-  copyright: "© All rights reserved." # A custom copyright statement
+  copyright: "&copy; Copyright {{ year }}. All rights reserved." # A custom copyright statement
   links:                      # A list of links to include in the footer
                               # See also: links
     - text: License           # The text to use for the link
@@ -63,7 +64,7 @@ cache:
 
 # -----------------------------------------------------------------------------
 
-cname: example.com            # The CNAME file value
+cname: docs.applio.org            # The CNAME file value
                               # or, false to not create a CNAME file
 
 # -----------------------------------------------------------------------------
@@ -78,8 +79,9 @@ edit:
 
 editor:                       # Configure the page live editor functionality
                               # that is only available during `retype start`
-  enabled: true               # false to disable and hide the live editor
+  enabled: false               # false to disable and hide the live editor
 
+# -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
 exclude:                      # Files or folders to exclude from the build
@@ -89,7 +91,7 @@ exclude:                      # Files or folders to exclude from the build
 
 # -----------------------------------------------------------------------------
 
-favicon: assets/logo.png   # Path to a custom favicon, or
+favicon: ../assets/logo.png   # Path to a custom favicon, or
                               # just put a favicon.ico in your project root
 
 # -----------------------------------------------------------------------------
