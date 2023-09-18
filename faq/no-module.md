@@ -1,15 +1,31 @@
-# Python "module" not found
+# How to Resolve a "Python Module Not Found" Error
 
-## I'm getting the error python "module" not found or similar
+Encountering a "Python module not found" error can be frustrating, but you can resolve it with these steps:
 
-First try to open the applio manager and selecting the third option if that doesnt works go to the requirements .txt and search for the module that is causing the error and in the cmd use this commands
+### 1. **Identify the Problematic Module:**
+   - The error message will look like this: `ModuleNotFoundError: No module named 'module'`
 
-(Change module with the name of the module that you searched in the requirements)
+### 2. **Open Command Prompt (cmd):**
+   - Launch a Command Prompt (cmd) window.
 
-```bash
-pip uninstall module
-```
+### 3. **Uninstall the Problematic Module:**
+   - Execute the following command, replacing `<module>` with the actual module name that triggered the error:
+     ```bash
+     pip uninstall <module>
+     ```
 
-```bash
-pip install module
-```
+### 4. **Reinstall the Module:**
+   - Once you've uninstalled the module, reinstall it by running this command:
+     ```bash
+     pip install <module>
+     ```
+   Make sure to replace `<module>` with the precise module name from step 3.
+
+   !!! Example:
+   - If you encountered the error with the "torch" module, use these commands:
+     ```bash
+     pip uninstall torch
+     pip install torch
+     ```
+
+*By carefully following these steps, you should successfully resolve the "Python module not found" error.*
