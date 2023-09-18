@@ -8,7 +8,7 @@ branding:
   logo: assets/logo.png
   logoDark: assets/logo.png
   logoAlign: left
-  label: BETA
+  label: v0.0.2
   colors:
     label:
       text: "#ffffff"
