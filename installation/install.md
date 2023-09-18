@@ -1,9 +1,4 @@
 # Installation
-
-!!!warning Requirements
-[Go to this page ](/requirements) and install all the requirements needed
-!!!
-
 ### Automatic installation:
 
 To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.

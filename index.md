@@ -4,7 +4,7 @@ icon: home
 
 # Home
 
-![](../../assets/applio.png)
+![](assets/applio.png)
 :::content-center
 [!badge variant="success" size="m" text="Create, experiment, enjoy: with Applio"]
 :::

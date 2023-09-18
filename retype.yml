@@ -1,178 +1,99 @@
-# -----------------------------------------------------------------------------
-# Retype
-# -----------------------------------------------------------------------------
+input: .
+output: .retype
 
-input: .                      # Local path from this retype.yml file to the
-                              # root of your project content files
-                              # See also: output
-
-# -----------------------------------------------------------------------------
-
-output: .retype               # Custom path to the output directory
-                              # See also: input
-
-# -----------------------------------------------------------------------------
-
-url: applio.org              # The base URL of your website
-url: docs.applio.org       # Can also be a sub-domain
-url: example.com/docs         # Can also include a sub-folder path
-url: https://docs.applio.org # Can also include a protocol
-
-# -----------------------------------------------------------------------------
+url: https://docs.applio.org
 
 branding:
-  title: Applio              # Your custom website title; keep it short
-  logo: ../assets/logo.png             # Path to a logo file
-  logoDark: ../assets/logo.png    # Path to a logo file to use in dark mode
-  logoAlign: left            # Align the logo to the right or the left
-  label: BETA                 # Optional label
-                              # To remove the label, remove this config
+  title: Applio
+  logo: assets/logo.png
+  logoDark: assets/logo.png
+  logoAlign: left
+  label: BETA
   colors:
-    label:                    # Label colors
-      text: "#ffffff"         # Custom color for the label text
-      background: "#00c220"   # Custom color for the label background
+    label:
+      text: "#ffffff"
+      background: "#00c220"
 
-# -----------------------------------------------------------------------------
-
-links:                        # Custom links to add to the top bar
-                              # See also: footer.links
-  - text: Home                # The text to use for the link
-    link: / 
+links:
+  - text: Home
+    link: /
     icon: home
   - text: Github
-    link: https://github.com/IAHispano/Applio-RVC-Fork # Link to an internal file
-    icon: mark-github                # A custom icon name, :emoji:, <svg>, or
-                              # a path to a file
-    iconAlign: left           # Icon alignment, to the left or right
-    target: blank             # Custom target
-                              # Use "blank" to open link in a new window
-
-# -----------------------------------------------------------------------------
+    link: https://github.com/IAHispano/Applio-RVC-Fork
+    icon: mark-github
+    iconAlign: left
+    target: blank
 
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved." # A custom copyright statement
-  links:                      # A list of links to include in the footer
-                              # See also: links
-    - text: License           # The text to use for the link
-      link: license.md        # Point to an internal file or external URL
-
-# -----------------------------------------------------------------------------
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  links:
+    - text: License
+      link: license.md
 
 cache:
-  busting: query              # Cache busting strategy
-                              # Options: none | path | query (default)
+  busting: query
 
-# -----------------------------------------------------------------------------
-
-cname: docs.applio.org            # The CNAME file value
-                              # or, false to not create a CNAME file
-
-# -----------------------------------------------------------------------------
+cname: docs.applio.org
 
 edit:
-  repo: ""                    # The URL to source files for this project
-  base: ""                    # Optional base path to a directory within repo
-  branch: ""                  # Point to a custom branch within the repo
-  label: "Edit this page"     # A custom label for the generated link
+  repo: ""
+  base: ""
+  branch: ""
+  label: "Edit this page"
 
-# -----------------------------------------------------------------------------
+editor:
+  enabled: false
 
-editor:                       # Configure the page live editor functionality
-                              # that is only available during `retype start`
-  enabled: false               # false to disable and hide the live editor
+exclude:
+  - "*_temp/"
+  - "/src/temp.md"
 
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-
-exclude:                      # Files or folders to exclude from the build
-                              # See also: include
-  - "*_temp/"                 # Wildcards are valid
-  - "/src/temp.md"            # Exclude a specific file
-
-# -----------------------------------------------------------------------------
-
-favicon: ../assets/logo.png   # Path to a custom favicon, or
-                              # just put a favicon.ico in your project root
-
-# -----------------------------------------------------------------------------
+favicon: assets/logo.png
 
 generator:
-  recase: all                 # `none` to not recase any file or folder names
-                              # By default, all generated file and folder names
-                              # are generated in all lowercase
+  recase: all
 
-# -----------------------------------------------------------------------------
-
-include:                      # Files or folders to include in the build
-                              # See also: exclude
-  - "*.py"                    # Wildcards are valid
-
-# -----------------------------------------------------------------------------
+include:
+  - "*.py"
 
 integrations:
   googleAnalytics:
-    id: ""                    # Your Google Analytics measurement id
+    id: ""
   googleTagManager:
-    id: ""                    # Your Google Tag Manager measurement id
+    id: ""
   gravatar:
-    enabled: true             # false to disable using Gravatar images
-    default: mp               # What Gravatar profile image to use
-  plausible:                  # Plausible.io integration
-    domain: domain1.com,domain2.com # Your plausible domain(s)
-    host: plausible.example.com     # Custom Plausible host name
+    enabled: true
+    default: mp
+  plausible:
+    domain: domain1.com,domain2.com
+    host: plausible.example.com
 
-# -----------------------------------------------------------------------------
+markdown:
+  lineBreaks: soft
 
-markdown:                     # Markdown configuration options
-  lineBreaks: soft            # Switch between `soft` and `hard` line breaks
-
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-
-search:                       # Custom configuration of the website search
+search:
   hotkeys:
-    - "/"                     # Keyboard key to set focus in the search field
-                              # Default is "k"
-  maxResults: 20              # Max number of search results to render
-  minChars: 2                 # Min characters required to trigger a search
-  mode: full                  # The search index creation mode
-                              # Options include: full | partial | basic
-  noResultsFoundMsg: "No results" # Message when no results are found
-  placeholder: Search         # Placeholder text used in the input field
-
-# -----------------------------------------------------------------------------
+    - "/"
+  maxResults: 20
+  minChars: 2
+  mode: full
+  noResultsFoundMsg: "No results"
+  placeholder: Search
 
 serve:
-  host: 127.0.0.1             # Serve the website from this host location
-  host: 127.0.0.1:5005        # Custom port also supported
-  port: 5005                  # Custom port configured separately from host
+  host: 127.0.0.1
+  port: 5005
   watch:
-    mode: memory              # Where to host files from during retype watch
-                              # Options include: memory (default) | disk
-    polling: true             # How Retype will listen for file changes
-                              # Options: false (default) | true | number
-    validation: optimal       # How thorough Retype is looking for file changes
-                              # Options: fast | full | optimal (default)
+    mode: memory
+    polling: true
+    validation: optimal
+  open: false
 
-# -----------------------------------------------------------------------------
-
-start:
-  open: false                 # Do not automatically open web browser on start
-
-# -----------------------------------------------------------------------------
-
-snippets:                     # Custom code snippets configuration
-                              # See: https://retype.com/components/code-snippet
-  lineNumbers:                # Language shortcodes to enable line numbering on
+snippets:
+  lineNumbers:
     - js
-    - none                    # `none` to disable line-numbering on snippets
-
-# -----------------------------------------------------------------------------
+    - none
 
 templating:
-  enabled: true               # Enable or disable the Retype content templating
-  liquid: false               # Is Liquid syntax {% ... %} enabled?
-                              # If true, Retype is incompatible with the
-                              # GitBook style of component configuration
+  enabled: true
+  liquid: false
