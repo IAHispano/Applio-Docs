@@ -128,8 +128,6 @@ markdown:                     # Markdown configuration options
 
 # -----------------------------------------------------------------------------
 
-meta:
-  title: " | Widgets"         # Appended to the <title> element on all pages
 
 # -----------------------------------------------------------------------------
 
