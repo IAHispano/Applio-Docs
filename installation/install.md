@@ -20,7 +20,8 @@ git clone https://github.com/IAHispano/Applio-RVC-Fork
 ```
 
 2. Install dependencies (Python 3.9.8):
-   +++ NVDIA
+   
++++ NVDIA
 
 ```bash
 pip install -r ../assets/requirements/requirements.txt
