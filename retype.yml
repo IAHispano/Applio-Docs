@@ -30,9 +30,6 @@ footer:
     - text: License
       link: license.md
 
-cache:
-  busting: query
-
 cname: docs.applio.org
 
 edit:

@@ -1,5 +1,6 @@
 ---
 order: A
+expanded: true
 ---
 !!!info Recomendation
 After installing everything, it is recommended to restart your PC.

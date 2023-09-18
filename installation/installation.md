@@ -6,4 +6,4 @@ order: B
 
 # Download
 
-We've curated a comprehensive list of frequently asked questions to address any queries you might have. If you still have doubts or need further assistance, please don't hesitate to reach out to us via our [official Discord server](https://discord.gg/IAHispano).
+At present, RVC/Applio is restricted from accessing online platforms such as Google Colab or Kaggle. Therefore, the sole available methods to utilize it are by running it locally on your personal computer or by leveraging a GPU leasing service.
