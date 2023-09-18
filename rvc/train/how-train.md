@@ -1,3 +1,3 @@
-# How to train
+# Train a model
 
 Text

@@ -1,3 +1,3 @@
-# How to do an inference
+# Make an inference
 
 Text
