@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748476481104">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748479002966">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -23,24 +23,22 @@
     <meta property="og:url" content="https://docs.applio.org/installation/install/">
     <meta property="og:title" content="Installation">
     <meta property="og:description" content="To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.">
-    <meta property="og:image" content="https://docs.applio.org/assets/exe_installer.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/installation/install/">
     <meta property="twitter:title" content="Installation">
     <meta property="twitter:description" content="To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.">
-    <meta property="twitter:image" content="https://docs.applio.org/assets/exe_installer.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.748476481104" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.748479002966" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748476481104" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748479002966" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748476481104" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.748476481104" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748479002966" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.748479002966" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,37 +211,24 @@
         <span>Installation</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="automatic-installation">
+<doc-anchor-target id="1-autmatic-installation">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#automatic-installation">#</doc-anchor-trigger>
-        <span>Automatic installation:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-autmatic-installation">#</doc-anchor-trigger>
+        <span>1. Autmatic installation:</span>
     </h3>
 </doc-anchor-target>
-<p>To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.</p>
-<doc-tabs>
-<doc-tab v-cloak id="only-nvdia">
-<template #title>Only NVDIA</template>
-<p>If you have a nvdia graphics card use the <a href="https://github.com/IAHispano/Applio-RVC-Fork/releases">Applio_Installer.exe</a> available in the releases section.
-<figure class="content-center">
-    <img src="../../assets/exe_installer.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</doc-tab>
-<doc-tab v-cloak id="nvdia-amd-or-intel">
-<template #title>NVDIA, AMD or Intel</template>
-<p>If you have another graphics card or the first option is not working use the <a href="https://github.com/IAHispano/Applio-Installer/releases">install_Applio.bat</a> available in the releases section.
-<figure class="content-center">
-    <img src="../../assets/script.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</doc-tab>
-</doc-tabs>
-<doc-anchor-target id="manual-installation">
+<p>To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.
+<a href="https://github.com/IAHispano/Applio-Installer/releases">install_Applio.bat</a> available in the releases section.</p>
+<doc-anchor-target id="2-manual-installation">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manual-installation">#</doc-anchor-trigger>
-        <span>Manual installation:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-manual-installation">#</doc-anchor-trigger>
+        <span>2. Manual installation:</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows">#</doc-anchor-trigger>
+        <span>Windows:</span>
     </h3>
 </doc-anchor-target>
 <ol>
@@ -253,6 +238,18 @@
 <pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/IAHispano/Applio-RVC-Fork</code></pre>
 </doc-codeblock></div>
 <ol start="2">
+<li>Download base models</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">https://huggingface.co/lj1995/VoiceConversionWebUI/tree/main</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li>In the installation script you can check where you should place each file/folder:</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-none"><code v-pre class="language-none">pretrained_v0, pretrained_v2, uvr5_pack, uvr5_weights, ffprobe.exe, ffmpeg.exe, hubert_base.pt and rmvpe.pt*</code></pre>
+</doc-codeblock></div>
+<ol start="4">
 <li>Install dependencies (Python 3.9.8):</li>
 </ol>
 <doc-tabs>
@@ -283,36 +280,8 @@
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">cd Applio-RVC-Fork
-make install # Do this everytime you start your paperspace machine</code></pre>
+make install </code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="run-applio">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run-applio">#</doc-anchor-trigger>
-        <span>Run Applio</span>
-    </h3>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab v-cloak id="script">
-<template #title>Script</template>
-<p>Open the go_Applio.bat script and select the option you prefer
-<figure class="content-center">
-    <img src="../../assets/go_applio.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</doc-tab>
-<doc-tab v-cloak id="manually">
-<template #title>Manually</template>
-<p>NVDIA:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">python infer-web.py --pycmd python --port 7897</code></pre>
-</doc-codeblock></div>
-<p>AMD or Intel:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">python infer-web.py --pycmd python --port 5000 --dml</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -332,10 +301,10 @@ make install # Do this everytime you start your paperspace machine</code></pre>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../find-models/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../installation/run/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Find voice models</span>
+                                                <span class="block mt-1">Run Applio</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
