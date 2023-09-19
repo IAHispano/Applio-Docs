@@ -1,7 +1,7 @@
 # FileNotFoundError
-![](../assets/filenotfounderror.png)
-
 This error occurs because you have not added the runtime to the Windows PATH, to do this you have to edit the environment variables and add the path to the Applio-RVC-Fork/runtime/scripts folder at the top of the list.
+
+![](../assets/filenotfounderror.png)
 
 ## Follow these steps:
 To edit the Windows PATH variable and add the path to the `Applio-RVC-Fork/runtime/scripts` folder at the top of the list, follow these steps:
