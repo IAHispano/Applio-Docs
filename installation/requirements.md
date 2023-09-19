@@ -22,14 +22,16 @@ After installing everything, it is recommended to restart your PC.
 
    - Download the file and execute it.
    - Click "Install," and you're done.
+####
 
 3. [Git](https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/)
 
    - Download the file and execute it.
    - Click "Next" for all options.
    - Click "Install," and you're done.
+####
 
-4. [Python](https://www.python.org/ftp/python/3.9.8/python-3.9.8-amd64.exe)
+4. [Python](https://www.python.org/ftp/python/3.9.8/python-3.9.8-amd64.exe) [!badge variant="warning" text="OPTIONAL"]
 
    - Download the file and execute it.
    - Check the box that says "Add Python 3.9 to path."
