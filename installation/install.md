@@ -1,26 +1,30 @@
 # Installation
 
-### Automatic installation:
+### 1. Autmatic installation:
 
 To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.
+[install_Applio.bat](https://github.com/IAHispano/Applio-Installer/releases) available in the releases section.
 
-+++ Only NVDIA
-If you have a nvdia graphics card use the [Applio_Installer.exe](https://github.com/IAHispano/Applio-RVC-Fork/releases) available in the releases section.
-![](../assets/exe_installer.png)
-+++ NVDIA, AMD or Intel
-If you have another graphics card or the first option is not working use the [install_Applio.bat](https://github.com/IAHispano/Applio-Installer/releases) available in the releases section.
-![](../assets/script.png)
-+++
-
-### Manual installation:
-
+### 2. Manual installation:
+### Windows:
 1. Clone the repository
 
 ```bash
 git clone https://github.com/IAHispano/Applio-RVC-Fork
 ```
 
-2. Install dependencies (Python 3.9.8):
+2. Download base models
+
+```bash
+https://huggingface.co/lj1995/VoiceConversionWebUI/tree/main
+```
+
+3. In the installation script you can check where you should place each file/folder:
+```
+pretrained_v0, pretrained_v2, uvr5_pack, uvr5_weights, ffprobe.exe, ffmpeg.exe, hubert_base.pt and rmvpe.pt*
+```
+
+4. Install dependencies (Python 3.9.8):
 
 +++ NVDIA
 
@@ -46,25 +50,5 @@ pip install -r ../assets/requirements/requirements-ipex.txt
 
 ```bash
 cd Applio-RVC-Fork
-make install # Do this everytime you start your paperspace machine
+make install 
 ```
-
-### Run Applio
-
-+++ Script
-Open the go_Applio.bat script and select the option you prefer
-![](../assets/go_applio.png)
-+++ Manually
-NVDIA:
-
-```bash
-python infer-web.py --pycmd python --port 7897
-```
-
-AMD or Intel:
-
-```bash
-python infer-web.py --pycmd python --port 5000 --dml
-```
-
-+++
