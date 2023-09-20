@@ -4,7 +4,7 @@ Training a model in Applio is a straightforward process. Follow these steps to c
 
 ### Step 1: Dataset Preparation
 
-1. Create a folder with your preferred name inside "Applio-RVC-Fork > datasets."
+1. Create a folder with your preferred name inside `Applio-RVC-Fork/datasets/`.
 
 2. Upload the audio files you intend to use for training into this folder.
 
@@ -12,19 +12,19 @@ Training a model in Applio is a straightforward process. Follow these steps to c
 
 1. Open Applio and start by naming your model.
 
-2. Click "Refresh Dataset List" in the interface.
+2. Click `Refresh Dataset List` in the interface.
 
 3. Select the folder you created in Step 1.
 
-4. Execute the "Process Data" step and continue until you see the "End Preprocess" output message.
+4. Execute the `Process Data` step and continue until you see the `End Preprocess` output message.
 
 ### Step 3: Feature Extraction
 
 1. Choose the desired feature extraction method that suits your needs.
 
-2. Execute the "Extract Features" step.
+2. Execute the `Extract Features` step.
 
-3. Wait for the "All-Feature-Done" message to confirm the completion of feature extraction.
+3. Wait for the `All-Feature-Done` message to confirm the completion of feature extraction.
 
 ### Step 4: Model Training
 
@@ -38,7 +38,7 @@ Training a model in Applio is a straightforward process. Follow these steps to c
 
    - **Batch Size:** Adjust the batch size based on your graphics card's VRAM. For instance, if you have 8GB VRAM, use a batch size between 6-8. Consider your graphics card's CUDA cores when experimenting with higher batch sizes.
 
-2. Click the "Train Model" button to initiate training.
+2. Click the `Train Model` button to initiate training.
 
 3. Monitor the progress in the Applio console as each epoch forms.
 
@@ -50,4 +50,4 @@ Training a model in Applio is a straightforward process. Follow these steps to c
 
    ![](../../assets/index.png)
 
-3. To save your model, select a preferred saving method and click the corresponding button. The zip file containing your model will be located inside the "finished/backup" folder within the "logs" directory in "Applio-RVC-Fork."
+3. To save your model, select a preferred saving method and click the corresponding button. The zip file containing your model will be located inside the `Applio-RVC-Fork/logs/finished/backup`.
