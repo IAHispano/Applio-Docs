@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748479002966">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748483276957">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Train a model</title>
     <meta name="title" content="Train a model">
-    <meta name="description" content="Text">
+    <meta name="description" content="Actually training a model is a simple and easy to learn procedure">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.applio.org/rvc/train/how-train/">
@@ -22,22 +22,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.applio.org/rvc/train/how-train/">
     <meta property="og:title" content="Train a model">
-    <meta property="og:description" content="Text">
+    <meta property="og:description" content="Actually training a model is a simple and easy to learn procedure">
+    <meta property="og:image" content="https://github.com/Maville-07/Applio-Docs/blob/18ca7a11bb6ac0246175b4bfef09d5dca1bb388a/assets/train%20example.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/rvc/train/how-train/">
     <meta property="twitter:title" content="Train a model">
-    <meta property="twitter:description" content="Text">
+    <meta property="twitter:description" content="Actually training a model is a simple and easy to learn procedure">
+    <meta property="twitter:image" content="https://github.com/Maville-07/Applio-Docs/blob/18ca7a11bb6ac0246175b4bfef09d5dca1bb388a/assets/train%20example.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.748479002966" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.748483276957" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.748479002966" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.748483276957" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.748479002966" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.748483276957" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -210,7 +212,41 @@
         <span>Train a model</span>
     </h1>
 </doc-anchor-target>
-<p>Text</p>
+<p>Actually training a model is a simple and easy to learn procedure</p>
+<ul>
+<li><em>First  create a folder with the name of your choice inside Applio-RVC-Fork &gt; datasets and upload the audio inside it.</em></li>
+</ul>
+<doc-anchor-target id="steps-to-follow-in-the-interface">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#steps-to-follow-in-the-interface">#</doc-anchor-trigger>
+        <span>steps to follow in the interface</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p><strong>Step 1 (process dataset)</strong></p>
+<p>Once in Applio, name the model, next click on refresh dataset list and select the previously created folder, click the &#x27;process data&#x27; step until you receive the &#x27;end prepocess&#x27; output message.</p>
+</li>
+<li><p><strong>Step 2  (Extract feature of the extraction method)</strong></p>
+<p>Select the desired extraction method, click the &#x27;extract features&#x27; step and wait for the &#x27;all-feature-done&#x27; message.</p>
+</li>
+<li><p><strong>Step 3 (Train model)</strong></p>
+<p>The values of the configurations are applied depending on your needs
+<img src="https://github.com/Maville-07/Applio-Docs/blob/18ca7a11bb6ac0246175b4bfef09d5dca1bb388a/assets/train%20example.png" alt="" /></p>
+<p><strong>Save frequency:</strong> it is recommended to set a number from 10 to 50, this option will save the state of the model every time it completes a cycle of the selected value <em>(it is useful to go back to a previous point in case of overtraining).</em></p>
+<p><strong>Training epochs:</strong> it is not possible to estimate a value of epochs to train a model, as each dataset is extended differently regardless of whether they have the same audio duration, for this step it is recommended to set the value that seems right for your model and keep an eye on the state of it through the tensorboard (although models from 100 - 200 epochs start to listen decently).</p>
+<p><strong>Batch size:</strong> This is the amount of audios that will be processed at the same time to form an epoch, a higher value is equivalent to a faster training time, but at a cost that consumes more graphic resources (VRAM), this value is set depending on the vram of your graphics card, for Example: if you have 8gb of vram a value between 6 - 8 is set <em>(although the cuda cores of your graphics card compensate in part the batch size, so you can try with a little higher values).</em></p>
+</li>
+</ul>
+<p><em><strong>once everything is set up, click on the train model button and wait for an epoch to form in the applio console.</strong></em></p>
+<doc-anchor-target id="final-step-save-model-and-generate-index-file">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#final-step-save-model-and-generate-index-file">#</doc-anchor-trigger>
+        <span>Final Step (Save model and generate index file)</span>
+    </h2>
+</doc-anchor-target>
+<p>when the training of our model is finished, we proceed to generate the index file by clicking the &#x27;Train Feature Index&#x27; button, if the step was done correctly it should look something like this.</p>
+<p><img src="https://github.com/Maville-07/Applio-Docs/blob/986c7874cfce53579ea72f3cc87d75378c66951d/assets/index.png" alt="" /></p>
+<p><strong>once everything is done, select a save method and click on the button, the zip file with the model will be found inside the folder &#x27;finished/backup&#x27; inside &#x27;logs&#x27; in Applio-RVC-Fork.</strong></p>
 
                                 
                                 <!-- Required only on API pages -->
