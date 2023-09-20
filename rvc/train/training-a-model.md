@@ -50,4 +50,4 @@ Training a model in Applio is a straightforward process. Follow these steps to c
 
    ![](../../assets/index.png)
 
-3. To save your model, select a preferred saving method and click the corresponding button. The zip file containing your model will be located inside the `Applio-RVC-Fork/logs/finished/backup`.
+3. To save your model, select a preferred saving method and click the corresponding button. The zip file containing your model will be located inside the `Applio-RVC-Fork/logs/finished/`.
