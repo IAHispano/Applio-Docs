@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748520429034">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748520637280">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -35,11 +35,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.748520429034" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.748520637280" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.748520429034" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.748520637280" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.748520429034" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.748520637280" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -226,7 +226,7 @@
     </h3>
 </doc-anchor-target>
 <ol>
-<li><p>Create a folder with your preferred name inside &quot;Applio-RVC-Fork &gt; datasets.&quot;</p>
+<li><p>Create a folder with your preferred name inside <code v-pre>Applio-RVC-Fork/datasets/</code>.</p>
 </li>
 <li><p>Upload the audio files you intend to use for training into this folder.</p>
 </li>
@@ -240,11 +240,11 @@
 <ol>
 <li><p>Open Applio and start by naming your model.</p>
 </li>
-<li><p>Click &quot;Refresh Dataset List&quot; in the interface.</p>
+<li><p>Click <code v-pre>Refresh Dataset List</code> in the interface.</p>
 </li>
 <li><p>Select the folder you created in Step 1.</p>
 </li>
-<li><p>Execute the &quot;Process Data&quot; step and continue until you see the &quot;End Preprocess&quot; output message.</p>
+<li><p>Execute the <code v-pre>Process Data</code> step and continue until you see the <code v-pre>End Preprocess</code> output message.</p>
 </li>
 </ol>
 <doc-anchor-target id="step-3-feature-extraction">
@@ -256,9 +256,9 @@
 <ol>
 <li><p>Choose the desired feature extraction method that suits your needs.</p>
 </li>
-<li><p>Execute the &quot;Extract Features&quot; step.</p>
+<li><p>Execute the <code v-pre>Extract Features</code> step.</p>
 </li>
-<li><p>Wait for the &quot;All-Feature-Done&quot; message to confirm the completion of feature extraction.</p>
+<li><p>Wait for the <code v-pre>All-Feature-Done</code> message to confirm the completion of feature extraction.</p>
 </li>
 </ol>
 <doc-anchor-target id="step-4-model-training">
@@ -279,7 +279,7 @@
 </li>
 </ul>
 </li>
-<li><p>Click the &quot;Train Model&quot; button to initiate training.</p>
+<li><p>Click the <code v-pre>Train Model</code> button to initiate training.</p>
 </li>
 <li><p>Monitor the progress in the Applio console as each epoch forms.</p>
 </li>
@@ -296,7 +296,7 @@
 <li><p>If done correctly, it should resemble the example below:</p>
 <p><img src="../../../assets/index.png" alt="" /></p>
 </li>
-<li><p>To save your model, select a preferred saving method and click the corresponding button. The zip file containing your model will be located inside the &quot;finished/backup&quot; folder within the &quot;logs&quot; directory in &quot;Applio-RVC-Fork.&quot;</p>
+<li><p>To save your model, select a preferred saving method and click the corresponding button. The zip file containing your model will be located inside the <code v-pre>Applio-RVC-Fork/logs/finished/</code>.</p>
 </li>
 </ol>
 
