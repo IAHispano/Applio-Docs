@@ -6,7 +6,7 @@ To quickly and effortlessly install Applio along with all the necessary models a
 
 +++ NVDIA
 
-If you are using an Nvidia GPU, please use this installer, which has a simplified GUI Applio Installer: [Applio Installer](https://github.com/IAHispano/Applio-Installer/releases)
+If you are using an Nvidia GPU, please use this installer, which has a simplified GUI: [Applio Installer](https://github.com/IAHispano/Applio-Installer/releases)
 
 +++ NVDIA, AMD or Intel
 
