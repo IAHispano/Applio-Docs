@@ -3,8 +3,8 @@
 ### 1. Automatic installation:
 
 To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.
-[install_Applio.bat](https://github.com/IAHispano/Applio-Installer/releases) available in the releases section.
-
+- For Nvdia GPU Only: [Applio Installer](https://github.com/IAHispano/Applio-Installer/releases)
+- For Nvdia/AMD/Intel GPU: [install_Applio.bat](https://github.com/IAHispano/Applio-Installer/releases)
 ### 2. Manual installation:
 ### Windows:
 1. Clone the repository
