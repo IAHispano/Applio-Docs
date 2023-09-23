@@ -8,7 +8,7 @@ To quickly and effortlessly install Applio along with all the necessary models a
 
 If you are using an Nvidia GPU, please use this installer, which has a simplified GUI Applio Installer: [Applio Installer](https://github.com/IAHispano/Applio-Installer/releases)
 
-+++ NVDIA, AMD, or Intel
++++ NVDIA, AMD or Intel
 
 If you are using an AMD/Intel GPU or the GUI installer is not working properly, use the .bat installer: [install_Applio.bat](https://github.com/IAHispano/Applio-RVC-Fork/releases/tag/v2.0.0)
 
