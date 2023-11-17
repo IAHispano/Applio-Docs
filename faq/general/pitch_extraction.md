@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Pitch extraction differences
 
 - **pm:** It provides a quick but inefficient result and is less faithful to the voice model.

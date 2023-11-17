@@ -9,6 +9,10 @@ After installing everything, it is recommended to restart your PC.
 
 # Requirements
 
+!!!warning Advice!
+These are the old and general requirements for the installation with the "Runtime" option. If you are using the "Conda" (new installer), see the [Conda](../faq/conda/dependencies.md) section.
+!!!
+
 1. [Buildtools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 
    - Download the file and execute it.
