@@ -4,12 +4,12 @@ expanded: true
 ---
 
 !!!info Recomendation
-After installing everything, it is recommended to restart your PC.
+After installing, it is recommended to restart your PC.
 !!!
 
 # Requirements
 
-[!badge variant="success" text=":icon-desktop-download:"] :icon-arrow-right: Auto downloaded
+[!badge variant="success" text=":icon-desktop-download:"] :icon-arrow-right: Semi or Auto installed by the installer
 
 [!badge variant="warning" text=":icon-download:"] :icon-arrow-right: Required for the **runtime**  installation
 
@@ -30,7 +30,7 @@ After installing everything, it is recommended to restart your PC.
    - Click "Install," and you're done.
 ####
 
-3. [Git](https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe) [!badge variant="warning" text=":icon-download:"] (Download it if MinGit is not working for you)
+3. [Git](https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe) [!badge variant="warning" text=":icon-download:"] (IF you use conda and the MinGit is not working for you download it)
 
    - Download the file and execute it.
    - Click "Next" for all options.
