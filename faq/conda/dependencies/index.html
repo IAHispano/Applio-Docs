@@ -11,24 +11,24 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Conda Error Building Wheels</title>
-    <meta name="title" content="Conda Error Building Wheels">
-    <meta name="description" content="If Conda shows an error related to the \"Wheels\" dependency, check that Visual Studio Build Tools are installed.">
+    <title>Dependencies</title>
+    <meta name="title" content="Dependencies">
+    <meta name="description" content="In this section you will found the why the dependencies are required or not for the conda installer to function.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.applio.org/faq/conda/conda_error_cannot_build/">
+    <link rel="canonical" href="https://docs.applio.org/faq/conda/dependencies/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.applio.org/faq/conda/conda_error_cannot_build/">
-    <meta property="og:title" content="Conda Error Building Wheels">
-    <meta property="og:description" content="If Conda shows an error related to the \"Wheels\" dependency, check that Visual Studio Build Tools are installed.">
+    <meta property="og:url" content="https://docs.applio.org/faq/conda/dependencies/">
+    <meta property="og:title" content="Dependencies">
+    <meta property="og:description" content="In this section you will found the why the dependencies are required or not for the conda installer to function.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.applio.org/faq/conda/conda_error_cannot_build/">
-    <meta property="twitter:title" content="Conda Error Building Wheels">
-    <meta property="twitter:description" content="If Conda shows an error related to the \"Wheels\" dependency, check that Visual Studio Build Tools are installed.">
+    <meta property="twitter:url" content="https://docs.applio.org/faq/conda/dependencies/">
+    <meta property="twitter:title" content="Dependencies">
+    <meta property="twitter:description" content="In this section you will found the why the dependencies are required or not for the conda installer to function.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -204,13 +204,41 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="conda-error-building-wheels" class="break-words">
+<doc-anchor-target id="dependencies" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conda-error-building-wheels">#</doc-anchor-trigger>
-        <span>Conda Error Building Wheels</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dependencies">#</doc-anchor-trigger>
+        <span>Dependencies</span>
     </h1>
 </doc-anchor-target>
-<p>If Conda shows an error related to the &quot;Wheels&quot; dependency, check that Visual Studio Build Tools are installed. This requirement is mentioned at the beginning of the installer.</p>
+<p>In this section you will found the why the dependencies are required or not for the conda installer to function.</p>
+<doc-anchor-target id="visual-studio-build-tools">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#visual-studio-build-tools">#</doc-anchor-trigger>
+        <span>Visual Studio Build Tools</span>
+    </h2>
+</doc-anchor-target>
+<p>Visual Studio Build Tools <strong>are required</strong> for the installer to function. Because of that they are <strong>semi automatically</strong> downloaded and installed in the installer.</p>
+<doc-anchor-target id="visual-c-redistributable">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#visual-c-redistributable">#</doc-anchor-trigger>
+        <span>Visual C++ Redistributable</span>
+    </h2>
+</doc-anchor-target>
+<p>Visual C++ Redistributable is <strong>no required</strong> for the installer to function. Becuase the conda env used by the installer already has the redistributable installed.</p>
+<doc-anchor-target id="git">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#git">#</doc-anchor-trigger>
+        <span>Git</span>
+    </h2>
+</doc-anchor-target>
+<p>Git is <strong>not required</strong> for the installer to function. The installer automatically downloads Mingit, eliminating the need for Git to be pre-installed.</p>
+<doc-anchor-target id="python">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#python">#</doc-anchor-trigger>
+        <span>Python</span>
+    </h2>
+</doc-anchor-target>
+<p>Python is <strong>not required</strong> for the installer to function. The installer utilizes Conda, so there&#x27;s no need to have Python installed beforehand.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -220,20 +248,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../faq/conda/mingit_extraction_or_download_issues/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../faq/conda/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Issues with Mingit Extraction or Download</span>
+                                                <span class="block mt-1">Conda</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../faq/conda/alternative/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../faq/conda/tensorboard_error/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">General Failure After Installation</span>
+                                                <span class="block mt-1">Tensorboard or dependency error</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -280,6 +308,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Conda Error Building Wheels", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Dependencies", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
