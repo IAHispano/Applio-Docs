@@ -5,15 +5,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753983151773">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753983334054">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>How to check if the Visual Studio Build Tools are installed correctly</title>
-    <meta name="title" content="How to check if the Visual Studio Build Tools are installed correctly">
-    <meta name="description" content="If you are having problems with the installation of the Visual Studio Build Tools, you can check if they are installed correctly by following these...">
+    <title>Check Build Tools Installed</title>
+    <meta name="title" content="Check Build Tools Installed">
+    <meta name="description" content="How to Verify the Correct Installation of Visual Studio Build Tools">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.applio.org/faq/general/check_buildtools_installed/">
@@ -21,25 +21,25 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.applio.org/faq/general/check_buildtools_installed/">
-    <meta property="og:title" content="How to check if the Visual Studio Build Tools are installed correctly">
-    <meta property="og:description" content="If you are having problems with the installation of the Visual Studio Build Tools, you can check if they are installed correctly by following these...">
+    <meta property="og:title" content="Check Build Tools Installed">
+    <meta property="og:description" content="How to Verify the Correct Installation of Visual Studio Build Tools">
     <meta property="og:image" content="https://docs.applio.org/assets/build_tools_installed.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/faq/general/check_buildtools_installed/">
-    <meta property="twitter:title" content="How to check if the Visual Studio Build Tools are installed correctly">
-    <meta property="twitter:description" content="If you are having problems with the installation of the Visual Studio Build Tools, you can check if they are installed correctly by following these...">
+    <meta property="twitter:title" content="Check Build Tools Installed">
+    <meta property="twitter:description" content="How to Verify the Correct Installation of Visual Studio Build Tools">
     <meta property="twitter:image" content="https://docs.applio.org/assets/build_tools_installed.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.753983151773" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.753983334054" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.753983151773" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.753983334054" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.753983151773" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.753983334054" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -206,38 +206,26 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="how-to-check-if-the-visual-studio-build-tools-are-installed-correctly" class="break-words">
+<doc-anchor-target id="check-build-tools-installed" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-check-if-the-visual-studio-build-tools-are-installed-correctly">#</doc-anchor-trigger>
-        <span>How to check if the Visual Studio Build Tools are installed correctly</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#check-build-tools-installed">#</doc-anchor-trigger>
+        <span>Check Build Tools Installed</span>
     </h1>
 </doc-anchor-target>
-<p>If you are having problems with the installation of the Visual Studio Build Tools, you can check if they are installed correctly by following these steps:</p>
+<p>How to Verify the Correct Installation of Visual Studio Build Tools</p>
+<p>If you encounter issues with the installation of Visual Studio Build Tools, you can ensure they are installed correctly by following these steps:</p>
 <ol>
-<li><p>Open the Visual Studio Installer (If you don&#x27;t have it installed, you can download it from <a href="https://aka.ms/vs/17/release/vs_BuildTools.exe">here</a>):</p>
+<li><p>Open the Visual Studio Installer. If you haven&#x27;t installed it yet, you can download it <a href="https://aka.ms/vs/17/release/vs_BuildTools.exe">here</a>.</p>
 </li>
-<li><p>Check if you have this screen (or similar with another version):</p>
+<li><p>Confirm that the displayed screen resembles the one shown below (or a similar one for a different version):</p>
+<p><img src="../../../assets/build_tools_installed.png" alt="Visual Studio Installer" /></p>
+<p>2.1. If the required components are not installed, navigate to the &quot;Available&quot; tab. Click on the &quot;Install&quot; button next to &quot;Visual Studio Build Tools 2022&quot; and select both &quot;Desktop development with C++&quot; and &quot;.NET Desktop Buildtools&quot; by clicking on their respective icons:</p>
+<p><img src="../../../assets/build_tools.png" alt="Visual Studio Installer" /></p>
+</li>
+<li><p>If the screen resembles the one above, click on the &quot;Modify&quot; button. Ensure that both &quot;Desktop development with C++&quot; and &quot;.NET Desktop Buildtools&quot; options are selected. If they are not, click on them, and then click the &quot;Install&quot; button:</p>
+<p><img src="../../../assets/build_tools.png" alt="Visual Studio Installer" /></p>
 </li>
 </ol>
-<p><figure class="content-center">
-    <img src="../../../assets/build_tools_installed.png" alt="Visual Studio Installer">
-    <figcaption class="caption">Visual Studio Installer</figcaption>
-</figure>
-</p>
-<p>2.1 If you don&#x27;t have it installed, go to the available tab, click on the install button in the &quot;Visual Studio Build Tools 2022&quot; and then click on this icons: &quot;Desktop development with C++&quot; and the &quot;.NET Desktop Buildtools&quot;:</p>
-<p><figure class="content-center">
-    <img src="../../../assets/build_tools.png" alt="Visual Studio Installer">
-    <figcaption class="caption">Visual Studio Installer</figcaption>
-</figure>
-</p>
-<ol start="3">
-<li>If you have this screen, check clicking on the &quot;Modify&quot; button and check if the &quot;Desktop development with C++&quot; and the &quot;.NET Desktop Buildtools&quot; option is selected if theay aren&#x27;t click them and click on the &quot;Install&quot; button:</li>
-</ol>
-<p><figure class="content-center">
-    <img src="../../../assets/build_tools.png" alt="Visual Studio Installer">
-    <figcaption class="caption">Visual Studio Installer</figcaption>
-</figure>
-</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -307,6 +295,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "How to check if the Visual Studio Build Tools are installed correctly", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Check Build Tools Installed", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
