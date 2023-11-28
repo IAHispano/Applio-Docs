@@ -3,14 +3,15 @@
 ### 1. Automatic installation:
 
 To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.
+If you are a linux user select "NVIDIA, AMD or Intel" and download the linux script
 
-+++ NVDIA
++++ NVIDIA
 
 If you are using an Nvidia GPU, please use this installer, which has a simplified GUI: [Applio Installer](https://github.com/IAHispano/Applio-Installer/releases)
 
-+++ NVDIA, AMD or Intel
++++ NVIDIA, AMD or Intel
 
-If you are using an AMD/Intel GPU or the GUI installer is not working properly, use the .bat installer: [install_Applio.bat](https://github.com/IAHispano/Applio-RVC-Fork/releases/tag/v2.0.0)
+If you are using an AMD/Intel GPU or the GUI installer is not working properly, use the .bat installer: [install_Applio.bat](https://github.com/IAHispano/Applio-RVC-Fork/releases/)
 
 +++
 
@@ -35,7 +36,7 @@ pretrained_v0, pretrained_v2, uvr5_pack, uvr5_weights, ffprobe.exe, ffmpeg.exe, 
 
 4. Install dependencies (Python 3.9.8):
 
-+++ NVDIA
++++ NVIDIA
 
 ```bash
 pip install -r ../assets/requirements/requirements.txt
@@ -55,9 +56,23 @@ pip install -r ../assets/requirements/requirements-ipex.txt
 
 +++
 
+### Linux:
+1. Clone the repo
+
+```bash
+git clone https://github.com/IAHispano/Applio-RVC-Fork && cd Applio-RVC-Fork
+```
+2. Execute the install script
+```bash
+chmod +x install_Applio.sh && ./install_Applio.sh
+```
+
++++
 ### Paperspace:
 
 ```bash
 cd Applio-RVC-Fork
 make install 
 ```
+
+
