@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754070162175">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754475532229">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.754070162175" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.754475532229" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754070162175" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754475532229" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754070162175" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.754070162175" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754475532229" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.754475532229" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -217,15 +217,16 @@
         <span>1. Automatic installation:</span>
     </h3>
 </doc-anchor-target>
-<p>To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.</p>
+<p>To quickly and effortlessly install Applio along with all the necessary models and configurations on Windows.
+If you are a linux user select &quot;NVIDIA, AMD or Intel&quot; and download the linux script</p>
 <doc-tabs>
-<doc-tab v-cloak id="nvdia">
-<template #title>NVDIA</template>
+<doc-tab v-cloak id="nvidia">
+<template #title>NVIDIA</template>
 <p>If you are using an Nvidia GPU, please use this installer, which has a simplified GUI: <a href="https://github.com/IAHispano/Applio-Installer/releases">Applio Installer</a></p>
 </doc-tab>
-<doc-tab v-cloak id="nvdia-amd-or-intel">
-<template #title>NVDIA, AMD or Intel</template>
-<p>If you are using an AMD/Intel GPU or the GUI installer is not working properly, use the .bat installer: <a href="https://github.com/IAHispano/Applio-RVC-Fork/releases/tag/v2.0.0">install_Applio.bat</a></p>
+<doc-tab v-cloak id="nvidia-amd-or-intel">
+<template #title>NVIDIA, AMD or Intel</template>
+<p>If you are using an AMD/Intel GPU or the GUI installer is not working properly, use the .bat installer: <a href="https://github.com/IAHispano/Applio-RVC-Fork/releases/">install_Applio.bat</a></p>
 </doc-tab>
 </doc-tabs>
 <doc-anchor-target id="2-manual-installation">
@@ -262,8 +263,8 @@
 <li>Install dependencies (Python 3.9.8):</li>
 </ol>
 <doc-tabs>
-<doc-tab v-cloak id="nvdia">
-<template #title>NVDIA</template>
+<doc-tab v-cloak id="nvidia">
+<template #title>NVIDIA</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">pip install -r ../assets/requirements/requirements.txt</code></pre>
 </doc-codeblock></div>
@@ -281,6 +282,25 @@
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+<doc-anchor-target id="linux">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
+        <span>Linux:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Clone the repo</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/IAHispano/Applio-RVC-Fork &amp;&amp; cd Applio-RVC-Fork</code></pre>
+</doc-codeblock></div>
+<ol start="2">
+<li>Execute the install script</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">chmod +x install_Applio.sh &amp;&amp; ./install_Applio.sh</code></pre>
+</doc-codeblock></div>
+<p>+++</p>
 <doc-anchor-target id="paperspace">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#paperspace">#</doc-anchor-trigger>
