@@ -1,3 +1,9 @@
+---
+order: B
+expanded: true
+icon: desktop-download
+---
+
 # Installation
 
 ### 1. Automatic installation:

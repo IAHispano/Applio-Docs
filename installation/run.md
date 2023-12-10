@@ -1,3 +1,9 @@
+---
+order: C
+expanded: true
+icon: play
+---
+
 # Run Applio
 
 +++ Script

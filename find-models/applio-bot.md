@@ -1,3 +1,7 @@
+---
+icon: copilot
+---
+
 # Applio Bot
 
 To search for models within a database of over 8000 functional RVC voice models, consider using Applio Bot. It offers the convenience of collecting models from multiple servers and provides an easy-to-use interface.

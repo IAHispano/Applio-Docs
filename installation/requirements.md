@@ -1,10 +1,15 @@
 ---
 order: A
 expanded: true
+icon: checklist
 ---
 
 !!!info Recomendation
 After installing, it is recommended to restart your PC.
+!!!
+
+!!!warning Important!
+This requirements are not needed in a installation with conda only with runtime or manual.
 !!!
 
 # Requirements
@@ -15,7 +20,7 @@ After installing, it is recommended to restart your PC.
 
 [!badge variant="primary" text=":icon-tools:"] :icon-arrow-right: Not required for the runtime or conda installation, only when installing **manually** 
 
-1. [Buildtools](https://aka.ms/vs/17/release/vs_BuildTools.exe) [!badge variant="success" text=":icon-desktop-download:"]
+1. [Buildtools](https://aka.ms/vs/17/release/vs_BuildTools.exe) [!badge variant="warning" text=":icon-download:"]
 
    - Download the file and execute it.
    - Follow the installation steps until you reach this screen:
