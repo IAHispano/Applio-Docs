@@ -16,7 +16,7 @@ This requirements are not needed in a installation with conda only with runtime 
 
 [!badge variant="success" text=":icon-desktop-download:"] :icon-arrow-right: Semi or Auto installed by the installer
 
-[!badge variant="warning" text=":icon-download:"] :icon-arrow-right: Required for the **runtime**  installation
+[!badge variant="warning" text=":icon-download:"] :icon-arrow-right: Required for the **runtime**(old)  installation
 
 [!badge variant="primary" text=":icon-tools:"] :icon-arrow-right: Not required for the runtime or conda installation, only when installing **manually** 
 
