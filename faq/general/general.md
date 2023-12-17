@@ -6,4 +6,4 @@ icon: package
 
 # General 
 
-Questions about RVC/Applio in general
+Questions and errors about RVC/Applio in general
