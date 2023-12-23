@@ -6,6 +6,10 @@ order: A
 
 # How to train
 
+!!!warning Important!
+Training is only for NVDIA GPUs.
+!!!
+
 ### Step 1: Dataset Preparation
 1. Create a folder with the desired name inside `Applio-RVC-Fork/datasets/`.
 2. Download the audio files intended for training into this folder.
