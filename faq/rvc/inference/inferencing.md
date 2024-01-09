@@ -15,6 +15,11 @@ downloading files from mega may fail!, this is due to malfunction of the depende
 ---
 # How to infer
 
-- When we have the model ready we will go back to the 'inference' section, upload the audio using the corresponding checkbox and wait for the message to change from "uploading..." to "download", with this we can hit the 'refresh' button and select the pth audio and index of our model to finally start with the audio conversion.
+- When we have the model ready we will go back to the 'Model inference' section.
 
-- in case the model you are downloading has in the title extraction methods like **crepe, harvest or mangio-crepe** check the *'advanced options'* box and change the extraction method to the corresponding one, applio by default uses rvmpe, changing it to the corresponding method helps to always have the best conversion quality.
+1. **upload your audio**, make sure it is only vocals 
+2. click the **'refresh'** button at the top right and select the downloaded/uploaded files in the **_Inferencing voice_** and **_index path_** box.
+3. press **convert** and in a few seconds you will have your inference done!
+
+
+- **recommendation:** having a 'clean acapella' helps to get better results. but if the model downloaded in its name mentions the words **rvmpe, crepe or mangio-crepe** click on the **advanced options box** and select the right method, this will help to have more acurrate pitch control
