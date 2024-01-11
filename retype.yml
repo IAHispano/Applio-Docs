@@ -8,11 +8,11 @@ branding:
   logo: assets/ICON.ico
   logoDark: assets/ICON.ico
   logoAlign: left
-  label: v0.0.3
+  label: v3.0.0-beta
   colors:
     label:
       text: "#ffffff"
-      background: "#00c220"
+      background: "#15171B"
 
 links:
   - text: Home
@@ -45,7 +45,7 @@ exclude:
   - "*_temp/"
   - "/src/temp.md"
 
-favicon: assets/logo.png
+favicon: assets/ICON.ico
 
 generator:
   recase: all
