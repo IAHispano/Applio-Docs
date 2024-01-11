@@ -5,8 +5,8 @@ url: https://docs.applio.org
 
 branding:
   title: Applio
-  logo: assets/logo.png
-  logoDark: assets/logo.png
+  logo: assets/ICON.ico
+  logoDark: assets/ICON.ico
   logoAlign: left
   label: v0.0.3
   colors:
