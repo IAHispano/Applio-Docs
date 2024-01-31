@@ -55,9 +55,7 @@ include:
 
 integrations:
   googleAnalytics:
-    id: ""
-  googleTagManager:
-    id: ""
+    id: "G-LZBWQVP49P"
   gravatar:
     enabled: true
     default: mp
