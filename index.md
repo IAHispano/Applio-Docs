@@ -4,7 +4,7 @@ icon: home
 
 # Home
 
-![](assets/applio.png)
+![](assets/Applio_Banner.png)
 :::content-center
 
 Ultimate voice cloning tool, meticulously optimized for unrivaled power, modularity, and user-friendly experience.

@@ -14,4 +14,4 @@ The bot is capable of searching models within a database of over +500k functiona
 
 Type the command /search, enter the model name you want to search for and the type of technology you want **RVC or Kits.AI** and you’re done.
 
-![](../assets/Bot_Applio.png)
+![](../assets/Applio_Bot.png)
