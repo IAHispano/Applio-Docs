@@ -26,6 +26,3 @@ downloading files from mega may fail!, this is due to malfunction of the depende
 
 - **recommendation:** having a **'clean acapella'** helps to get better results. but if the model downloaded in its name mentions the words **rvmpe, crepe or mangio-crepe** click on the **advanced options box** and select the right method, this will help to have more acurrate pitch control.
 
-!!!info
-You can adjust your inference by clicking on the **Advanced Settings** option.
-!!!

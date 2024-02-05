@@ -7,7 +7,7 @@ icon: device-desktop
 
 How to Separate the Vocals and the Instrumental of songs with UVR locally
 
-1. **Download** and **install** [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui/releases/tag/v5.6). ![](../assets/Descarga.png)
+1. **Download** and **install** [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui/releases/tag/v5.6).
 
 !!!info Info
 In case you get a Windows message, just click on **More information** and then on **Run anyway**.
@@ -34,4 +34,4 @@ In case you get a Windows message, just click on **More information** and then o
 
 4. **Select** the video or song as input and **choose** the output folder for the instrumental or final vocals.
 
-5. **Choose Process Method** select the type of models you need to use (MDX-Net or VR Arch) after that select the model and click **Start Processing**. ![](../assets/Choose.png)
+5. **Choose Process Method** select the type of models you need to use (MDX-Net or VR Arch) after that select the model and click **Start Processing**. 

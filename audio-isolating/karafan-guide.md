@@ -14,11 +14,11 @@ How to Separate the Vocals and the Instrumental of songs with KaraFan (Colab Ver
 It should be clarified that there is a small chance that your Google account may be banned, therefore it is preferable to use a secondary or new account. In addition, the Colab only lasts 30 minutes in execution.
 !!!
 
-2. First, run the cell by clicking on the white :icon-play: button. The patch that solves the CUDA problem will start to download. ![](../assets/CUDA_Issue.png)
+2. First, run the cell by clicking on the white :icon-play: button. The patch that solves the CUDA problem will start to download.
 
-3. Then we click on the next cell **This is it!** to load the KaraFan interface. ![](../assets/Interfaz.png)
+3. Then we click on the next cell **This is it!** to load the KaraFan interface.
 
-4. Now we have to copy **the path of your song** that you want to separate and the path of the **folder** where the separated song will be stored. ![](../assets/Ruta.png)
+4. Now we have to copy **the path of your song** that you want to separate and the path of the **folder** where the separated song will be stored. 
 
 5. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
 

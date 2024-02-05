@@ -10,7 +10,7 @@ order: C
 !!!warning Important!
 Training is only for **NVDIA GPUs.**
 !!!
- - [don't know how to create a dataset?, check the audio insolation guide](/audio-isolating/)
+- [don't know how to create a dataset?, check the create dataset section](/create-datasets\How-to-create-datasets.md/)
 
 ||| Step 1: Dataset Preparation
 1. prepare a folder to place your audio, it can have any name you like and place it in your favorite place
@@ -64,3 +64,11 @@ Once configured, press **_'Start training'_** to start the process, everything i
 |||
 
 How to use the tensorboatd? Check out the [Tensorboard](./tensorboard.md) section.
+
+!!!secondary Retrainig
+In case you want to retrain your model, just put the name of your model and the same settings from step 3 and start training.
+!!!
+
+!!!info Info
+Your trained model will be found in a folder with your model name inside the logs folder.
+!!!

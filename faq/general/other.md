@@ -1,8 +1,11 @@
 ---
-order: 1
+order: C
+icon: multi-select	
 ---
 
-# Check Build Tools Installed
+# Others
+
+## Check Build Tools Installed
 
 How to Verify the Correct Installation of Visual Studio Build Tools
 
