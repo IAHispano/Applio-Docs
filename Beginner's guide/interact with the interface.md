@@ -5,7 +5,7 @@ One of the main features of applio for user comfort is a simple to understand in
 
 ---
 
-- **Make an inference/use voices;** you can go to the [inference section](get-started/inferencing/).
+- **Make an inference/use voices;** you can go to the [inference section](/get-started/inferencing/).
 
 - **Make a Dataset, train a Voice Model:** [training Guide](/get-started/training/) / [Create a Dataset](/get-started/how-to-create-datasets/)
 
