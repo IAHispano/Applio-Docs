@@ -66,7 +66,7 @@ Once configured, press **_'Start training'_** to start the process, everything i
 How to use the tensorboatd? Check out the [Tensorboard](./tensorboard.md) section.
 
 !!!secondary Retrainig
-In case you want to retrain your model, just put the name of your model and the same settings from step 3 and start training.
+In case you want to retrain your model, just put the name of your model and the same settings from step 4, please note that you will have to specify the number of epochs you want your model to reach and start training.
 !!!
 
 !!!info Info

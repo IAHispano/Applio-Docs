@@ -58,3 +58,6 @@ Basically cuts the audio into parts to make the inference by parts and then join
 ==- Pretrained
 It is a model trained with several sets of long-duration audios that will serve as a basis for training the models in RVC.
 ==-
+==- Overtraining
+It’s when the TensorBoard graph starts to rise and never comes back down. An overtrained model will sound robotic, muffled, and won’t be able to articulate words well. For more information check the [Tensorboard section](/get-started\tensorboard.md).
+==- 

@@ -25,3 +25,7 @@ Tensorboard is a series of graphs where we can monitor the progress of our model
 ![TensorBoard Screenshot](https://cdn.discordapp.com/attachments/1139925179489853470/1178729423411884152/image.png)
 
 This image provides a visual guide for locating the "g/total" metric within the "Scalars" tab.
+
+==- Advanced Information
+Besides checking the loss/g/total, it’s necessary to monitor the loss/g/mel, loss/g/kl and loss/d/total graphs. If any of these values increase and don’t decrease again, it indicates overtraining.
+==-
