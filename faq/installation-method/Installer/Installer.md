@@ -1,5 +1,6 @@
 ---
 expanded: false
+icon: desktop-download
 order: B
 ---
 
