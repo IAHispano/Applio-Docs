@@ -23,7 +23,7 @@ Thanks to our team, we were able to bring Applio to other places for your conven
 ==- Hugginface Space
  1. First you need to create a hugginface account.
 
- 2. Then enter [Applio Hugginface Space](https://huggingface.co/spaces/IAHispano/Applio) and duplicate the space, that is all. 
+ 2. Then enter [Applio Hugginface Space](https://huggingface.co/spaces/IAHispano/Applio) and duplicate the space, that is all. If you don't want to use huggingface you can use  [Applo playground](https://applio.org/playground).
  
  ![](../assets/Duplicate.png)
  

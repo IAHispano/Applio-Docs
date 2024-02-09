@@ -70,5 +70,5 @@ In case you want to retrain your model, just put the name of your model and the 
 !!!
 
 !!!info Info
-Your trained model will be found in a folder with your model name inside the logs folder.
+Your trained model will be found in a folder with your model name inside the logs folder and the pth files that are saved during the training in the folder named zips.
 !!!

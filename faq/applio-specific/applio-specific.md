@@ -15,8 +15,6 @@ Applio features a comprehensive overhaul of the f0 inference algorithm, introduc
 Applio seamlessly integrates with Paperspace, offering features such as Paperspace arguments for sharing Gradio links, and a dedicated make file tailored for Paperspace users.
 === What CLI functionality does Applio introduce?
 Applio introduces command-line interface (CLI) functionality, enabling users to use the --is_cli flag in infer-web.py for CLI system usage.
-=== What is the f0 hybrid estimation method introduced by Applio?
-Applio offers a novel f0 hybrid estimation method by calculating nanmedian for a specified array of f0 methods, ensuring the best results from multiple methods.
 === What changes have been made to the UI in Applio for both inference and training?
 In the inference interface, there is a complete redesign for an enhanced user experience, including audio recording, drop-down menus for file selection, and an advanced settings section.
 ===

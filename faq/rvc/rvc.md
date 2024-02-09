@@ -17,6 +17,9 @@ No, a Dataset is the set of audio used for training, while a Model is the result
 ==- Added index
 The added index contains the compressed dataset and is responsible for controlling the tones of the model at the time of inference.
 ==-
+==- Pth
+It is the one that contains all the data from the trained model that will serve us to make inference.
+==-
 ==- Epoch
 An Epoch is the number of iterations performed during training to complete one full cycle of your dataset. For example, if you have a dataset of 200 audio samples and you set a batch_size of 10, 10 audio samples will be processed in each iteration. To process all 200 audio samples, you will need to perform 20 iterations in total. This complete cycle is referred to as one epoch.
 ==-
@@ -42,4 +45,16 @@ Hop Length is used for tonal fluctuations. Lower values are more precise but slo
 ==-
 ==- Batch Size
 The batch size is the amount of GPU that will be used to train the model. The larger the batch size, the shorter the training duration. It is recommended to use multiples of 4 as the batch size, although the most common is 8, as it gives the AI time to learn correctly without rushing.
+==-
+==- Search Feature Ratio
+It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.
+==-
+==- Pitch
+The pitch is used to adjust the tone of the model so that it can match the original voice and avoid artifacts, for men it is - and women it is +.
+==-
+==- Split Audio
+Basically cuts the audio into parts to make the inference by parts and then joins them together.
+==-
+==- Pretrained
+It is a model trained with several sets of long-duration audios that will serve as a basis for training the models in RVC.
 ==-
