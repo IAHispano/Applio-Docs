@@ -10,17 +10,17 @@ order: C
 !!!warning Important!
 Training is only for **NVDIA GPUs.**
 !!!
-- [don't know how to create a dataset?, check the create dataset section](/create-datasets\How-to-create-datasets.md/)
+- [Don't know how to create a dataset?, check the create dataset section](/create-datasets\How-to-create-datasets.md/)
 
 ||| Step 1: Dataset Preparation
-1. prepare a folder to place your audio, it can have any name you like and place it in your favorite place
-2. copy the path of the folder containing your dataset and paste it in the **'dataset path'** box
+1. Prepare a folder to place your audio, it can have any name you like and place it in your favorite place
+2. Copy the path of the folder containing your dataset and paste it in the **'dataset path'** box
 |||
 
 
 ---
 ||| Step 2: Dataset Processing
-1. once the model is named and the dataset path is pasted press "Prepocess Dataset".
+1. Once the model is named and the dataset path is pasted press "Prepocess Dataset".
 |||
 
 !!!
@@ -48,12 +48,12 @@ Configure the training parameters according to your needs.
 
 ### Other Options
 
-- **Pitch Guidance:** just like the name, gives variation of pitch.
+- **Pitch Guidance:** Just like the name, gives variation of pitch.
 - **Pretrained:** Uses the existing rvc pretrained.
 - **Save Only Latest:** Save a single .pth file (final model)
-- **Save Every Weights:** saves a .pth file of the process when a cycle of **'Save Every Epoch'** is completed.
+- **Save Every Weights:** Saves a .pth file of the process when a cycle of **'Save Every Epoch'** is completed.
 - **Custom Pretrained:** just like the name, uses the Custom Pretrained that are loaded in applio.
-- **GPU Setinggs:** select which of your GPUs you are going to use (only for users who have more than one GPU).
+- **GPU Setinggs:** Select which of your GPUs you are going to use (only for users who have more than one GPU).
 
 ---
 Once configured, press **_'Start training'_** to start the process, everything is registered in the **applio CMD.**

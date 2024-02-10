@@ -10,7 +10,7 @@ Thanks to our team, we were able to bring Applio to other places for your conven
  1. Enter [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb) and just **run the 2 cells**.
  ![](../assets/Colab.png)
 
- 2. then a **public link** will be given to us where we can enter the interface.
+ 2. Then a **public link** will be given to us where we can enter the interface.
 
  !!!info Info
  You can select the **Drive icon**, which will generate a code for you to mount your Drive in Colab
@@ -27,7 +27,7 @@ Thanks to our team, we were able to bring Applio to other places for your conven
  
  ![](../assets/Duplicate.png)
  
- !!!warning Warnig
+ !!!warning Warning
  You can't train models here.
  !!!
 ==- 
