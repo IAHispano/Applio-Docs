@@ -10,7 +10,7 @@ Applio is the application that will allow us to create our own voices with AI or
 As mentioned at the end of the text, to use applio locally on your computer you must have good hardware, especially if you want to clone a voice, what software do you need?. For Tranining applio requires at least a **Nvidia Series 2000 (RTX) graphics card.**
 !!!
 
-**keep in mind that if you want to use voices in your computer you can do it without having a super hardware.**
+**Keep in mind that if you want to use voices in your computer you can do it without having a super hardware.**
 
 ---
 ### How do I install Applio?
