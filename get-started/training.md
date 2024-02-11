@@ -53,7 +53,7 @@ Configure the training parameters according to your needs.
 - **Save Only Latest:** Save a single .pth file (final model)
 - **Save Every Weights:** Saves a .pth file of the process when a cycle of **'Save Every Epoch'** is completed.
 - **Custom Pretrained:** just like the name, uses the Custom Pretrained that are loaded in applio.
-- **GPU Setinggs:** Select which of your GPUs you are going to use (only for users who have more than one GPU).
+- **GPU Settings:** Select which of your GPUs you are going to use (only for users who have more than one GPU).
 
 ---
 Once configured, press **_'Start training'_** to start the process, everything is registered in the **applio CMD.**
@@ -63,7 +63,7 @@ Once configured, press **_'Start training'_** to start the process, everything i
 1. Once training is completed, generate the index file by clicking the "Train Feature Index" button.
 |||
 
-How to use the tensorboatd? Check out the [Tensorboard](./tensorboard.md) section.
+How to use the Tensorbard? Check out the [Tensorboard](./tensorboard.md) section.
 
 !!!secondary Retrainig
 In case you want to retrain your model, just put the name of your model and the same settings from step 4, please note that you will have to specify the number of epochs you want your model to reach and start training.
