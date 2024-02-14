@@ -14,26 +14,26 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Audio Analizer</title>
-    <meta name="title" content="Audio Analizer">
-    <meta name="description" content="To use this tool, we go to the Extra section in the Audio Analyzer, drag our dataset and click on Get audio information">
+    <title>Sample Rate</title>
+    <meta name="title" content="Sample Rate">
+    <meta name="description" content="Here you will learn how to see the sampling frequency of an audio.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.applio.org/get-started/audio-analyzer/">
+    <link rel="canonical" href="https://docs.applio.org/datasets/sample-rate/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.applio.org/get-started/audio-analyzer/">
-    <meta property="og:title" content="Audio Analizer">
-    <meta property="og:description" content="To use this tool, we go to the Extra section in the Audio Analyzer, drag our dataset and click on Get audio information">
-    <meta property="og:image" content="https://docs.applio.org/assets/audio_analyzer.png">
+    <meta property="og:url" content="https://docs.applio.org/datasets/sample-rate/">
+    <meta property="og:title" content="Sample Rate">
+    <meta property="og:description" content="Here you will learn how to see the sampling frequency of an audio.">
+    <meta property="og:image" content="https://docs.applio.org/assets/audio-analyzer.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.applio.org/get-started/audio-analyzer/">
-    <meta property="twitter:title" content="Audio Analizer">
-    <meta property="twitter:description" content="To use this tool, we go to the Extra section in the Audio Analyzer, drag our dataset and click on Get audio information">
-    <meta property="twitter:image" content="https://docs.applio.org/assets/audio_analyzer.png">
+    <meta property="twitter:url" content="https://docs.applio.org/datasets/sample-rate/">
+    <meta property="twitter:title" content="Sample Rate">
+    <meta property="twitter:description" content="Here you will learn how to see the sampling frequency of an audio.">
+    <meta property="twitter:image" content="https://docs.applio.org/assets/audio-analyzer.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -209,21 +209,47 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="audio-analizer" class="break-words">
+<doc-anchor-target id="sample-rate" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#audio-analizer">#</doc-anchor-trigger>
-        <span>Audio Analizer</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-rate">#</doc-anchor-trigger>
+        <span>Sample Rate</span>
     </h1>
 </doc-anchor-target>
-<p>To use this tool, we go to the <strong>Extra</strong> section in the <strong>Audio Analyzer</strong>, drag our dataset and click on <strong>Get audio information</strong>.
-<figure class="content-center">
-    <img src="../../assets/audio_analyzer.png" alt="" class="w-full">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+<p>Here you will learn how to see the sampling frequency of an audio.</p>
+<doc-anchor-target id="what-is-sample-rate">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-sample-rate">#</doc-anchor-trigger>
+        <span>What is sample rate?</span>
+    </h2>
+</doc-anchor-target>
+<p>Basically, it’s the frequency that our audio can reach, which is measured in KHz. If you choose an incorrect sample rate to train a type of sound unrelated to the voice, it can result in a poor model.</p>
 <ul>
-<li><a href="/create-datasets/sample-rate.md">don&#x27;t understand how it works?, check the sample rate section</a></li>
+<li><p>To do this, we need the program <a href="https://www.spek.cc/p/download">Spek</a>. If you have Applio installed on your PC, you can check the <a href="../../get-started/audio-analyzer/">audio analyzer</a> section.</p>
+</li>
+<li><p>Drag your dataset into the program and you’ll get a graph like this.
+<img src="../../assets/audio-analyzer.png" alt="" /></p>
+</li>
+<li><p>Now that you’ve seen that your audio has an audio frequency of 17500KHz, we multiply it by two and we would have our sampling frequency.</p>
+</li>
 </ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Info</h5>
+<p>In case you get a frequency like 35k, you should choose the one that is closest to that frequency.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -233,20 +259,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../get-started/tensorboard/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../datasets/create-datasets/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Tensorboard</span>
+                                                <span class="block mt-1">How to create datasets</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../get-started/alternatives/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../voice-models/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Other Alternatives</span>
+                                                <span class="block mt-1">Voice Models</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -293,6 +319,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Audio Analizer", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Sample Rate", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
