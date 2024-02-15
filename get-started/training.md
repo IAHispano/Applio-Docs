@@ -49,7 +49,7 @@ Configure the training parameters according to your needs.
 ### Other Options
 
 - **Pitch Guidance:** Just like the name, gives variation of pitch.
-- **Pretrained:** Uses the existing rvc pretrained.
+- **Pretrained:** Uses the existing RVC pretrained.
 - **Save Only Latest:** Save a single .pth file (final model)
 - **Save Every Weights:** Saves a .pth file of the process when a cycle of **'Save Every Epoch'** is completed.
 - **Custom Pretrained:** just like the name, uses the Custom Pretrained that are loaded in applio.
