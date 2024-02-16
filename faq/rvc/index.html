@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.761350300362">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.761364747554">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.761350300362" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.761364747554" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.761350300362" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.761364747554" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.761350300362" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.761364747554" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -263,6 +263,10 @@
     <template #title>Batch Size</template>
 <p>The batch size is the amount of GPU that will be used to train the model. The larger the batch size, the shorter the training duration. It is recommended to use multiples of 4 as the batch size, although the most common is 8, as it gives the AI time to learn correctly without rushing.</p>
 </doc-panel>
+<doc-panel id="inference" collapsed>
+    <template #title>Inference</template>
+<p>is the process where an audio is transformed by the voice model.</p>
+</doc-panel>
 <doc-panel id="search-feature-ratio" collapsed>
     <template #title>Search Feature Ratio</template>
 <p>It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.</p>
@@ -270,6 +274,14 @@
 <doc-panel id="pitch" collapsed>
     <template #title>Pitch</template>
 <p>The pitch is used to adjust the tone of the model so that it can match the original voice and avoid artifacts, for men it is - and women it is +.</p>
+</doc-panel>
+<doc-panel id="artifacting" collapsed>
+    <template #title>Artifacting</template>
+<p>is when the inference output sounds robotic, distorted, with background noise and with fails when trying to modulate words.</p>
+</doc-panel>
+<doc-panel id="breath-filtering" collapsed>
+    <template #title>Breath filtering</template>
+<p>Applies respiration filtering to the results, the value represents the filter radius and respiration reduction to avoid artifacts.</p>
 </doc-panel>
 <doc-panel id="split-audio" collapsed>
     <template #title>Split Audio</template>
@@ -282,6 +294,20 @@
 <doc-panel id="overtraining" collapsed>
     <template #title>Overtraining</template>
 <p>It’s when the TensorBoard graph starts to rise and never comes back down. An overtrained model will sound robotic, muffled, and won’t be able to articulate words well. For more information check the <a href="../../get-started/tensorboard/">Tensorboard section</a>.</p>
+</doc-panel>
+<doc-panel id="g-and-d" collapsed>
+    <template #title>G and D</template>
+<p>They are responsible for storing the training data of the model.
+Generative learns to replicate results similar to the original.
+Discriminator tries to distinguish real data from those created by the generator.</p>
+</doc-panel>
+<doc-panel id="what-are-the-requirements-for-rvc-applio" collapsed>
+    <template #title>What are the requirements for RVC/Applio?</template>
+<p>The minimum required for local training is an Nvidia RTX series 20 graphics card with 8GB of VRAM to train models, in the case of inference you only need to have a decent CPU and at least 4GB of VRAM. If you have a Celeron processor, it would be better to look at <a href="../../get-started/alternatives/">other alternatives</a>.</p>
+</doc-panel>
+<doc-panel id="can-i-use-rvc-applio-on-a-mac" collapsed>
+    <template #title>Can I use RVC/Applio on a Mac?</template>
+<p>Yes, but only for inference. besides, the installation should be done as if it were on Linux.</p>
 </doc-panel>
 
                                 
