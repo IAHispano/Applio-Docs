@@ -46,12 +46,21 @@ Hop Length is used for tonal fluctuations. Lower values are more precise but slo
 ==- Batch Size
 The batch size is the amount of GPU that will be used to train the model. The larger the batch size, the shorter the training duration. It is recommended to use multiples of 4 as the batch size, although the most common is 8, as it gives the AI time to learn correctly without rushing.
 ==-
+==- Inference
+is the process where an audio is transformed by the voice model.
+==- 
 ==- Search Feature Ratio
 It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.
 ==-
 ==- Pitch
 The pitch is used to adjust the tone of the model so that it can match the original voice and avoid artifacts, for men it is - and women it is +.
 ==-
+==- Artifacting
+is when the inference output sounds robotic, distorted, with background noise and with fails when trying to modulate words.
+==- 
+==- Breath filtering
+Applies respiration filtering to the results, the value represents the filter radius and respiration reduction to avoid artifacts.
+==- 
 ==- Split Audio
 Basically cuts the audio into parts to make the inference by parts and then joins them together.
 ==-
@@ -60,4 +69,15 @@ It is a model trained with several sets of long-duration audios that will serve 
 ==-
 ==- Overtraining
 It’s when the TensorBoard graph starts to rise and never comes back down. An overtrained model will sound robotic, muffled, and won’t be able to articulate words well. For more information check the [Tensorboard section](/get-started\tensorboard.md).
+==- 
+==- G and D
+They are responsible for storing the training data of the model.
+Generative learns to replicate results similar to the original.
+Discriminator tries to distinguish real data from those created by the generator.
+==- 
+==- What are the requirements for RVC/Applio?
+The minimum required for local training is an Nvidia RTX series 20 graphics card with 8GB of VRAM to train models, in the case of inference you only need to have a decent CPU and at least 4GB of VRAM. If you have a Celeron processor, it would be better to look at [other alternatives](/get-started\Alternatives.md).
+==- 
+==-  Can I use RVC/Applio on a Mac?
+Yes, but only for inference. besides, the installation should be done as if it were on Linux.
 ==- 
