@@ -1,6 +1,6 @@
 ---
 icon: cpu
-expanded: true
+expanded: false
 order: A
 ---
 
