@@ -18,7 +18,7 @@ A Dataset is a set of audio files compressed into a .zip file used by RVC for vo
 
 2. Now we just need to separate the vocals from the instrumental.
 
- - [don't know how to isolate audios?, check the audio insolation guide](/audio-isolating/)
+ - [don't know how to isolate audios?, check the audio insolation guide](/Audio\Audio.md)
 
 3. After separating our audios, we open [Audacity](https://www.audacityteam.org/download/) to edit them and do the following:
 

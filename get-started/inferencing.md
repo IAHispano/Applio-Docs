@@ -27,8 +27,9 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
 - **Recommendation:** having a **'clean acapella'** helps to get better results. but if the model downloaded in its name mentions the words **rvmpe, crepe or mangio-crepe** click on the **advanced options box** and select the right method, this will help to have more acurrate pitch control.
 
 !!!primary What should I do if my output audio sounds robotic?
- - Look for better quality audio
+ - Look for better quality audio.
  - Your voice model needs more [training](/get-started\training.md) or is [overtraining](/get-started\tensorboard.md).
  - Remove the reverb, double vocals and noise from your acapella, check the [UVR 5 guide](/Audio\UVR.md) or [MCSEP guide](/Audio\MVSEP.md).
  - The dataset of your model contained noise, you need to [clean the dataset](/Datasets\Create-Datasets.md).
+ - Try advanced settings like split audio or pitch.
 !!!

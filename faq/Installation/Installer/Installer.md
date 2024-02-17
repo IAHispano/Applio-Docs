@@ -11,7 +11,7 @@ Here you have all the frequent asked questions about the installer option.
 In the conda installation method, Applio is installed in a conda environment. This enviroment has all the dependencies needed to run RVC/Applio so you don't need to install anything else.
 ==-
 ==- Tensorboard or dependency error
-If an error related to Tensorboard occurs, it's likely that no dependencies were installed correctly. [Review if you have the latest installer version](/get-started\install-applio.md).
+If an error related to Tensorboard occurs, it's likely that no dependencies were installed correctly. [Review if you have the latest installer version](/get-started\Installation.md).
 
 Also, please check if you have done any of the following:
 

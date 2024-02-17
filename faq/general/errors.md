@@ -6,13 +6,13 @@ icon: no-entry
 
 # Errors 
 
-Common general errors in RVC/Applio if you want to check the errors depending on the installation method please check the specific [installation method page](../installation-method/installation-method.md).
+Common general errors in RVC/Applio if you want to check the errors depending on the installation method please check the specific [installation method page](/faq\Installation\Installation.md).
 
 ==- **FFmpeg error/utf8 error**
 Ensure paths are free of special characters.
 ==-
 ==- **Situation with Google Colab**
-Unfortunately, Google Colab is currently unavailable as Google has taken measures to restrict access to Colab services, including Applio. Thanks to our team, we have been able to bring Applio back. [More information here](/get-started\Other-Alternatives.md).
+Unfortunately, Google Colab is currently unavailable as Google has taken measures to restrict access to Colab services, including Applio. Thanks to our team, we have been able to bring Applio back. [More information here](/get-started\Alternatives.md).
 ==-
 ==- **Connection Error**
 Ensure the console (black command line window) is open.
