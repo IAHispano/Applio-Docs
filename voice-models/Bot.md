@@ -1,5 +1,6 @@
 ---
 icon: copilot
+order: A
 ---
 
 # Applio Bot

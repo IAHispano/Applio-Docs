@@ -1,6 +1,6 @@
 ---
 expanded: true
-order: C
+order: B
 icon: search
 ---
 

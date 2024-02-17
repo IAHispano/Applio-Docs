@@ -1,5 +1,6 @@
 ---
 icon: bug
+order: C
 ---
 # Report an Error
 - "I have an error when using Applio, is there any way to report it or find a solution?"
