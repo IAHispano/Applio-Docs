@@ -10,7 +10,7 @@ order: C
 !!!warning Important!
 Training is only for **NVDIA GPUs.**
 !!!
-- [Don't know how to create a dataset?, check the create dataset section](/Datasets\Create-Datasets.md)
+- [Don't know how to create a dataset?, check the create dataset section](/guides/datasets/create-datasets/)
 
 ||| Step 1: Dataset Preparation
 1. Prepare a folder to place your audio, it can have any name you like and place it in your favorite place
