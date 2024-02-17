@@ -1,7 +1,7 @@
 ---
 icon: question
 order: Z
-expanded: true
+expanded: false
 ---
 
 # Frequently Asked Questions
