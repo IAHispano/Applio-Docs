@@ -17,7 +17,9 @@ Training is only for **NVDIA GPUs.**
 2. Copy the path of the folder containing your dataset and paste it in the **'dataset path'** box
 |||
 
-
+!!!secondary Dataset Creator
+You can check this option so that you can upload your dataset from the interface. Put the name of your dataset and drag only the audio of your dataset. Keep in mind that you can only place one audio and not several. For those cases, do it the other way.
+!!!
 ---
 ||| Step 2: Dataset Processing
 1. Once the model is named and the dataset path is pasted press "Prepocess Dataset".
@@ -26,7 +28,7 @@ Training is only for **NVDIA GPUs.**
 !!!
 **Recommendation:** select one of the 3 available frequencies according to the audio frequency of your dataset `(38k, 40k, 48k)` this will help to avoid filtering out more artifacts or background noise.
 !!!
-
+- [Don't know how to check sample rate?, check the sample rate section](/guides\Datasets\Sample-Rate.md)
 --- 
 ||| Step 3: Feature Extraction
 1. Select an F0 method that suits your needs.

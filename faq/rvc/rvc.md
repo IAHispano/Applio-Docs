@@ -8,6 +8,9 @@ order: C
 
 Questions about RVC.
 
+==- What is RVC?
+RVC (Retrieval-Based Voice Conversion) is a technology that is used to clone the voice of a person/character or replace that voice with another one.
+==- 
 ==- What are the requirements for RVC/Applio?
 The minimum required for local training is an Nvidia RTX series 20 graphics card with 8GB of VRAM to train models, in the case of inference you only need to have a decent CPU and at least 4GB of VRAM. If you have a Celeron processor, it would be better to look at [other alternatives](/get-started\Alternatives.md).
 ==- 

@@ -7,13 +7,13 @@ icon: cloud
 Thanks to our team, we were able to bring Applio to other places for your convenience
 
 ==- Applio Colab
- 1. Enter [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb) and just **run the 2 cells**.
+ 1. Enter [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb) and just **run the 2 cells**. 
  ![](../assets/Colab.png)
 
  2. Then a **public link** will be given to us where we can enter the interface.
 
  !!!info Info
- You can select the **Drive icon**, which will generate a code for you to mount your Drive in Colab
+ You can uncheck the **ForceTemporaryDependence** box to mount the drive and download the dependencies separately, which will take less time. If you leave that option checked, you must select the **Drive icon**, which will generate a code for you to mount your Drive in Colab. Keep in mind that this will clone the entire repository on your drive.
  ![](../assets/Drive.png)
  !!!
 

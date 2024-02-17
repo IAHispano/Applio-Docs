@@ -13,7 +13,7 @@ Basically, it’s the frequency that our audio can reach, which is measured in K
 - To do this, we need the program [Spek](https://www.spek.cc/p/download). If you have Applio installed on your PC, you can check the [audio analyzer](/get-started\audio-analyzer.md/) section.
 
 - Drag your dataset into the program and you’ll get a graph like this.
- ![](../assets/Audio-Analyzer.png)
+ ![](/../assets/Audio-Analyzer.png)
 
 - Now that you’ve seen that your audio has an audio frequency of 17500KHz, we multiply it by two and we would have our sampling frequency.
 
