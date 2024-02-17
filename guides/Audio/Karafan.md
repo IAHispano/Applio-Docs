@@ -14,7 +14,7 @@ How to Separate the Vocals and the Instrumental of songs with KaraFan (Colab Ver
 It should be clarified that there is a small chance that your Google account may be banned, therefore it is preferable to use a secondary or new account. In addition, the Colab only lasts 30 minutes in execution.
 !!!
 
-2. First, run the cell by clicking on the white :icon-play: button. The patch that solves the CUDA problem will start to download.
+2. First, run the cell by clicking on the white :icon-play: button. So that the repository can start to be cloned.
 
 3. Then we click on the next cell **This is it!** to load the KaraFan interface.
 
@@ -23,9 +23,9 @@ It should be clarified that there is a small chance that your Google account may
 5. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
 
 ||| To effectively separate the instrumental from the vocals
-![](../assets/Musica.png)
+![](/../assets\Musica.png)
 ||| In case you want to separate the voice from a YouTuber’s video or other typoe of video
-![](../assets/Youtuber.png)
+![](/../assets/Youtuber.png)
 |||
 
 6. We click on **Start** and it will begin to separate the chosen song. At the end of the process, the message **Processing DONE** will appear at the end of the interface.
@@ -38,7 +38,7 @@ The first time you use it, it will start downloading the models you have selecte
 
 ### Code to be afk
 
-To run this code in Colab, we have to press the keys **Ctrl + Shift + i** to open the **developer tools** option and the following window will open. In case another window is displayed, we can locate it by selecting the **Console** option, so in this way Colab will not disconnect during the separation process.
+To run this code in Colab, we have to press the keys **Ctrl + Shift + i** to open the **developer tools** option and the following window will open. In case another window is displayed, we can locate it by selecting the **Console** option, so in this way Colab will not disconnect during the separation process. First, we put **Allow pasting**, then we press enter and only then it will let us enter the code.
 
 ``` js
 function ClickConnect() {

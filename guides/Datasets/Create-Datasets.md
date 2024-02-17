@@ -18,18 +18,18 @@ A Dataset is a set of audio files compressed into a .zip file used by RVC for vo
 
 2. Now we just need to separate the vocals from the instrumental.
 
- - [don't know how to isolate audios?, check the audio insolation guide](/audio-isolating/)
+ - [don't know how to isolate audios?, check the audio insolation guide](/guides\Audio\Audio.md)
 
 3. After separating our audios, we open [Audacity](https://www.audacityteam.org/download/) to edit them and do the following:
 
 ==- Noise Gate
  Is a tool that helps reduce background noise in an audio recording, first select your audio and go to the effect section under the Steve Daulton option and select noise gate. Then set the following parameters
- ![](../assets/Noise_Gate.png)
+ ![](/../assets/Noise_Gate.png)
 ==-
 
 ==- Truncating silence
  This tool is used to remove silences from our dataset, now go back to the effect section under the special option and select truncate silence. Then set the following parameters: 
- ![](../assets/Truncate.png)
+ ![](/../assets/Truncate.png)
 ==-
 
 !!!warning Before truncate silence
@@ -37,4 +37,4 @@ A Dataset is a set of audio files compressed into a .zip file used by RVC for vo
 !!!
 
 4. Finally, we export our already processed audio and it’s ready for [training](/get-started\training.md/).
-![](../assets/Guardar.png)
+![](/../assets/Guardar.png)
