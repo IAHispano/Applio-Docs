@@ -1,6 +1,6 @@
 ---
 order: B
-icon: file-directory-fill
+icon: file-directory
 ---
 
 # Create datasets

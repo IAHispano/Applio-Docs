@@ -1,8 +1,9 @@
 ---
-icon: columns
+icon: plug
+order: HS
 ---
 
-# Applio Plugins
+# Plugins
 ---
 ### What are plugins in Applio?
 Plugins or extensions, as the name implies, allow you to add functions to applio without having to update the program.

@@ -1,7 +1,7 @@
 ---
 icon: cpu
 expanded: false
-order: A
+order: B
 ---
 
 # Get Started with Applio

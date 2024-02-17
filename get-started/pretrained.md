@@ -1,5 +1,6 @@
 ---
 icon: sliders
+order: E
 ---
 # Custom Pretraineds
 
