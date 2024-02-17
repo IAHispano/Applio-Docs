@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.761497410097">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.761528639875">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.761497410097" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.761528639875" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.761497410097" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.761528639875" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.761497410097" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.761528639875" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -242,6 +242,41 @@
 </figure>
 </p>
 <p>This image provides a visual guide for locating the &quot;g/total&quot; metric within the &quot;Scalars&quot; tab.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Settings</h5>
+<ul>
+<li>Set the <strong>smoothing</strong> to 0.950 or 0.987 for a better view of the graph.</li>
+<li>You can click on the <span class="docs-emoji">&#x2699;&#xFE0F;</span> to mark the option to <strong>reload data</strong> every 30 seconds.</li>
+<li>Below each graph, there will be 3 buttons. The first one is to <strong>put it in full size</strong>, the second one is to <strong>deactivate the Y-axis</strong> and the last one is to <strong>adjust the data to the graph</strong>.</li>
+<li>Uncheck the option to <strong>ignore outliers in chart scaling</strong>.</li>
+</ul>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="lowest-point">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lowest-point">#</doc-anchor-trigger>
+        <span>Lowest Point</span>
+    </h2>
+</doc-anchor-target>
+<p>It’s when the graph goes to a point so low that it doesn’t happen again. During training, there will be several low points which you should test to find the indicated pth of your model. To know which one to choose, we go to the lowest point and look at how many <strong>steps</strong> it has. Knowing this, we can search in the open cmd for the epochs with that step or the closest one from the save points.
+<figure class="content-center">
+    <img src="../../assets/point.png" alt="" class="w-full">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-panel id="advanced-information" collapsed>
     <template #title>Advanced Information</template>
 <p>Besides checking the loss/g/total, it’s necessary to monitor the loss/g/mel, loss/g/kl and loss/d/total graphs. If any of these values increase and don’t decrease again, it indicates overtraining.</p>
