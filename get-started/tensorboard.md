@@ -22,7 +22,7 @@ Tensorboard is a series of graphs where we can monitor the progress of our model
 
 4. Look for the "g/total" metric at the top to monitor the progress of your training.
 
-![TensorBoard Screenshot](https://cdn.discordapp.com/attachments/1139925179489853470/1178729423411884152/image.png)
+![TensorBoard Screenshot](/assets/tensorboard.png)
 
 This image provides a visual guide for locating the "g/total" metric within the "Scalars" tab.
 
