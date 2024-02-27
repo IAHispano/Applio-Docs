@@ -1,0 +1,66 @@
+---
+icon: zap
+expanded: false
+order: C
+---
+
+
+# Training
+
+!!!warning Important!
+Training is only for **NVDIA GPUs.**
+!!!
+
+How to use the Tensorboard for correct training? Check out the [Tensorboard](./tensorboard.md) section.
+||| Step 1: Dataset Preparation
+1. upload your audio in .wav format using the **Dataset Maker** or setup it manually to `applio/assets/datasets` creating inside a folder for the program to read it.
+|||
+
+
+---
+||| Step 2: Dataset Processing
+1. Once the model is named and the dataset selected press **"Prepocess Dataset"** and wait for the message in the CMD.
+|||
+
+
+- you can select one of the **3 available frequencies** according to the audio `(38k, 40k, 48k)`, this will help to avoid filtering out more artifacts or background noise.
+
+
+--- 
+||| Step 3: Feature Extraction
+1. Select an F0 method that suits your needs.
+2. **(optional)** modify Hop lenght, lower value, higher smoothness of pitch change but slower training and vice versa.
+|||
+
+---
+||| Step 4: Model Training
+Configure the training parameters according to your needs.
+
+ ![](/assets/training_example.png)
+|||
+---
+- **Save Every Epoch:** Set this value between 10 and 50 to determine how often the model's state is saved during training.
+
+- **Total Epochs:** The number of epochs needed varies based on your dataset. Monitor progress using TensorBoard; typically, models perform well around 200-400 epochs.
+
+-  **Batch Size:** Adjust based on your GPU's VRAM. For 8 GB VRAM, use a batch size between 6 and 8. Consider CUDA cores when experimenting with higher batch sizes.
+
+### Other Options
+
+- **Pitch Guidance:** Gives variation of pitch.
+- **Pretrained:** Uses the RVC pretrained.
+- **Save Only Latest:** Save a single file with information.
+- **Save Every Weights:** Saves a D/G file of the process when a cycle of **'Save Every Epoch'** is completed.
+- **Custom Pretrained:** Uses the Custom Pretrained that are loaded.
+- **GPU Settings:** Allows to choose GPUs (only for users who have more than one GPU).
+
+---
+Once configured, press **_'Start training'_** to start the process, everything is registered in the **CMD.**
+
+---
+||| Final Step: Model Saving and Index File Generation
+1. Once training is completed, generate the index file by clicking the "Train Feature Index" button.
+|||
+
+
+- (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number.)
