@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762381971520">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762484572178">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.762381971520" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.762484572178" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762381971520" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762484572178" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762381971520" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762484572178" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -216,8 +216,9 @@
     </h1>
 </doc-anchor-target>
 <p>Thanks to our team, we were able to bring Applio to other places for your convenience</p>
-<doc-panel id="applio-colab" collapsed>
-    <template #title>Applio Colab</template>
+<doc-tabs>
+<doc-tab v-cloak id="cloud">
+<template #title>Cloud</template>
 <ol>
 <li><p>Enter <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb">Applio Colab</a> and just <strong>run the 2 cells</strong>.
 <img src="../../assets/colab.png" alt="" /></p>
@@ -239,17 +240,22 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>You can uncheck the <strong>ForceTemporaryDependence</strong> box to mount the drive and download the dependencies separately, which will take less time. If you leave that option checked, you must select the <strong>Drive icon</strong>, which will generate a code for you to mount your Drive in Colab. Keep in mind that this will clone the entire repository on your drive.
-<img src="../../assets/drive.png" alt="" /></p>
+<p>You should select the Drive icon, which generates a code that allows you to mount your Drive in Colab. Keep in mind that this will clone the entire repository to your drive.</p>
         </div>
     </div>
 </div>
+<p><img src="../../assets/drive.png" alt="" /></p>
 <ol start="3">
-<li>You can <a href="../training/">train</a> models, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></li>
+<li><p>You can <a href="../training/">train</a> models, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></p>
+</li>
+<li><p>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder, you just need to move that folder and your model’s .pth file to your drive.</p>
+</li>
+<li><p>(If you want to retrain move that folder to Colab again, enter the same name of the model and locate in which stage the save files are left, enter a higher number of epochs.)</p>
+</li>
 </ol>
-</doc-panel>
-<doc-panel id="hugginface-space" collapsed>
-    <template #title>Hugginface Space</template>
+</doc-tab>
+<doc-tab v-cloak id="hugginface">
+<template #title>Hugginface</template>
 <ol>
 <li><p>First you need to create a hugginface account.</p>
 </li>
@@ -274,7 +280,8 @@
         </div>
     </div>
 </div>
-</doc-panel>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->

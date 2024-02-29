@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762381971520">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762484572178">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -16,7 +16,7 @@
     <!-- Primary Meta Tags -->
     <title>UVR Guide</title>
     <meta name="title" content="UVR Guide">
-    <meta name="description" content="How to Separate the Vocals and the Instrumental of songs with UVR locally">
+    <meta name="description" content="How to Separate the Vocals and the Instrumental of songs with UVR.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.applio.org/guides/audio/uvr/">
@@ -25,22 +25,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.applio.org/guides/audio/uvr/">
     <meta property="og:title" content="UVR Guide">
-    <meta property="og:description" content="How to Separate the Vocals and the Instrumental of songs with UVR locally">
+    <meta property="og:description" content="How to Separate the Vocals and the Instrumental of songs with UVR.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/guides/audio/uvr/">
     <meta property="twitter:title" content="UVR Guide">
-    <meta property="twitter:description" content="How to Separate the Vocals and the Instrumental of songs with UVR locally">
+    <meta property="twitter:description" content="How to Separate the Vocals and the Instrumental of songs with UVR.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/icon.ico" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.762381971520" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.762484572178" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.762381971520" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.762484572178" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.762381971520" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.762484572178" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,7 +213,10 @@
         <span>UVR Guide</span>
     </h1>
 </doc-anchor-target>
-<p>How to Separate the Vocals and the Instrumental of songs with UVR locally</p>
+<p>How to Separate the Vocals and the Instrumental of songs with UVR.</p>
+<doc-tabs>
+<doc-tab v-cloak id="local">
+<template #title>Local</template>
 <ol>
 <li><strong>Download</strong> and <strong>install</strong> <a href="https://github.com/Anjok07/ultimatevocalremovergui/releases/tag/v5.6">Ultimate Vocal Remover</a>.</li>
 </ol>
@@ -270,19 +273,152 @@
 <ul>
 <li>UVR-DeEcho-DeReverb (to remove reverb from vocals)</li>
 <li>UVR-BVE-4B_SN-44100-1 (to separate 2 or more voices singing at the same time)</li>
-<li>5_Hp-Karaoke-UVR (to remove choruses from vocals)
-<div></div>
-</li>
+<li>5_Hp-Karaoke-UVR (to remove choruses from vocals)</li>
 </ul>
 </li>
 </ul>
+</div>
 <ol start="4">
-<li><p><strong>Select</strong> the video or song as input and <strong>choose</strong> the output folder for the instrumental or final vocals.</p>
+<li><strong>Select</strong> the audio or song as input and <strong>choose</strong> the output folder for the instrumental or final vocals.</li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You can change the <strong>type of wav or the MP3 bitrate</strong> in <strong>Additional settings</strong>, in <strong>Audio Format Settings</strong>.</p>
+        </div>
+    </div>
+</div>
+<ol start="5">
+<li>Choose <strong>Process Method</strong> select the type of models you need to use (MDX-Net or VR Arch) after that select the model and click <strong>Start Processing</strong>.</li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Before Processing</h5>
+<ul>
+<li>You can select if you only want the <strong>vocals</strong>, <strong>instrumental</strong>, the vocals with <strong>no echo</strong> or with echo, or both</li>
+</ul>
+        </div>
+    </div>
+</div>
+<ol start="6">
+<li>Finally, look for your processed audio in the location you selected as output.</li>
+</ol>
+</doc-tab>
+<doc-tab v-cloak id="cloud">
+<template #title>Cloud</template>
+<ol>
+<li>First, we go to the <a href="https://colab.research.google.com/github/Eddycrack864/Ultimate-Vocal-Remover-5.6-for-Google-Colab/blob/main/Ultimate_Vocal_Remover_5_6_for_Google_Colab.ipynb">UVR Colab</a></li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Warning</h5>
+<p>It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Also, some models don&#x27;t work.</p>
+        </div>
+    </div>
+</div>
+<ol start="2">
+<li><p>Run the 2 cells. You can check the <strong>vip_models</strong> option if you wish to use them.</p>
 </li>
-<li><p><strong>Choose Process Method</strong> select the type of models you need to use (MDX-Net or VR Arch) after that select the model and click <strong>Start Processing</strong>.</p>
+<li><p>Then a public link will be given to us where we can enter the interface.</p>
 </li>
 </ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You can change the <strong>type of wav or the MP3 bitrate</strong> in <strong>Additional settings</strong>, in <strong>Settings</strong>.</p>
+        </div>
+    </div>
 </div>
+<ol start="4">
+<li><p>Drag or choose the audio or song to the <strong>input audio</strong> section and place the name it will have in <strong>input filename</strong>.</p>
+</li>
+<li><p>Choose <strong>Process Method</strong> select the type of models you need to use (MDX-Net or VR Arch) after that select the
+model and click <strong>Start Processing</strong>.</p>
+</li>
+</ol>
+<div>
+<ul>
+<li><strong>MDX-NET models</strong>
+<ul>
+<li>UVR-MDX-NET Voc FT (to remove the instrumental and vocals)</li>
+</ul>
+</li>
+<li><strong>VR Arch models</strong>
+<ul>
+<li>UVR-DeEcho-DeReverb (to remove reverb from vocals)</li>
+<li>5_Hp-Karaoke-UVR (to remove choruses from vocals)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Before Processing</h5>
+<ul>
+<li>You can select the <strong>windows size</strong> and the <strong>aggression setting</strong> in case of <strong>VR Arc</strong> and the <strong>batch size</strong> and the <strong>volume compensation</strong> for <strong>MDX-NET</strong>.</li>
+<li>You should check the <strong>GPU conversion</strong> option. Additionally,</li>
+<li>You can select if you only want the <strong>vocals</strong>, <strong>instrumental</strong>, the vocals with <strong>no echo</strong> or with echo, or both</li>
+</ul>
+        </div>
+    </div>
+</div>
+<ol start="6">
+<li>Finally, download the processed audio.</li>
+</ol>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -305,7 +441,7 @@
                                         <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../guides/audio/mvsep/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">MVSEP Guide</span>
+                                                <span class="block mt-1">MVSEP</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
