@@ -5,7 +5,7 @@ icon: desktop-download
 
 # Installation
 
-Installing applio is a simple process, just download the .bat file of the latest version **[via the official repository](https://github.com/IAHispano/Applio/releases)**, extract the zip file and run the `run-install.bat (Windows) or run-install-sh (Linux)`, wait for it to download the necessary content and run the `run-applio.bat or run-applio.sh` file.
+Installing [Applio](https://docs.applio.org/beginners/frequent-doubts/#what-is-applio-and-where-can-i-use-it) is a simple process, just download the .bat file of the latest version **[via the official repository](https://github.com/IAHispano/Applio/releases)**, extract the zip file and run the `run-install.bat (Windows) or run-install-sh (Linux)`, wait for it to download the necessary content and run the `run-applio.bat or run-applio.sh` file.
 
 !!!warning Before Installing:
 - Make sure that you place Applio on C driver.

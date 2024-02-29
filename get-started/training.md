@@ -25,11 +25,12 @@ How to use the Tensorboard for correct training? Check out the [Tensorboard](./t
 
 - you can select one of the **3 available frequencies** according to the audio `(38k, 40k, 48k)`, this will help to avoid filtering out more artifacts or background noise.
 
+- [don't know how to check sample rate?, check the sample rate section](/guides\Datasets\Sample-Rate.md)
 
 --- 
 ||| Step 3: Feature Extraction
-1. Select an F0 method that suits your needs.
-2. **(optional)** modify Hop lenght, lower value, higher smoothness of pitch change but slower training and vice versa.
+1. Select an [F0 method](https://docs.applio.org/faq/rvc/#pitch-extraction-differences) that suits your needs.
+2. **(optional)** modify [Hop lenght](https://docs.applio.org/faq/rvc/#hop-length), lower value, higher smoothness of pitch change but slower training and vice versa.
 |||
 
 ---
@@ -48,8 +49,8 @@ Configure the training parameters according to your needs.
 ### Other Options
 
 - **Pitch Guidance:** Gives variation of pitch.
-- **Pretrained:** Uses the RVC pretrained.
-- **Save Only Latest:** Save a single file with information.
+- [Pretrained:](https://docs.applio.org/faq/rvc/#pretrained) Uses the [RVC](https://docs.applio.org/faq/rvc/#what-is-rvc) pretrained.
+- **Save Only Lates:** Save a single file with information.
 - **Save Every Weights:** Saves a D/G file of the process when a cycle of **'Save Every Epoch'** is completed.
 - **Custom Pretrained:** Uses the Custom Pretrained that are loaded.
 - **GPU Settings:** Allows to choose GPUs (only for users who have more than one GPU).
@@ -63,6 +64,6 @@ Once configured, press **_'Start training'_** to start the process, everything i
 |||
 
 
-- (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number of epoch.)
+- (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number of [epoch](https://docs.applio.org/faq/rvc/#epoch).)
 
-- Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder.
+- Your trained model is located in the logs/model folder, and the [.pth](https://docs.applio.org/faq/rvc/#pth) files are in the logs/zips folder.
