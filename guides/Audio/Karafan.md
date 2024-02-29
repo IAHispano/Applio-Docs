@@ -70,7 +70,7 @@ Folder                      | Function
 
 4. Now we go to the **Vocals** folder and we will find a folder with the name of our song or audio. There we will find a list of audios, we download the audio with the name **Vocal Final**, in case you want the instrumental one that says **Music Final**.
 
-For more information, visit the [GitHub repository](https://github.com/Captain-FLAM/KaraFan?tab=readme-ov-file#-special-thanks-to).
+For more information, visit the [GitHub repository](https://github.com/Captain-FLAM/KaraFan).
 +++ Cloud
 1. In our Google Drive, we created the folder **Music** where we will put our songs to separate, and **Vocals** where our already separated song will be stored
 
