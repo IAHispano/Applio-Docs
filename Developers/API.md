@@ -11,4 +11,4 @@ Applio API is the key that allows request and access in *a few clicks* a quantit
  
 **How to access and use the Applio API?**
 
-- go to the [Applio website](https://applio.org/), register, and once you have done so, you can go to the [API](https://applio.org/api) section and create a key. 
+- Go to the [Applio website](https://applio.org/), register, and once you have done so, you can go to the [API](https://applio.org/api) section and create a key. 

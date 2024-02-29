@@ -1,26 +1,64 @@
 ---
 order: C
 expanded: true
-icon: cloud
+icon: mirror
 ---
 
 # KaraFan Guide 
 
-How to Separate the Vocals and the Instrumental of songs with KaraFan (Colab Version)
+How to Separate the Vocals and the Instrumental of songs with KaraFan.
 
-1. In our Google Drive, we created the folder **Music** where we will put our songs to separate, and **Vocals** where our already separated song will be stored
++++ Local
+## How To Install?
 
-!!!warning Warning
-It should be clarified that there is a small chance that your Google account may be banned, therefore it is preferable to use a secondary or new account. In addition, the Colab only lasts 30 minutes in execution.
+!!!warning Important!
+Its is only for **NVDIA GPUs.**
 !!!
+1. On your PC where you wish to store the **KaraFan project** and Go inside it.
+2. First, we have to download and install [Python](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe).
 
-2. First, run the cell by clicking on the white :icon-play: button. So that the repository can start to be cloned.
+3. Donwload:
+- [Install.exe](https://github.com/Captain-FLAM/KaraFan/wiki/Data/Install.exe) <-- The easiest way! **(auto-extract the BAT)**.
+- [Intall.zip](https://github.com/Captain-FLAM/KaraFan/wiki/Data/Install.zip) <-- Bypass the Browser Security
+- [Install.bat](https://github.com/Captain-FLAM/KaraFan/wiki/Data/Install.bat) <-- Click to show, save it and rename to **Install.bat**.
 
-3. Then we click on the next cell **This is it!** to load the KaraFan interface.
+!!!primary 
+If you have installed Python 3.11 before WITHOUT using this Install.bat, you must uninstall it before !
+Even those installed with the Microsoft Store !
+!!!
+!!!secondary Important
+On Windows 11, you must allow first the execution of the **BAT file**:
 
-4. Now we have to copy **the path of your song** that you want to separate and the path of the **folder** where the separated song will be stored. 
+- Right-click on the file
+- Choose « Properties »
+- In the « General » tab, click on the « Unlock » button
+- Click on the « OK » button
+!!!
+4. You must execute it with **Administrator Rights**.
 
-5. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
+5. Run **Setup.py** by double-clicking on it. 
+
+6. Now, you can launch **KaraFan.pyw** by double-clicking on it.
+
+## How To Update?
+Simply **Run the Setup.py** file !
+
+### STRUCTURE 📂
+After installation, you'll find new folders at the root of the folder you have chosen with the following structure :
+
+Folder                      | Function
+---                         | ---
+/ KaraFan                   | The main application
+/ KaraFan_user              | Where config file & FFmpeg executable are saved
+/ KaraF/ KaraFan_user       | Where all the models are stored
+/ KaraFan_user / Multi_Song | If you want to test SDR with your own recipes
+/ Music                     | Here you can put your audio files (or choose another one)
+/ Results                   | Here you will find your extracted audio files (or another one)
+
+## How To Use?
+1. Place your audio in the **music folder** and copy the **path of your song** that you want to separate and the path of the **folder** where the separated song will be stored.
+
+2. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
 
 ||| To effectively separate the instrumental from the vocals
 ![](/../assets\Musica.png)
@@ -28,13 +66,40 @@ It should be clarified that there is a small chance that your Google account may
 ![](/../assets/Youtuber.png)
 |||
 
-6. We click on **Start** and it will begin to separate the chosen song. At the end of the process, the message **Processing DONE** will appear at the end of the interface.
+3. We click on **Start** and it will begin to separate the chosen song. At the end of the process, the message **Processing DONE** will appear at the end of the interface.
+
+4. Now we go to the **Vocals** folder and we will find a folder with the name of our song or audio. There we will find a list of audios, we download the audio with the name **Vocal Final**, in case you want the instrumental one that says **Music Final**.
+
+For more information, visit the [GitHub repository](https://github.com/Captain-FLAM/KaraFan?tab=readme-ov-file#-special-thanks-to).
++++ Cloud
+1. In our Google Drive, we created the folder **Music** where we will put our songs to separate, and **Vocals** where our already separated song will be stored
+
+!!!warning Warning
+The Colab only lasts 30 minutes in execution.
+!!!
+2. First, we go to the [Google Colab](https://colab.research.google.com/drive/1f3y3-Z9GOGqEHeY8M--2g3z-vOzWiKdn?usp=sharing).
+
+3. Run the cell by clicking on the white :icon-play: button. So that the repository can start to be cloned.
+
+4. Then we click on the next cell **This is it!** to load the KaraFan interface.
+
+5. Now we have to copy **the path of your song** that you want to separate and the path of the **folder** where the separated song will be stored. 
+
+6. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
+
+||| To effectively separate the instrumental from the vocals
+![](/../assets\Musica.png)
+||| In case you want to separate the voice from a YouTuber’s video or other typoe of video
+![](/../assets/Youtuber.png)
+|||
+
+7. We click on **Start** and it will begin to separate the chosen song. At the end of the process, the message **Processing DONE** will appear at the end of the interface.
 
 !!!info Info
 The first time you use it, it will start downloading the models you have selected in your drive in the **KaraFan_user** folder. If you keep this folder for the next time you want to use it, you will not need to download it again.
 !!!
 
-7. Now we go to the **Vocals** folder and we will find a folder with the name of our song or audio. There we will find a list of audios, we download the audio with the name **Vocal Final**, in case you want the instrumental one that says **Music Final**.
+8. Now we go to the **Vocals** folder and we will find a folder with the name of our song or audio. There we will find a list of audios, we download the audio with the name **Vocal Final**, in case you want the instrumental one that says **Music Final**.
 
 ### Code to be afk
 
@@ -53,6 +118,7 @@ iconElement.dispatchEvent (clickEvent);
 }
 setInterval(ClickConnect, 6000);
 ```
++++
 
 
 

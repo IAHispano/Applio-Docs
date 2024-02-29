@@ -15,7 +15,7 @@ How to use the Tensorboard for correct training? Check out the [Tensorboard](./t
 ||| Step 1: Dataset Preparation
 1. upload your audio in .wav format using the **Dataset Maker** or setup it manually to `applio/assets/datasets` creating inside a folder for the program to read it.
 |||
-
+- [don't know how to create a dataset?, check the dataset section](/guides\Datasets\Datasets.md)
 
 ---
 ||| Step 2: Dataset Processing
@@ -63,4 +63,6 @@ Once configured, press **_'Start training'_** to start the process, everything i
 |||
 
 
-- (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number.)
+- (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number of epoch.)
+
+- Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder.

@@ -4,7 +4,7 @@ order: D
 ---
 
 # Make AI Cover
-Here you will learn how to make ai covers.
+Here you will learn how to make AI covers.
 
 ---
 

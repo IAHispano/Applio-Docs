@@ -4,13 +4,9 @@ expanded: true
 icon: globe
 ---
 
-# MVSEP Guide
-
-How to Separate the Vocals and the Instrumental of songs with MVSEP Website.
-
 1. First, we go to the [MVSEP](https://mvsep.com/es) page.
 
-!!! primary Please note that you need to be registered to download the separated vocals in wav format.
+!!! primary Please note that you must be registered to download the separate voices in wav format. Also, it only allows files less than 100MB.
 !!!
 
 2. After registering and logging in, select your audio or music to separate, and then choose the type of separation and the type of model if requested.
@@ -35,4 +31,6 @@ In some cases, you will see the option of aggressiveness, for better results you
 !!!warning Warning
 Unlike doing it locally, here you will have to wait in a queue, this may take time depending on the queue at that moment.
 !!!
+
+- [If you don’t want to wait, you can use this alternative, but keep in mind that not all models can be used there.](/guides\Audio\Music.md)
 
