@@ -18,7 +18,7 @@ Share the pth file in the weights folder, not the one in logs. Future versions w
 ==- **Test previous model and continue Training**
 ### - How can I use the saved model in the middle of training?
 
-select one of the .pth generated file in `Applio-RVC-Fork/Logs/zips` (you need to have the index previously generated for best results) or Save via model extraction at the bottom of the ckpt processing tab.
+select one of the .pth generated file in `Applio/Logs/zips` (you need to have the index previously generated for best results) or Save via model extraction at the bottom of the ckpt processing tab.
 
 ### - How can I continue training with more data?
 

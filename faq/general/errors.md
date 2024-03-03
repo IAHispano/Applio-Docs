@@ -35,3 +35,9 @@ Delete smaller-sized wav files, then click "train the model" and "train the inde
 ==- **RuntimeError: The size of tensor a must match...**
 Avoid changing the sampling rate mid-training. If necessary, change the exp name and train from scratch or copy pitch and features folders to accelerate training.
 ==-
+==- **The filename, directory name, or volume label syntax is incorrect**
+Make sure to correctly set the path for your dataset before training. Remember that the dataset should not be in a zip file within the Applio/assets/datasets folder.
+==-
+==- **IndexError: list index out of range**
+Make sure to use the same sample rate when retraining or when selecting a custom pretrain.
+==-
