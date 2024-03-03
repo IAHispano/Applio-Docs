@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762750882373">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762756339224">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.762750882373" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.762756339224" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762750882373" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762756339224" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762750882373" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762756339224" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -243,33 +243,28 @@
 <li><p>Then a <strong>public link</strong> will be given to us where we can enter the interface.</p>
 </li>
 </ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Info</h5>
-<p>You should select the Drive icon, which generates a code that allows you to mount your Drive in Colab. Keep in mind that this will clone the entire repository to your drive.</p>
-        </div>
-    </div>
-</div>
-<p><img src="../../assets/drive.png" alt="" /></p>
+<doc-anchor-target id="extra-cell">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#extra-cell">#</doc-anchor-trigger>
+        <span>Extra cell</span>
+    </h3>
+</doc-anchor-target>
+<p>In this section, you will find the following options:</p>
+<ul>
+<li><strong>Mount Drive:</strong> Connects Colab to our Google Drive for performing backups.</li>
+<li><strong>AutoBackup:</strong> Saves our trained model to our drive. Drive needs to be mounted first.</li>
+<li><strong>LoadBackup:</strong> Used to load our model if we want to retrain it. Drive must be mounted.</li>
+<li><strong>Download Custom Pretrains:</strong> Allows direct downloading of custom pretrained models to Applio.</li>
+</ul>
+<p><img src="../../assets/extracolab.png" alt="" /></p>
 <ol start="3">
 <li><p>You can <a href="../training/">train</a> models, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></p>
 </li>
-<li><p>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder, you just need to move that folder or only the <a href="https://docs.applio.org/faq/rvc/#g-and-d">D and G</a> pth file and your model’s .pth file to your drive.</p>
+<li><p>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder on Drive, you just need to run the Mount Drive and AutoBackup cell before Star Applio.</p>
 </li>
 </ol>
 <ul>
-<li>(If you want to retrain move that folder or D and G pth to Colab again, enter the same name of the model and locate in which stage the save files are left and enter a higher number of epochs.)</li>
+<li>(If you want to retrain place the name of your model and run the LoadBackup cell and enter a higher number of epochs.)</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="hugginface">
