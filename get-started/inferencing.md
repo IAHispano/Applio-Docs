@@ -53,5 +53,5 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
  - Your voice model needs more [training](/get-started\training.md) or is [overtraining](https://docs.applio.org/faq/rvc/#overtraining).
  - Remove the reverb, double vocals and noise from your acapella, check the [UVR 5 guide](/guides\Audio\UVR.md) or [MCSEP guide](/guides\Audio\MVSEP.md).
  - The dataset of your model contained noise, you need to [clean the dataset](/guides\Datasets\Create-Datasets.md).
- - Try [advanced settings](https://docs.applio.org/get-started/inferencing/#advanced-settings).
+ - Try advanced settings.
 !!!

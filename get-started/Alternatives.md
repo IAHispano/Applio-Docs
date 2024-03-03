@@ -21,13 +21,13 @@ Thanks to our team, we were able to bring Applio to other places for your conven
  - **Mount Drive:** Connects Colab to our Google Drive for performing backups.
  - **AutoBackup:** Saves our trained model to our drive. Drive needs to be mounted first.
  - **LoadBackup:** Used to load our model if we want to retrain it. Drive must be mounted.
- - **Download Custom Pretrains:** Allows direct downloading of custom pretrained models to Applio.
+ - **Download Custom Pretrains:** Allows direct downloading of custom pretrains to Applio.
 
  ![](../assets/ExtraColab.png)
 
  3. You can [train](/get-started\training.md/) models, do [inference](/get-started\inferencing.md/), or use [TTS](/get-started\tts.md/)
 
- 4. Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder on Drive, you just need to run the Mount Drive and AutoBackup cell before Star Applio.
+ 4. Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the Mount Drive and AutoBackup cell before Start Applio.
 
  -  (If you want to retrain place the name of your model and run the LoadBackup cell and enter a higher number of epochs.)
 +++ Hugginface
