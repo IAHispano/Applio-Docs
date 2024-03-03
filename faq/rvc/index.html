@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762493447638">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762742405199">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.762493447638" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.762742405199" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762493447638" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762742405199" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762493447638" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762742405199" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -246,10 +246,6 @@
     <template #title>Epoch</template>
 <p>An Epoch is the number of iterations performed during training to complete one full cycle of your dataset. For example, if you have a dataset of 200 audio samples and you set a batch_size of 10, 10 audio samples will be processed in each iteration. To process all 200 audio samples, you will need to perform 20 iterations in total. This complete cycle is referred to as one epoch.</p>
 </doc-panel>
-<doc-panel id="hop-length" collapsed>
-    <template #title>Hop Length</template>
-<p>Hop Length is used for tonal fluctuations. Lower values are more precise but slower, while higher values are quicker but less accurate.</p>
-</doc-panel>
 <doc-panel id="pitch-extraction-differences" collapsed>
     <template #title>Pitch extraction differences</template>
 <ul>
@@ -291,25 +287,9 @@
     <template #title>Inference</template>
 <p>is the process where an audio is transformed by the voice model.</p>
 </doc-panel>
-<doc-panel id="search-feature-ratio" collapsed>
-    <template #title>Search Feature Ratio</template>
-<p>It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.</p>
-</doc-panel>
-<doc-panel id="pitch" collapsed>
-    <template #title>Pitch</template>
-<p>The pitch is used to adjust the tone of the model so that it can match the original voice and avoid artifacts, for men it is - and women it is +.</p>
-</doc-panel>
 <doc-panel id="artifacting" collapsed>
     <template #title>Artifacting</template>
 <p>Is when the inference output sounds robotic, distorted, with background noise and with fails when trying to modulate words.</p>
-</doc-panel>
-<doc-panel id="breath-filtering" collapsed>
-    <template #title>Breath filtering</template>
-<p>Applies respiration filtering to the results, the value represents the filter radius and respiration reduction to avoid artifacts.</p>
-</doc-panel>
-<doc-panel id="split-audio" collapsed>
-    <template #title>Split Audio</template>
-<p>Basically cuts the audio into parts to make the inference by parts and then joins them together.</p>
 </doc-panel>
 <doc-panel id="pretrained" collapsed>
     <template #title>Pretrained</template>

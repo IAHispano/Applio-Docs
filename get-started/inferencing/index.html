@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762493447638">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762742405199">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.762493447638" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.762742405199" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762493447638" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762742405199" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762493447638" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762742405199" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -249,14 +249,60 @@
 <ul>
 <li>When we have the model ready we will go back to the <a href="https://docs.applio.org/faq/rvc/#inference">inference</a> section.</li>
 </ul>
+<doc-tabs>
+<doc-tab v-cloak id="single">
+<template #title>Single</template>
 <ol>
-<li><strong>Upload your audio and select it</strong>, make sure it is only vocals</li>
-<li>Click the <strong>&#x27;refresh&#x27;</strong> button at the top right and select the downloaded/uploaded files in the <strong><em>Voice model</em></strong> and <a href="https://docs.applio.org/faq/rvc/#added-index">index</a> file box.</li>
-<li>Press <strong>convert</strong> and you will have your inference done!</li>
+<li><strong>Upload your audio and select it</strong>, make sure it is only vocals.</li>
+<li>Click the <strong>Refresh</strong> button at the top right and select the downloaded/uploaded files in the <strong>Voice model</strong> and <a href="https://docs.applio.org/faq/rvc/#added-index">index</a> file box.</li>
+<li>Press <strong>Convert</strong> and you will have your inference done!</li>
 </ol>
+</doc-tab>
+<doc-tab v-cloak id="batch">
+<template #title>Batch</template>
+<ol>
+<li>Place your audio files in a folder, copy and paste the path into the <strong>Input Folder</strong>, if you’d like, you can also specify the output path for the converted audios in the <strong>Output Folder</strong>.</li>
+<li>Click the <strong>Refresh</strong> button at the top right and select the downloaded/uploaded files in the <strong>Voice model</strong> and <a href="https://docs.applio.org/faq/rvc/#added-index">index</a> file box.</li>
+<li>Press <strong>Convert</strong> and you will have your inference done!</li>
+</ol>
+</doc-tab>
+</doc-tabs>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Make sure the path and audio name don&#x27;t contain spaces or special characters.</h5>
+        </div>
+    </div>
+</div>
 <ul>
-<li><strong>Recommendation:</strong> having a <strong>&#x27;clean acapella&#x27;</strong> helps to get better results. but if the model downloaded in its name mentions the words <a href="https://docs.applio.org/faq/rvc/#pitch-extraction-differences">rvmpe, crepe or mangio-crepe</a> click on the <strong>advanced options box</strong> and select the right method, this will help to have more acurrate pitch control.</li>
+<li><strong>Recommendation:</strong> having a <strong>clean acapella</strong> helps to get better results. but if the model downloaded in its name mentions the words rvmpe, crepe or mangio-crepe click on the <strong>advanced options box</strong>. Furthermore, this section has the following:</li>
 </ul>
+<doc-panel id="advace-settings" collapsed>
+    <template #title><strong>Advace Settings</strong></template>
+<ul>
+<li><strong>Split Audio:</strong> Basically cuts the audio into parts to make the inference by parts and then joins them together.</li>
+<li><strong>Autotune:</strong> Apply a soft autotune to your inferences, recommended for singing conversions.</li>
+<li><strong>Clean Audio:</strong> Clean your audio output using noise detection algorithms, recommended for speaking audios.</li>
+<li><strong>Clean Strenght:</strong> The more you increase it the more it will clean up, but it will be more compressed.</li>
+<li><strong>Pitch:</strong> Adjust the tone of the model, for male it is - and female it is +. For male to female is -12 and female to male is +12.</li>
+<li><strong>Filter Radius:</strong> Applies respiration filtering to the results, the value represents the filter radius and respiration reduction to avoid artifacts.</li>
+<li><strong>Search Feature Ratio:</strong> It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.</li>
+<li><strong>Volume Envelope:</strong> Substitute or blend with the volume envelope of the output.</li>
+<li><strong>Protec Voiceless Consonants:</strong> Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.</li>
+<li><strong>Hop Length:</strong> Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference but tend to yield higher pitch accuracy.</li>
+<li><strong>Pitch extraction algorithm:</strong> Select between <a href="https://docs.applio.org/faq/rvc/#pitch-extraction-differences">rvmpe, crepe, mangio-crepe or other</a></li>
+</ul>
+</doc-panel>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -276,7 +322,7 @@
 <li>Your voice model needs more <a href="../training/">training</a> or is <a href="https://docs.applio.org/faq/rvc/#overtraining">overtraining</a>.</li>
 <li>Remove the reverb, double vocals and noise from your acapella, check the <a href="../../guides/audio/uvr/">UVR 5 guide</a> or <a href="../../guides/audio/mvsep/">MCSEP guide</a>.</li>
 <li>The dataset of your model contained noise, you need to <a href="../../guides/datasets/create-datasets/">clean the dataset</a>.</li>
-<li>Try advanced settings like <a href="https://docs.applio.org/faq/rvc/#split-audio">split audio</a> or <a href="https://docs.applio.org/faq/rvc/#pitch">pitch</a>.</li>
+<li>Try advanced settings.</li>
 </ul>
         </div>
     </div>
