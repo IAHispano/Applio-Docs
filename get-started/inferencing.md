@@ -34,7 +34,7 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
 !!!
 - **Recommendation:** having a **clean acapella** helps to get better results. but if the model downloaded in its name mentions the words rvmpe, crepe or mangio-crepe click on the **advanced options box**. Furthermore, this section has the following:
 
-==- **Advace Settings**
+==- **Advanced Settings**
 - **Split Audio:** Basically cuts the audio into parts to make the inference by parts and then joins them together.
 - **Autotune:** Apply a soft autotune to your inferences, recommended for singing conversions.
 - **Clean Audio:** Clean your audio output using noise detection algorithms, recommended for speaking audios.
@@ -53,5 +53,5 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
  - Your voice model needs more [training](/get-started\training.md) or is [overtraining](https://docs.applio.org/faq/rvc/#overtraining).
  - Remove the reverb, double vocals and noise from your acapella, check the [UVR 5 guide](/guides\Audio\UVR.md) or [MCSEP guide](/guides\Audio\MVSEP.md).
  - The dataset of your model contained noise, you need to [clean the dataset](/guides\Datasets\Create-Datasets.md).
- - Try advanced settings.
+ - Try [advanced settings](https://docs.applio.org/get-started/inferencing/#advace-settings).
 !!!
