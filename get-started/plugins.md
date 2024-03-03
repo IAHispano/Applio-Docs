@@ -1,6 +1,6 @@
 ---
+order: J
 icon: plug
-order: HS
 ---
 
 # Plugins
@@ -11,7 +11,9 @@ Plugins or extensions, as the name implies, allow you to add functions to applio
 
 - How do I upload extensions to Applio?
 ---
-Uploading Extensions to Applio is a simple process, download the extensions you want from [here](https://github.com/IAHispano/Applio-Plugins), go to the plugins section and drag the .zip file to "plugin installer, When you upload the file and refresh the interface you will see the section of the extension you have downloaded.
+Uploading Extensions to Applio is a simple process, download the extensions you want from [here](https://github.com/IAHispano/Applio-Plugins), go to the **Plugins** section and drag the .zip file to **Plugin Installer**, When you upload the file and refresh the interface you will see the section of the extension you have downloaded.
+
+-![](/assets\Plugin.png)-
 
 (Manual Upload: Drag and drop the files to `Applio/Tabs/Plugins`)
 

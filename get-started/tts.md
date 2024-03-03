@@ -13,3 +13,5 @@ icon: typography
 
 - Finally we click on **convert** and wait for the result
 -![](/assets/TTS.png)-
+
+- Applio also features ElevenLabas TTS. Check the [Plugins section](/get-started\plugins.md) for more information.

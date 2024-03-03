@@ -9,9 +9,9 @@ Installing [Applio](https://docs.applio.org/beginners/frequent-doubts/#what-is-a
 
 !!!warning Before Installing:
 - Make sure that you place Applio on C driver.
-- Do not put it in a folder with privileged access.
-- Do not run the run-install.bat as an administrator.
-- Make sure the path does not contain any spaces.
+- Dom't put it in a folder with privileged access.
+- Don't run the run-install.bat as an administrator.
+- Make sure the path does not contain any spaces or special characters.
 - Desactivate your antivirus and firewall to avoid missing dependencies.
 !!!
 

@@ -15,7 +15,7 @@ How to use the Tensorboard for correct training? Check out the [Tensorboard](./t
 ||| Step 1: Dataset Preparation
 1. upload your audio in .wav format using the **Dataset Maker** or setup it manually to `applio/assets/datasets` creating inside a folder for the program to read it.
 |||
-- [don't know how to create a dataset?, check the dataset section](/guides\Datasets\Datasets.md)
+- [don't know how to create a dataset?, check the dataset section](/guides\Datasets\Create-Datasets.md)
 
 ---
 ||| Step 2: Dataset Processing
