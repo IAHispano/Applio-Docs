@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762745392434">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762750882373">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/icon.ico" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.762745392434" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.762750882373" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.762745392434" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.762750882373" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.762745392434" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.762750882373" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -249,6 +249,14 @@
 <doc-panel id="runtimeerror-the-size-of-tensor-a-must-match" collapsed>
     <template #title><strong>RuntimeError: The size of tensor a must match...</strong></template>
 <p>Avoid changing the sampling rate mid-training. If necessary, change the exp name and train from scratch or copy pitch and features folders to accelerate training.</p>
+</doc-panel>
+<doc-panel id="the-filename-directory-name-or-volume-label-syntax-is-incorrect" collapsed>
+    <template #title><strong>The filename, directory name, or volume label syntax is incorrect</strong></template>
+<p>Make sure to correctly set the path for your dataset before training. Remember that the dataset should not be in a zip file within the Applio/assets/datasets folder.</p>
+</doc-panel>
+<doc-panel id="indexerror-list-index-out-of-range" collapsed>
+    <template #title><strong>IndexError: list index out of range</strong></template>
+<p>Make sure to use the same sample rate when retraining or when selecting a custom pretrain.</p>
 </doc-panel>
 
                                 
