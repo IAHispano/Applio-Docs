@@ -30,8 +30,8 @@ Thanks to our team, we were able to bring Applio to other places for your conven
  4. Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the Mount Drive and AutoBackup cell before Start Applio.
 
  -  (If you want to retrain place the name of your model and run the LoadBackup cell and enter a higher number of epochs.)
-+++ Hugginface
- 1. First you need to create a hugginface account.
++++ Huggingface
+ 1. First you need to create a huggingface account.
 
  2. Then enter [Applio Hugginface Space](https://huggingface.co/spaces/IAHispano/Applio) and duplicate the space, that is all. If you don't want to use huggingface you can use  [Applo playground](https://applio.org/playground).
  

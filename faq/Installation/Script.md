@@ -13,7 +13,7 @@ Here you will learn how to install Applio using commands in CMD.
 ``` js
 ./run-applio.bat
 ```
-## Linux
+## Linux/Mac
 ``` js
 chmod +x run-install.sh
 ./run-install.sh
