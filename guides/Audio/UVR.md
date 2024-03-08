@@ -25,12 +25,15 @@ In case you get a Windows message, just click on **More information** and then o
 :::
 
 - **MDX-NET models**
-  - MDX23C-InstVoc HQ (the best to remove the instrumental and vocals)
+  - UVR-MDX-NET Inst HQ 4 (the best to remove the instrumental and vocals)
+  - MDX23C-InstVoc HQ (one of the best to remove the instrumental and vocals)
   - UVR-MDX-NET Voc FT (to remove the instrumental and vocals)
+  - UVR-MDX-NET Crowd HQ 1 (to remove crowd from vocals)
 - **VR Arch models**
   - UVR-DeEcho-DeReverb (to remove reverb from vocals)
   - UVR-BVE-4B_SN-44100-1 (to separate 2 or more voices singing at the same time)
   - 5_Hp-Karaoke-UVR (to remove choruses from vocals)
+  - UVR-DeNoise (To remove noise from vocals)
 :::
 
 4. **Select** the audio or song as input and **choose** the output folder for the instrumental or final vocals.
@@ -64,10 +67,13 @@ model and click **Start Processing**.
 :::
 
 - **MDX-NET models**
+  - UVR-MDX-NET Inst HQ 4 (the best to remove the instrumental and vocals)
   - UVR-MDX-NET Voc FT (to remove the instrumental and vocals)
+  - UVR-MDX-NET Crowd HQ 1 (to remove crowd from vocals)
 - **VR Arch models**
   - UVR-DeEcho-DeReverb (to remove reverb from vocals)
   - 5_Hp-Karaoke-UVR (to remove choruses from vocals)
+  - UVR-DeNoise (To remove noise from vocals)
 :::
 
 !!!info Before Processing

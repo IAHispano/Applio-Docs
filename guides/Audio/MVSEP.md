@@ -13,6 +13,7 @@ icon: globe
 
 :::
 - MDX23C (vocals, instrumental)
+- BSReformer V2 (vocals, instrumental)
 - MVSep MelBand Reformer (vocals, instrumental)
 - **MDX B (vocals, instrumental)** 
   - UVR-MDX-NET Voc FT

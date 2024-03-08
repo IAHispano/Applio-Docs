@@ -15,7 +15,7 @@ Thanks to our team, we were able to bring Applio to other places for your conven
 
  2. Then a **public link** will be given to us where we can enter the interface.
 
- ### Extra cell
+ ### Extra cells
  In this section, you will find the following options:
 
  - **Mount Drive:** Connects Colab to our Google Drive for performing backups.
