@@ -8,15 +8,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763238441543">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763257866403">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>UVR Guide</title>
-    <meta name="title" content="UVR Guide">
-    <meta name="description" content="How to Separate the Vocals and the Instrumental of songs with UVR.">
+    <title>UVR</title>
+    <meta name="title" content="UVR">
+    <meta name="description" content="Here you will learn how to Separate the Vocals and the Instrumental of songs with UVR.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.applio.org/guides/audio/uvr/">
@@ -24,23 +24,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.applio.org/guides/audio/uvr/">
-    <meta property="og:title" content="UVR Guide">
-    <meta property="og:description" content="How to Separate the Vocals and the Instrumental of songs with UVR.">
+    <meta property="og:title" content="UVR">
+    <meta property="og:description" content="Here you will learn how to Separate the Vocals and the Instrumental of songs with UVR.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/guides/audio/uvr/">
-    <meta property="twitter:title" content="UVR Guide">
-    <meta property="twitter:description" content="How to Separate the Vocals and the Instrumental of songs with UVR.">
+    <meta property="twitter:title" content="UVR">
+    <meta property="twitter:description" content="Here you will learn how to Separate the Vocals and the Instrumental of songs with UVR.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/icon.ico" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.763238441543" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.763257866403" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.763238441543" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.763257866403" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.763238441543" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.763257866403" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -207,13 +207,13 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="uvr-guide" class="break-words">
+<doc-anchor-target id="uvr" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-guide">#</doc-anchor-trigger>
-        <span>UVR Guide</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr">#</doc-anchor-trigger>
+        <span>UVR</span>
     </h1>
 </doc-anchor-target>
-<p>How to Separate the Vocals and the Instrumental of songs with UVR.</p>
+<p>Here you will learn how to Separate the Vocals and the Instrumental of songs with UVR.</p>
 <doc-tabs>
 <doc-tab v-cloak id="local">
 <template #title>Local</template>
@@ -276,7 +276,7 @@
 <li>UVR-DeEcho-DeReverb (to remove reverb from vocals)</li>
 <li>UVR-BVE-4B_SN-44100-1 (to separate 2 or more voices singing at the same time)</li>
 <li>5_Hp-Karaoke-UVR (to remove choruses from vocals)</li>
-<li>UVR-DeNoise (To remove noise from vocals)</li>
+<li>UVR-DeNoise (to remove noise from vocals)</li>
 </ul>
 </li>
 </ul>
@@ -319,7 +319,7 @@
         <div class="pr-5 ml-3 w-full">
             <h5>Before Processing</h5>
 <ul>
-<li>You can select if you only want the <strong>vocals</strong>, <strong>instrumental</strong>, the vocals with <strong>no echo</strong> or with echo, or both</li>
+<li>You can select if you only want the <strong>Vocals Only</strong>, <strong>Instrumental Only</strong>, the vocals with <strong>No Reverb Only</strong>, <strong>No Crowd Only</strong>, <strong>No Noise Only</strong> or with those effects.</li>
 </ul>
         </div>
     </div>
@@ -346,7 +346,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Warning</h5>
-<p>It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Also, some models don&#x27;t work.</p>
+<p>It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Also, some models don&#x27;t work. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.</p>
         </div>
     </div>
 </div>
@@ -393,7 +393,7 @@ model and click <strong>Start Processing</strong>.</p>
 <ul>
 <li>UVR-DeEcho-DeReverb (to remove reverb from vocals)</li>
 <li>5_Hp-Karaoke-UVR (to remove choruses from vocals)</li>
-<li>UVR-DeNoise (To remove noise from vocals)</li>
+<li>UVR-DeNoise (to remove noise from vocals)</li>
 </ul>
 </li>
 </ul>
@@ -415,7 +415,7 @@ model and click <strong>Start Processing</strong>.</p>
 <ul>
 <li>You can select the <strong>windows size</strong> and the <strong>aggression setting</strong> in case of <strong>VR Arc</strong> and the <strong>batch size</strong> and the <strong>volume compensation</strong> for <strong>MDX-NET</strong>.</li>
 <li>You should check the <strong>GPU conversion</strong> option. Additionally,</li>
-<li>You can select if you only want the <strong>vocals</strong>, <strong>instrumental</strong>, the vocals with <strong>no echo</strong> or with echo, or both</li>
+<li>You can select if you only want the <strong>Vocals Only</strong>, <strong>Instrumental Only</strong>, the vocals with <strong>No Reverb Only</strong>, <strong>No Crowd Only</strong>, <strong>No Noise Only</strong> or with those effects.</li>
 </ul>
         </div>
     </div>
@@ -494,6 +494,6 @@ model and click <strong>Start Processing</strong>.</p>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "UVR Guide", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "UVR", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
