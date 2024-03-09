@@ -4,9 +4,8 @@ icon:  file-added
 ---
 # How to create datasets
 
-!!!info What is a Dataset?
+### What is a Dataset?
 A Dataset is a set of audio files compressed into a .zip file used by RVC for voice training.
-!!!
 
 1. First, we need to search for or download the audios of the person or character you want to create the model for
 
@@ -33,7 +32,7 @@ A Dataset is a set of audio files compressed into a .zip file used by RVC for vo
 ==-
 
 !!!warning Before truncate silence
-- The dataset should only contain speech; any other type of sound should be removed or reduced, such as hisses or breathing sounds.
+The dataset should only contain speech; any other type of sound should be removed or reduced, such as hisses, screams or breathing.
 !!!
 
 4. Finally, we export our already processed audio and it’s ready for [training](/get-started\training.md/).

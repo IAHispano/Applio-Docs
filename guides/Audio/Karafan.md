@@ -4,9 +4,9 @@ expanded: true
 icon: mirror
 ---
 
-# KaraFan Guide 
+# KaraFan
 
-How to Separate the Vocals and the Instrumental of songs with KaraFan.
+Here you will learn how to Separate the Vocals and the Instrumental of songs with KaraFan.
 
 +++ Local
 ## How To Install?
@@ -75,7 +75,7 @@ For more information, visit the [GitHub repository](https://github.com/Captain-F
 1. In our Google Drive, we created the folder **Music** where we will put our songs to separate, and **Vocals** where our already separated song will be stored
 
 !!!warning Warning
-The Colab only lasts 30 minutes in execution.
+The Colab only lasts 30 minutes in execution. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.
 !!!
 2. First, we go to the [Google Colab](https://colab.research.google.com/drive/1f3y3-Z9GOGqEHeY8M--2g3z-vOzWiKdn?usp=sharing).
 

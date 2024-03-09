@@ -5,6 +5,7 @@ icon: cloud
 ---
 
 # Music Source Separation
+Here you will learn how to Separate the Vocals and the Instrumental of songs with Music Source Separation Colab.
 
 1. First, we go to the [Google Colab](https://colab.research.google.com/github/Eddycrack864/Music-Source-Separation-Universal-Colab/blob/main/Music_Source_Separation_Universal_Colab.ipynb).
 

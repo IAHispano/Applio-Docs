@@ -67,3 +67,5 @@ Once configured, press **_'Start training'_** to start the process, everything i
 - (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number of [epoch](https://docs.applio.org/faq/rvc/#epoch).)
 
 - Your trained model is located in the logs/model folder, and the [.pth](https://docs.applio.org/faq/rvc/#pth) files are in the logs/zips folder.
+
+- [If you don’t have an NVIDIA GPU, you can try Applio Colab. Check the other alternatives section.](/get-started\Alternatives.md)
