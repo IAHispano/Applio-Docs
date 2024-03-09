@@ -52,7 +52,7 @@ Configure the training parameters according to your needs.
 - [Pretrained:](https://docs.applio.org/faq/rvc/#pretrained) Uses the [RVC](https://docs.applio.org/faq/rvc/#what-is-rvc) pretrained.
 - **Save Only Lates:** Save a single file with information.
 - **Save Every Weights:** Saves a D/G file of the process when a cycle of **'Save Every Epoch'** is completed.
-- **Custom Pretrained:** Uses the Custom Pretrained that are loaded.
+- [Custom Pretrained:](/get-started\pretrained.md) Uses the Custom Pretrained that are loaded.
 - **GPU Settings:** Allows to choose GPUs (only for users who have more than one GPU).
 
 ---
