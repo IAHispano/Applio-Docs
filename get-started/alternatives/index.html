@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763338593645">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763757935497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.763338593645" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.763757935497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.763338593645" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.763757935497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.763338593645" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.763757935497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -258,7 +258,7 @@
 </ul>
 <p><img src="../../assets/extracolab.png" alt="" /></p>
 <ol start="3">
-<li>You can <a href="../training/">train</a> models, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></li>
+<li>You can <a href="../training/">train</a> models while checking <a href="../tensorboard/">Tensorboard</a>, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
@@ -273,7 +273,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>In case you want to <strong>train</strong>, you should run the <strong>Extra cells</strong>. Otherwise, simply run the <strong>Install Applio</strong> and <strong>Start Applio</strong> cells.</h5>
+            <h5>In case you want to <strong>train</strong>, you should run the <strong>Extra cells</strong> before run <strong>Start Applio</strong> cell. Otherwise, simply run the <strong>Install Applio</strong> and <strong>Start Applio</strong> cells.</h5>
         </div>
     </div>
 </div>
@@ -285,13 +285,13 @@
 </doc-anchor-target>
 <p>To load your dataset in Colab, there are two ways to do it:</p>
 <ul>
-<li><p>Place your audio in a folder on your Google Drive, run the <strong>Mount Drive</strong> cell in Colab and Click on <span class="docs-emoji">&#x1F4C1;</span> in Colab. Then navigate to your dataset folder, copy the path and paste it into the <strong>dataset path</strong>.</p>
+<li><p>Place your audio in a folder on your Google Drive, run the <strong>Mount Drive</strong> cell in Colab and Click on <span class="docs-emoji">&#x1F4C1;</span> in Colab. Then navigate to your dataset folder, copy the path, it should look like this <code v-pre>/content/drive/MyDrive/dataset folder</code> and paste it into the <strong>dataset path</strong>.</p>
 </li>
 <li><p>Upload your audio in .wav format using the <strong>Dataset Maker</strong> or click on <span class="docs-emoji">&#x1F4C1;</span> and setup it manually to <code v-pre>program/assets/datasets</code> creating inside a folder for the program to read it.</p>
 </li>
 </ul>
 <ol start="4">
-<li>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before Start Applio.</li>
+<li>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before run <strong>Start Applio</strong> cell.</li>
 </ol>
 <ul>
 <li>(If you want to retrain place the name of your model in the <strong>Load a Backup</strong> cell and run it. Then, insert the name of your model and enter a higher number of epochs.)</li>
