@@ -25,7 +25,7 @@ In case you get a Windows message, just click on **More information** and then o
 :::
 
 - **MDX-NET models**
-  - UVR-MDX-NET Inst HQ 4 (the best to remove the instrumental and vocals)
+  - UVR-MDX-NET Inst HQ 4 (the best to remove the instrumental and vocals, but this may leave additional noise)
   - MDX23C-InstVoc HQ (one of the best to remove the instrumental and vocals)
   - UVR-MDX-NET Voc FT (to remove the instrumental and vocals)
   - UVR-MDX-NET Crowd HQ 1 (to remove crowd from vocals)
@@ -67,7 +67,7 @@ model and click **Start Processing**.
 :::
 
 - **MDX-NET models**
-  - UVR-MDX-NET Inst HQ 4 (the best to remove the instrumental and vocals)
+  - UVR-MDX-NET Inst HQ 4 (the best to remove the instrumental and vocals, but this may leave additional noise)
   - UVR-MDX-NET Voc FT (to remove the instrumental and vocals)
   - UVR-MDX-NET Crowd HQ 1 (to remove crowd from vocals)
 - **VR Arch models**

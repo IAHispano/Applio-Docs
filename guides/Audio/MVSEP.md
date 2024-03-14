@@ -22,6 +22,7 @@ Here you will learn how to Separate the Vocals and the Instrumental of songs wit
 - **Ultimate Vocal Remover HQ (vocals, music)**
   - UVR-DeEcho-DeReverb (to remove reverb from vocals)
   - UVR-BVE-4B_SN-44100-1 (to separate 2 or more voices singing at the same time)
+  - UVR-DeNoise (to remove noise from vocals)
 - BanditPlus (SFX, speech, music, effects)
 :::
 
