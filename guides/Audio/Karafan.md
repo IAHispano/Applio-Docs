@@ -77,7 +77,7 @@ For more information, visit the [GitHub repository](https://github.com/Captain-F
 !!!warning Warning
 The Colab only lasts 30 minutes in execution. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.
 !!!
-2. First, we go to the [Google Colab](https://colab.research.google.com/drive/1f3y3-Z9GOGqEHeY8M--2g3z-vOzWiKdn?usp=sharing).
+2. First, we go to the [Google Colab](https://colab.research.google.com/github/Eddycrack864/KaraFan/blob/master/KaraFan_Improved_Version.ipynb).
 
 3. Run the cell by clicking on the white :icon-play: button. So that the repository can start to be cloned.
 
