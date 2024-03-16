@@ -46,7 +46,7 @@ You can change the **type of wav or the MP3 bitrate** in **Additional settings**
 !!!
 
 6. Finally, look for your processed audio in the location you selected as output.
-+++ Cloud
++++ Google Colab
 
 1. First, we go to the [UVR Colab](https://colab.research.google.com/github/Eddycrack864/Ultimate-Vocal-Remover-5.6-for-Google-Colab/blob/main/Ultimate_Vocal_Remover_5_6_for_Google_Colab.ipynb)
 !!!warning Warning

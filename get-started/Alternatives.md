@@ -6,7 +6,7 @@ icon: cloud
 # Other Alternatives
 Thanks to our team, we were able to bring Applio to other places for your convenience
 
-+++ Cloud
++++ Google Colab
  !!!warning Warning
  It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.
  !!!
