@@ -102,6 +102,8 @@ make run-applio
 cd /notebooks/Applio
 make run-tensorboard
 ```
+8. Your trained model is located in the `logs/model` folder, and the .pth files are in the `logs/zips` folder.
+
 -  (If you want to retrain insert the name of your model and enter a higher number of epochs)
 !!!warning Warning
 Make sure to set the [batch size](https://docs.applio.org/faq/rvc/#batch-size) according to the VRAM of your chosen GPU.
