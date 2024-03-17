@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763920576130">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763960110123">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.763920576130" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.763960110123" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.763920576130" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.763960110123" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.763920576130" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.763960110123" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.763960110123" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -254,7 +255,7 @@
 <li><strong>Mount Drive:</strong> Connects Colab to our Google Drive for performing backups.</li>
 <li><strong>AutoBackup:</strong> Saves our trained model to our drive. Drive needs to be mounted first.</li>
 <li><strong>Load a Backup:</strong> Used to load our model if we want to retrain it. Drive must be mounted.</li>
-<li><strong>Download Custom Pretrains:</strong> Allows direct downloading of custom pretrains to Applio.</li>
+<li><strong>Download <a href="https://docs.applio.org/get-started/pretrained/">Custom Pretrains</a>:</strong> Allows direct downloading of custom pretrains to Applio.</li>
 </ul>
 <p><img src="../../assets/extracolab.png" alt="" /></p>
 <ol start="3">
@@ -290,6 +291,23 @@
 <li><p>Upload your audio in .wav format using the <strong>Dataset Maker</strong> or click on <span class="docs-emoji">&#x1F4C1;</span> and setup it manually to <code v-pre>program/assets/datasets</code> creating inside a folder for the program to read it.</p>
 </li>
 </ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Mark the <strong>Save Only Latest</strong> option to prevent it from filling up your Colab storage.</h5>
+        </div>
+    </div>
+</div>
 <ol start="4">
 <li>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before run <strong>Start Applio</strong> cell.</li>
 </ol>
@@ -320,6 +338,96 @@
         <div class="pr-5 ml-3 w-full">
             <h5>Warning</h5>
 <p>You can&#x27;t train models here.</p>
+        </div>
+    </div>
+</div>
+</doc-tab>
+<doc-tab v-cloak id="paperspace">
+<template #title>Paperspace</template>
+<doc-anchor-target id="what-is-paperspace">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-paperspace">#</doc-anchor-trigger>
+        <span>What is Paperspace?</span>
+    </h2>
+</doc-anchor-target>
+<p>Paperspace is a cloud platform that provides access to powerful virtual machines with dedicated GPU for software development, machine learning, artificial intelligence, and other applications that require substantial processing power. This has made it one of the most competent <strong>paid</strong> alternatives to Colab.</p>
+<ol>
+<li>First you should create an account on <a href="https://console.paperspace.com/signup">Paperspace</a></li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>During the account creation</h5>
+<ul>
+<li>You will be asked for account verification, so you will need to enter a phone number and input the received verification code.</li>
+<li>You should know that Paperspace’s <strong>free</strong> plan is quite poor, and there’s nothing you can do about it. So, you should consider paying for a <strong>Pro</strong> or <strong>Growth</strong> plan.</li>
+<li>Paperspace has joined <strong>DigitalOcean</strong>, so you can also pay with PayPal or Google Pay!.</li>
+<li>You can pay by the hour for a <a href="https://www.paperspace.com/pricing">dedicated GPU</a> instead of using the default free ones or the paid plan.</li>
+<li>You will need to clarify some additional account details before starting to use Paperspace.</li>
+</ul>
+        </div>
+    </div>
+</div>
+<ol start="2">
+<li><p>Once the account is created, you will need to choose a Paperspace plan. To do this, click on <strong>Upgrade</strong> and select the one that suits your preference. The best option is the <strong>Pro</strong> plan.</p>
+</li>
+<li><p>Go to the <strong>Gradient</strong> tab and click on the <strong>Create</strong> button:</p>
+</li>
+</ol>
+<ul>
+<li>Select the template: <strong>Start from Scratch</strong></li>
+<li>Select a avaible <strong>GPU</strong></li>
+<li>Select the number of hours your computer will remain active.
+Then click on <strong>Start Notebook</strong>.</li>
+</ul>
+<ol start="4">
+<li>Now type the following commands one at a time in the terminal; this is only for the first time:</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">git clone https://github.com/IAHispano/Applio.git
+cd /notebooks/Applio
+make run-install
+make run-applio</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><strong>Next time, you will only enter the last 3 commands</strong>.</li>
+</ul>
+<ol start="5">
+<li><p>Finally, the link to access the <strong>GUI</strong> will appear.</p>
+</li>
+<li><p>You can <a href="../training/">train</a> models while checking <a href="../tensorboard/">Tensorboard</a>, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></p>
+</li>
+<li><p>Run TensorBoard in another terminal, click on <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53Zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5h-5Z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></g></g></svg> and enter the following commands:</p>
+</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">cd /notebooks/Applio
+make run-tensorboard</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Warning</h5>
+<p>Make sure to set the <a href="https://docs.applio.org/faq/rvc/#batch-size">batch size</a> according to the VRAM of your chosen GPU.</p>
         </div>
     </div>
 </div>
@@ -394,6 +502,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Other Alternatives", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Other Alternatives", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
