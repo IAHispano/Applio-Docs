@@ -13,6 +13,6 @@ The bot is capable of searching models within a database of over +500k functiona
 
 ## How to use Applio Bot
 
-Type the command /search, enter the model name you want to search for and you’re done.
+Type the command /search, enter the model name you want to search for, Click on **📤Download** to download the model or right click to get the model link, that’s all.
 
 ![](../assets/Applio_Bot.png)
