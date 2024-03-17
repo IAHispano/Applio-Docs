@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763960110123">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764013116364">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.763960110123" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.764013116364" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.763960110123" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764013116364" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.763960110123" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.763960110123" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764013116364" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.764013116364" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -220,6 +220,13 @@
 <doc-tabs>
 <doc-tab v-cloak id="google-colab">
 <template #title>Google Colab</template>
+<doc-anchor-target id="what-is-google-colab">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-google-colab">#</doc-anchor-trigger>
+        <span>What is Google Colab?</span>
+    </h2>
+</doc-anchor-target>
+<p>Google Colab <strong>(Google Colaboratory)</strong> is a free cloud based platform that enables writing and executing Python code within an interactive notebook environment. It provides free access to computing resources, including CPUs, <strong>GPUs</strong> and TPUs from Google’s servers, making it particularly useful for machine learning tasks and data analysis. Additionally, Colab offers a Pro subscription, but it’s not highly recommended to pay for it when there are better alternatives available.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -309,14 +316,21 @@
     </div>
 </div>
 <ol start="4">
-<li>Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before run <strong>Start Applio</strong> cell.</li>
+<li>Your trained model is located in the <code v-pre>logs/model</code> folder, and the .pth files are in the <code v-pre>logs/zips</code> folder. If you want to save your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before run <strong>Start Applio</strong> cell.</li>
 </ol>
 <ul>
-<li>(If you want to retrain place the name of your model in the <strong>Load a Backup</strong> cell and run it. Then, insert the name of your model and enter a higher number of epochs.)</li>
+<li>(If you want to retrain place the name of your model in the <strong>Load a Backup</strong> cell and run it. Then, insert the name of your model and enter a higher number of epochs)</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="huggingface">
 <template #title>Huggingface</template>
+<doc-anchor-target id="what-is-huggingface">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-huggingface">#</doc-anchor-trigger>
+        <span>What is Huggingface?</span>
+    </h2>
+</doc-anchor-target>
+<p>Hugging Face is a company specialized in artificial intelligence that has distinguished itself through its work in developing tools and models for <strong>natural language processing (NLP)</strong>. This has made it one of the leading online communities and platforms for cutting edge NLP model research, development and distribution.</p>
 <ol>
 <li><p>First you need to create a huggingface account.</p>
 </li>
@@ -337,7 +351,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Warning</h5>
-<p>You can&#x27;t train models here.</p>
+<p>You can&#x27;t train models here because it only utilizes CPU.</p>
         </div>
     </div>
 </div>
@@ -407,13 +421,24 @@ make run-applio</code></pre>
 </li>
 <li><p>You can <a href="../training/">train</a> models while checking <a href="../tensorboard/">Tensorboard</a>, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></p>
 </li>
-<li><p>Run TensorBoard in another terminal, click on <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53Zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5h-5Z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></g></g></svg> and enter the following commands:</p>
-</li>
+</ol>
+<doc-anchor-target id="how-to-upload-my-dataset-in-paperspace">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-upload-my-dataset-in-paperspace">#</doc-anchor-trigger>
+        <span>How to upload my dataset in Paperspace?</span>
+    </h3>
+</doc-anchor-target>
+<p>Upload your audio in .wav format using the <strong>Dataset Maker</strong> or click on <span class="docs-emoji">&#x1F4C1;</span> and setup it manually to <code v-pre>Applio/assets/datasets</code> creating inside a folder for the program to read it.</p>
+<ol start="7">
+<li>Run tensorboard in another terminal, click on <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53Zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5h-5Z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></g></g></svg> and enter the following commands:</li>
 </ol>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-javascript"><code v-pre class="language-javascript">cd /notebooks/Applio
 make run-tensorboard</code></pre>
 </doc-codeblock></div>
+<ul>
+<li>(If you want to retrain insert the name of your model and enter a higher number of epochs)</li>
+</ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
