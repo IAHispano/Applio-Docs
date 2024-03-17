@@ -7,6 +7,9 @@ icon: cloud
 Thanks to our team, we were able to bring Applio to other places for your convenience
 
 +++ Google Colab
+## What is Google Colab?
+Google Colab **(Google Colaboratory)** is a free cloud based platform that enables writing and executing Python code within an interactive notebook environment. It provides free access to computing resources, including CPUs, **GPUs** and TPUs from Google’s servers, making it particularly useful for machine learning tasks and data analysis. Additionally, Colab offers a Pro subscription, but it’s not highly recommended to pay for it when there are better alternatives available.
+
  !!!warning Warning
  It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.
  !!!
@@ -39,10 +42,13 @@ Thanks to our team, we were able to bring Applio to other places for your conven
 
  !!!info Mark the **Save Only Latest** option to prevent it from filling up your Colab storage.
  !!!
- 4. Your trained model is located in the logs/model folder, and the .pth files are in the logs/zips folder. If you want to save your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell.
+ 4. Your trained model is located in the `logs/model` folder, and the .pth files are in the `logs/zips` folder. If you want to save your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell.
 
- -  (If you want to retrain place the name of your model in the **Load a Backup** cell and run it. Then, insert the name of your model and enter a higher number of epochs.)
+ -  (If you want to retrain place the name of your model in the **Load a Backup** cell and run it. Then, insert the name of your model and enter a higher number of epochs)
 +++ Huggingface
+## What is Huggingface?
+Hugging Face is a company specialized in artificial intelligence that has distinguished itself through its work in developing tools and models for **natural language processing (NLP)**. This has made it one of the leading online communities and platforms for cutting edge NLP model research, development and distribution.
+
  1. First you need to create a huggingface account.
 
  2. Then enter [Applio Huggingface Space](https://huggingface.co/spaces/IAHispano/Applio) and duplicate the space, that is all. If you don't want to use huggingface you can use  [Applo playground](https://applio.org/playground).
@@ -50,7 +56,7 @@ Thanks to our team, we were able to bring Applio to other places for your conven
  ![](../assets/Duplicate.png)
  
  !!!warning Warning
- You can't train models here.
+ You can't train models here because it only utilizes CPU.
  !!!
 +++ Paperspace
 ## What is Paperspace?
@@ -88,11 +94,15 @@ make run-applio
 
 6. You can [train](/get-started\training.md/) models while checking [Tensorboard](/get-started\tensorboard.md), do [inference](/get-started\inferencing.md/), or use [TTS](/get-started\tts.md/)
 
-7. Run TensorBoard in another terminal, click on :icon-terminal: and enter the following commands:
+ ### How to upload my dataset in Paperspace?
+ Upload your audio in .wav format using the **Dataset Maker** or click on :file_folder: and setup it manually to `Applio/assets/datasets` creating inside a folder for the program to read it.
+
+7. Run tensorboard in another terminal, click on :icon-terminal: and enter the following commands:
 ``` js
 cd /notebooks/Applio
 make run-tensorboard
 ```
+-  (If you want to retrain insert the name of your model and enter a higher number of epochs)
 !!!warning Warning
 Make sure to set the [batch size](https://docs.applio.org/faq/rvc/#batch-size) according to the VRAM of your chosen GPU.
 !!!
