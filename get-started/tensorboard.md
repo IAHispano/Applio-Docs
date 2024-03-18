@@ -34,9 +34,9 @@ This image provides a visual guide for locating the "g/total" metric within the 
 !!!
 
 ## Lowest Point
-It’s when the graph goes to a point so low that it doesn’t happen again. During training, there will be several low points which you should test to find the indicated pth of your model. To know which one to choose, we go to the lowest point and look at how many **steps** it has. Knowing this, we can search in the open cmd for the epochs with that step or the closest one from the save points.
+It’s when the graph goes to a point so low that it doesn’t happen again. During training, there will be several low points which you should test to find the indicated pth of your model and in this way prevent our model from being [overtrained](https://docs.applio.org/faq/rvc/#overtraining). To know which one to choose, we go to the lowest point and look at how many **steps** it has. Knowing this, we can search in the open cmd for the epochs with that step or the closest one from the save points.
 -![](../assets/Point.png)-
 
 ==- Advanced Information
-Besides checking the loss/g/total, it’s necessary to monitor the loss/g/mel, loss/g/kl and loss/d/total graphs. If any of these values increase and don’t decrease again, it indicates overtraining.
+Besides checking the loss/g/total, it’s necessary to monitor the loss/g/mel, loss/g/kl and loss/d/total graphs. If any of these values increase and don’t decrease again, it indicates [overtraining](https://docs.applio.org/faq/rvc/#overtraining).
 ==-
