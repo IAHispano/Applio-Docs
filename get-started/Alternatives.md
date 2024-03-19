@@ -18,6 +18,9 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
 
  2. Then a **public link** will be given to us where we can enter the interface.
 
+ !!!info In case you want to **train**, you should run the **Extra cells** before run **Start Applio** cell. Otherwise, simply run the **Install Applio** and **Start Applio** cells.
+ !!!
+
  ### Extra cells
  In this section, you will find the following options:
 
@@ -30,19 +33,16 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
 
  3. You can [train](/get-started\training.md/) models while checking [Tensorboard](/get-started\tensorboard.md), do [inference](/get-started\inferencing.md/), or use [TTS](/get-started\tts.md/)
 
- !!!info In case you want to **train**, you should run the **Extra cells** before run **Start Applio** cell. Otherwise, simply run the **Install Applio** and **Start Applio** cells.
- !!!
-
  ### How to upload my dataset in Colab?
  To load your dataset in Colab, there are two ways to do it:
 
- - Place your audio in a folder on your Google Drive, run the **Mount Drive** cell in Colab and Click on :file_folder: in Colab. Then navigate to your dataset folder, copy the path, it should look like this `/content/drive/MyDrive/dataset folder` and paste it into the **dataset path**.
+ - Place your audio in a folder on your Google Drive, run the **Mount Drive** cell in Colab and click on :file_folder: in Colab. Then navigate to your dataset folder, copy the path, it should look like this `/content/drive/MyDrive/dataset folder` and paste it into the **dataset path**.
 
- - Upload your audio in .wav format using the **Dataset Maker** or click on :file_folder: and setup it manually to `program/assets/datasets` creating inside a folder for the program to read it.
+ - Upload your audio in .wav format using the **Dataset Maker** or click on :file_folder: in Colab and setup it manually to `program/assets/datasets` creating inside a folder for the program to read it.
 
- !!!info Mark the **Save Only Latest** option to prevent it from filling up your Colab storage.
+ !!!info Mark the **Save Only Latest** option before training to prevent it from filling up your Colab storage.
  !!!
- 4. Your trained model is located in the `logs/model` folder, and the .pth files are in the `logs/zips` folder. If you want to save your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell.
+ 4. Click on :file_folder: in Colab and locate your trained model in the `program/logs/model` folder, and the .pth files are in the `program/logs/zips` folder. If you want to save your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell.
 
  -  (If you want to retrain place the name of your model in the **Load a Backup** cell and run it. Then, insert the name of your model and enter a higher number of epochs)
 +++ Huggingface
@@ -96,13 +96,14 @@ make run-applio
 
  ### How to upload my dataset in Paperspace?
  Upload your audio in .wav format using the **Dataset Maker** or click on :file_folder: and setup it manually to `Applio/assets/datasets` creating inside a folder for the program to read it.
-
+ !!!info Mark the **Save Only Latest** option before training to prevent it from filling up your storage.
+ !!!
 7. Run tensorboard in another terminal, click on :icon-terminal: and enter the following commands:
 ``` js
 cd /notebooks/Applio
 make run-tensorboard
 ```
-8. Your trained model is located in the `logs/model` folder, and the .pth files are in the `logs/zips` folder.
+8. Click on :file_folder: and locate your trained model in the `Applio/logs/model` folder, and the .pth files are in the `Applio/logs/zips` folder.
 
 -  (If you want to retrain insert the name of your model and enter a higher number of epochs)
 !!!warning Warning
