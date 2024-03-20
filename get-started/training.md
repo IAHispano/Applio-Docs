@@ -8,7 +8,7 @@ order: C
 # Training
 
 !!!warning Important!
-Training is only for **NVDIA GPUs.**
+Training is only for **NVDIA GPUs**, If you don’t have a compatible GPU, the Training tab will be disabled.
 !!!
 
 How to use the Tensorboard for correct training? Check out the [Tensorboard](./tensorboard.md) section.
