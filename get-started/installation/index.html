@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764282420074">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764291892098">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -16,7 +16,7 @@
     <!-- Primary Meta Tags -->
     <title>Installation</title>
     <meta name="title" content="Installation">
-    <meta name="description" content="Installing Applio is a simple process, just download the .bat file of the latest version via the official repository">
+    <meta name="description" content="Installing Applio is a simple process, you can download and install Applio in different ways.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.applio.org/get-started/installation/">
@@ -25,22 +25,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.applio.org/get-started/installation/">
     <meta property="og:title" content="Installation">
-    <meta property="og:description" content="Installing Applio is a simple process, just download the .bat file of the latest version via the official repository">
+    <meta property="og:description" content="Installing Applio is a simple process, you can download and install Applio in different ways.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/get-started/installation/">
     <meta property="twitter:title" content="Installation">
-    <meta property="twitter:description" content="Installing Applio is a simple process, just download the .bat file of the latest version via the official repository">
+    <meta property="twitter:description" content="Installing Applio is a simple process, you can download and install Applio in different ways.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.764282420074" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.764291892098" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764282420074" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764291892098" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764282420074" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764291892098" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.764291892098" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,7 +214,15 @@
         <span>Installation</span>
     </h1>
 </doc-anchor-target>
-<p>Installing <a href="https://docs.applio.org/beginners/frequent-doubts/#what-is-applio-and-where-can-i-use-it">Applio</a> is a simple process, just download the .bat file of the latest version <strong><a href="https://github.com/IAHispano/Applio/releases">via the official repository</a></strong>, extract the zip file and run the <code v-pre>run-install.bat (Windows) or run-install-sh (Linux)</code>, wait for it to download the necessary content and run the <code v-pre>run-applio.bat or run-applio.sh</code> file.</p>
+<p>Installing <a href="https://docs.applio.org/beginners/frequent-doubts/#what-is-applio-and-where-can-i-use-it">Applio</a> is a simple process, you can download and install Applio in different ways. If you are new to Applio we recommend installing the precompiled version (Zip or Exe) as it comes ready to use Applio.</p>
+<doc-tabs>
+<doc-tab v-cloak id="github">
+<template #title>GitHub</template>
+<p>Here you will learn how to install Applio via the official repository.</p>
+<ul>
+<li>Download the <strong>.bat</strong> file of the latest version from <strong><a href="https://github.com/IAHispano/Applio/releases">GitHub repository</a></strong></li>
+<li>Extract the zip file</li>
+</ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -237,7 +246,136 @@
         </div>
     </div>
 </div>
-<p>If you encounter an error during execution, you can try the <a href="../../faq/installation/compiled/">precompiled</a> version of Applio.</p>
+<doc-anchor-target id="windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows">#</doc-anchor-trigger>
+        <span>Windows:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Run the <code v-pre>run-install.bat</code>, wait for it to download the necessary content</li>
+<li>Run the <code v-pre>run-applio.bat</code> file</li>
+</ul>
+<doc-anchor-target id="linux">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
+        <span>Linux:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Run the <code v-pre>run-install.sh</code>, wait for it to download the necessary content</li>
+<li>Run the <code v-pre>run-applio.sh</code> file</li>
+</ul>
+<p><strong>If you encounter an error during execution, you can try the precompiled (Zip or Exe) version of Applio.</strong></p>
+</doc-tab>
+<doc-tab v-cloak id="zip">
+<template #title>Zip</template>
+<p>If you encounter an error during execution, you can try the precompiled <strong>(Zip)</strong> version of Applio.</p>
+<ul>
+<li>Download the zip <a href="https://huggingface.co/IAHispano/Applio/resolve/main/Compiled/ApplioV3.0.9.zip?download=true">here</a></li>
+<li>Extract it</li>
+<li>Click on <code v-pre>run-applio.bat</code>, that’s all.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Before executing run-applio:</h5>
+<ul>
+<li>Make sure that you place Applio inside a folder on C driver.</li>
+<li>Don&#x27;t put it in a folder with privileged access.</li>
+<li>Don&#x27;t run the run-applio.bat as an administrator.</li>
+<li>Make sure the path does not contain any spaces or special characters.</li>
+</ul>
+        </div>
+    </div>
+</div>
+<p><strong>If you are having problems trying to run the executable, try with the Exe format.</strong></p>
+</doc-tab>
+<doc-tab v-cloak id="exe">
+<template #title>Exe</template>
+<p>If you encounter an error during execution, you can try the precompiled <strong>(Exe)</strong> version of Applio.</p>
+<ul>
+<li>Download <a href="https://huggingface.co/IAHispano/Applio/resolve/main/Compiled/ApplioV3.0.9.exe">here</a></li>
+<li>Open the executable so it can extract the program files</li>
+<li>Click on <code v-pre>run-applio.bat</code>, that’s all.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Before installing:</h5>
+<ul>
+<li>In case you get a Windows message, just click on <strong>More information</strong> and then on <strong>Run anyway</strong>.</li>
+<li>Make sure that you place Applio inside a folder on C driver.</li>
+<li>Don&#x27;t put it in a folder with privileged access.</li>
+<li>Don&#x27;t open the Applio.exe or run-applio.bat as an administrator.</li>
+<li>Make sure the path does not contain any spaces or special characters.</li>
+</ul>
+        </div>
+    </div>
+</div>
+<p><strong>If you are having problems trying to run the executable, try with the Zip format.</strong></p>
+</doc-tab>
+<doc-tab v-cloak id="script">
+<template #title>Script</template>
+<p>Here you will learn how to install Applio using commands in CMD.</p>
+<doc-anchor-target id="windows-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows-1">#</doc-anchor-trigger>
+        <span>Windows</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">./run-install.bat</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">./run-applio.bat</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="linuxmac">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linuxmac">#</doc-anchor-trigger>
+        <span>Linux/Mac</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">chmod +x run-install.sh
+./run-install.sh</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">chmod +x run-applio.sh
+./run-applio.sh</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="paperspace">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#paperspace">#</doc-anchor-trigger>
+        <span>Paperspace</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">make run-install</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">make run-applio</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <doc-anchor-target id="how-to-update-applio">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-update-applio">#</doc-anchor-trigger>
@@ -314,6 +452,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Installation", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Installation", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
