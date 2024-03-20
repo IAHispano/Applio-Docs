@@ -8,7 +8,7 @@ branding:
   logo: assets/ICON.ico
   logoDark: assets/ICON.ico
   logoAlign: left
-  label: v3.0.8
+  label: v3.0.9
   colors:
     label:
       text: "#ffffff"
