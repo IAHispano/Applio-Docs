@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764291892098">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.765079495731">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/icon.ico" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.764291892098" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.765079495731" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.764291892098" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.765079495731" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.764291892098" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.765079495731" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -221,15 +221,23 @@
     </h2>
 </doc-anchor-target>
 <p>Basically, it’s the frequency that our audio can reach, which is measured in KHz. If you choose an incorrect sample rate to train a type of sound unrelated to the voice, it can result in a poor model.</p>
-<ul>
+<ol>
 <li><p>To do this, we need the program <a href="https://www.spek.cc/p/download">Spek</a>. If you have Applio installed on your PC, you can check the <a href="../../../get-started/audio-analyzer/">audio analyzer</a> section.</p>
 </li>
-<li><p>Drag your dataset into the program and you’ll get a graph like this.
-<img src="/../assets/audio-analyzer.png" alt="" /></p>
-</li>
-<li><p>Now that you’ve seen that your audio has an audio frequency of 17500KHz, we multiply it by two and we would have our sampling frequency.</p>
-</li>
+<li><p>Drag your dataset into the program, and you’ll get the following image and information:</p>
+<ul>
+<li>Sample rate</li>
+<li>Duration of the audio</li>
+<li>Number of Samples</li>
+<li>Bits per Samples</li>
+<li>Channels (Mono or Stereo)</li>
 </ul>
+</li>
+</ol>
+<p><img src="/../assets/audio-analyzer.png" alt="" /></p>
+<ol start="3">
+<li>Now that we’ve seen in the <strong>Spectrogram</strong> image that our audio has an audio frequency of 22050 KHz, we multiply it by two, and we would have our sample rate.</li>
+</ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -244,7 +252,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>In case you get a frequency like 35k, you should choose the one that is closest to that frequency.</p>
+<p>In case you get a frequency like 44100k, you should choose the one that is closest to that frequency.</p>
         </div>
     </div>
 </div>
