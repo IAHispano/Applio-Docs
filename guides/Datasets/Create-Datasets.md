@@ -37,3 +37,6 @@ The dataset should only contain speech; any other type of sound should be remove
 
 4. Finally, we export our already processed audio and it’s ready for [training](/get-started\training.md/).
 ![](/../assets/Guardar.png)
+
+!!!info Make sure to export your dataset as a single audio file, or if you split it, ensure that each audio segment has a duration of 10 to 15 seconds per audio.
+!!!

@@ -15,6 +15,4 @@ Ultimate voice cloning tool, meticulously optimized for unrivaled power, modular
 
 [!badge variant="dark" text="Less code. More peformance."]
 
-*Consider also visiting [docs from](https://aihubdocs.github.io/en) [Julia](https://discordapp.com/users/791013455251374151), from where we have drawn inspiration for different contents.*
-
 

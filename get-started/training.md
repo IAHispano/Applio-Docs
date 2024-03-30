@@ -21,7 +21,8 @@ How to use the Tensorboard for correct training? Check out the [Tensorboard](./t
 ||| Step 2: Dataset Processing
 1. Once the model is named and the dataset selected press **"Prepocess Dataset"** and wait for the message in the CMD.
 |||
-
+!!!info Make sure your dataset consists of single audio file or if you split it, ensure that each audio segment has a duration of 10 to 15 seconds per audio.
+!!!
 
 - you can select one of the **3 available frequencies** according to the audio `(38k, 40k, 48k)`, this will help to avoid filtering out more artifacts or background noise.
 
@@ -30,7 +31,7 @@ How to use the Tensorboard for correct training? Check out the [Tensorboard](./t
 --- 
 ||| Step 3: Feature Extraction
 1. Select an [F0 method](https://docs.applio.org/faq/rvc/#pitch-extraction-differences) that suits your needs.
-2. **(optional)** modify [Hop lenght](https://docs.applio.org/faq/rvc/#hop-length), lower value, higher smoothness of pitch change but slower training and vice versa.
+2. **(optional)** modify [Hop lenght](https://docs.applio.org/get-started/inferencing/#advanced-settings), lower value, higher smoothness of pitch change but slower training and vice versa.
 |||
 
 ---
@@ -57,7 +58,7 @@ Configure the training parameters according to your needs.
 
 ---
 Once configured, press **_'Start training'_** to start the process, everything is registered in the **CMD.**
-
+- [don’t forget to check TensorBoard while training your model., check the tensorboard section](/get-started\tensorboard.md)
 ---
 ||| Final Step: Model Saving and Index File Generation
 1. Once training is completed, generate the index file by clicking the "Train Feature Index" button.

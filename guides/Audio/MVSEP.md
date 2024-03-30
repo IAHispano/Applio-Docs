@@ -15,7 +15,8 @@ Here you will learn how to Separate the Vocals and the Instrumental of songs wit
 
 :::
 - MDX23C (vocals, instrumental)
-- BSReformer V2 (vocals, instrumental)
+- **BSReformer V2 (vocals, instrumental)**
+  - viperx edition
 - MVSep MelBand Reformer (vocals, instrumental)
 - **MDX B (vocals, instrumental)** 
   - UVR-MDX-NET Voc FT

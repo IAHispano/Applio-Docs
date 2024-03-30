@@ -44,14 +44,14 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
 - **Search Feature Ratio:** It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.
 - **Volume Envelope:** Substitute or blend with the volume envelope of the output.
 - **Protec Voiceless Consonants:** Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.
-- **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference but tend to yield higher pitch accuracy.
+- **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.
 - **Pitch extraction algorithm:** Select between [rvmpe, crepe, mangio-crepe or other](https://docs.applio.org/faq/rvc/#pitch-extraction-differences)
 ==- 
 
 !!!primary What should I do if my output audio sounds [robotic](https://docs.applio.org/faq/rvc/#artifacting)?
  - Look for better quality audio.
  - Your voice model needs more [training](/get-started\training.md) or is [overtraining](https://docs.applio.org/faq/rvc/#overtraining).
- - Remove the reverb, double vocals and noise from your acapella, check the [UVR 5 guide](/guides\Audio\UVR.md) or [MCSEP guide](/guides\Audio\MVSEP.md).
+ - Remove the reverb, double vocals and noise from your acapella, check the [UVR 5 guide](/guides\Audio\UVR.md) or [MVSEP guide](/guides\Audio\MVSEP.md).
  - The dataset of your model contained noise, you need to [clean the dataset](/guides\Datasets\Create-Datasets.md).
  - Try advanced settings.
 !!!
