@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.765220565533">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.765418020523">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.765220565533" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.765418020523" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.765220565533" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.765418020523" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.765220565533" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.765418020523" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -72,7 +72,7 @@
                     <nav class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../guides/">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../get-started/">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
                                             <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
@@ -166,7 +166,7 @@
                             <nav>
                                 <ul class="flex flex-wrap justify-center items-center">
                                     <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../guides/">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../get-started/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
                                                     <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
@@ -216,7 +216,7 @@
 <p>Questions about RVC.</p>
 <doc-panel id="what-is-rvc" collapsed>
     <template #title>What is RVC?</template>
-<p>RVC (Retrieval-Based Voice Conversion) is a technology that is used to clone the voice of a person/character or replace that voice with another one.</p>
+<p>RVC (Retrieval-Based Voice Conversion) is one of the is one of the Ai voice cloning techniques using speech synthesis.</p>
 </doc-panel>
 <doc-panel id="what-are-the-requirements-for-rvc-applio" collapsed>
     <template #title>What are the requirements for RVC/Applio?</template>
@@ -246,37 +246,21 @@
     <template #title>Epoch</template>
 <p>An Epoch is the number of iterations performed during training to complete one full cycle of your dataset. For example, if you have a dataset of 200 audio samples and you set a batch_size of 10, 10 audio samples will be processed in each iteration. To process all 200 audio samples, you will need to perform 20 iterations in total. This complete cycle is referred to as one epoch.</p>
 </doc-panel>
-<doc-panel id="pitch-extraction-differences" collapsed>
-    <template #title>Pitch extraction differences</template>
+<doc-panel id="f0-extraction-methods" collapsed>
+    <template #title>F0 extraction methods</template>
 <ul>
-<li><p><strong>pm:</strong> It provides a quick but inefficient result and is less faithful to the voice model.</p>
+<li><p><strong>pm:</strong> Provides a fast result at the cost of vague tone processing.</p>
 </li>
-<li><p><strong>Harvest:</strong> It offers a better replication of tones from our Acapella but is slower and often gives errors initially.</p>
+<li><p><strong>Harvest:</strong> Better replication of tones, slower model and often gives errors.</p>
 </li>
-<li><p><strong>Dio:</strong> Possibly used for moments when our Acapella has rapid word pronunciation, such as in rap.</p>
+<li><p><strong>Dio:</strong> Similar to PM processing, provides fast processing with better transition in tones.</p>
 </li>
-<li><p><strong>Crepe:</strong> It provides better word pronunciation results.</p>
+<li><p><strong>Crepe/crepe-tiny:</strong> Contains an elaborate processing of pitch changes, compared to the previous ones this one does not distort in magnitude. (Crepe is to be able to modify the value of pitch processing (Hop Lenght), lower value will induce a better result but slower and vice versa.)</p>
 </li>
-<li><p><strong>Crepe-tiny:</strong> Similar to crepe, it processes faster but with less aggressiveness.</p>
+<li><p><strong>Rmvpe:</strong> Model with Crepe and PM features, fast and quality tone processing with low probability of distortion.</p>
 </li>
-<li><p><strong>Mangio-crepe:</strong> It provides better results in terms of breaths and performs the same as crepe, but it is slower and sometimes yields poorer results.</p>
+<li><p><strong>FPCE:</strong> Fpce is a alternative hybrid method that works similarly to f0 with the difference of a slightly more optimized processing and taking less context from the input audio for a &quot;particular&quot; conversion.</p>
 </li>
-<li><p><strong>Mangio-crepe-tiny:</strong> Similar to mangio-crepe, it&#x27;s faster but with less aggressiveness.</p>
-</li>
-<li><p><strong>Rmvpe:</strong> It is a combination of pm and crepe but is fast for both training and inference. It is the most faithful to the voice model (currently the best option).</p>
-</li>
-<li><p><strong>Fcpe:</strong> It takes less context from the audios because it is faster, it is less sensitive but it can also lose information.</p>
-</li>
-</ul>
-</doc-panel>
-<doc-panel id="hybrids-pitch-extraction" collapsed>
-    <template #title>Hybrids pitch extraction</template>
-<p>It makes the inference by comparing both models and takes the best of both with an approximate pitch. The following combinations exist:</p>
-<ul>
-<li>hybrid [rmvpe - fcpe]</li>
-<li>hybrid [crepe - rmvpe]</li>
-<li>hybrid [crepe - fcpe]</li>
-<li>hybrid [crepe - rmvpe - fcpe]</li>
 </ul>
 </doc-panel>
 <doc-panel id="batch-size" collapsed>
