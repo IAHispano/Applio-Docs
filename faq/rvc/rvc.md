@@ -9,7 +9,7 @@ order: C
 Questions about RVC.
 
 ==- What is RVC?
-RVC (Retrieval-Based Voice Conversion) is a technology that is used to clone the voice of a person/character or replace that voice with another one.
+RVC (Retrieval-Based Voice Conversion) is one of the is one of the Ai voice cloning techniques using speech synthesis.
 ==- 
 ==- What are the requirements for RVC/Applio?
 The minimum required for local training is an Nvidia RTX series 20 graphics card with 8GB of VRAM to train models, in the case of inference you only need to have a decent CPU and at least 4GB of VRAM. If you have a Celeron processor, it would be better to look at [other alternatives](/get-started\Alternatives.md).
@@ -32,31 +32,19 @@ It is the one that contains all the data from the trained model that will serve 
 ==- Epoch
 An Epoch is the number of iterations performed during training to complete one full cycle of your dataset. For example, if you have a dataset of 200 audio samples and you set a batch_size of 10, 10 audio samples will be processed in each iteration. To process all 200 audio samples, you will need to perform 20 iterations in total. This complete cycle is referred to as one epoch.
 ==-
-==- Pitch extraction differences
-- **pm:** It provides a quick but inefficient result and is less faithful to the voice model.
+==- F0 extraction methods
+- **pm:** Provides a fast result at the cost of vague tone processing.
 
-- **Harvest:** It offers a better replication of tones from our Acapella but is slower and often gives errors initially.
+- **Harvest:** Better replication of tones, slower model and often gives errors.
 
-- **Dio:** Possibly used for moments when our Acapella has rapid word pronunciation, such as in rap.
+- **Dio:** Similar to PM processing, provides fast processing with better transition in tones.
 
-- **Crepe:** It provides better word pronunciation results.
+- **Crepe/crepe-tiny:** Contains an elaborate processing of pitch changes, compared to the previous ones this one does not distort in magnitude. (Crepe is to be able to modify the value of pitch processing (Hop Lenght), lower value will induce a better result but slower and vice versa.)
 
-- **Crepe-tiny:** Similar to crepe, it processes faster but with less aggressiveness.
+- **Rmvpe:** Model with Crepe and PM features, fast and quality tone processing with low probability of distortion.
 
-- **Mangio-crepe:** It provides better results in terms of breaths and performs the same as crepe, but it is slower and sometimes yields poorer results.
+- **FPCE:** Fpce is a alternative hybrid method that works similarly to f0 with the difference of a slightly more optimized processing and taking less context from the input audio for a "particular" conversion.
 
-- **Mangio-crepe-tiny:** Similar to mangio-crepe, it's faster but with less aggressiveness.
-
-- **Rmvpe:** It is a combination of pm and crepe but is fast for both training and inference. It is the most faithful to the voice model (currently the best option).
-
-- **Fcpe:** It takes less context from the audios because it is faster, it is less sensitive but it can also lose information.
-==-
-==- Hybrids pitch extraction 
-It makes the inference by comparing both models and takes the best of both with an approximate pitch. The following combinations exist:
-- hybrid [rmvpe - fcpe]
-- hybrid [crepe - rmvpe]
-- hybrid [crepe - fcpe]
-- hybrid [crepe - rmvpe - fcpe]
 ==-
 ==- Batch Size
 The batch size is the amount of GPU that will be used to train the model. The larger the batch size, the shorter the training duration. It is recommended to use multiples of 4 as the batch size, although the most common is 8, as it gives the AI time to learn correctly without rushing.
