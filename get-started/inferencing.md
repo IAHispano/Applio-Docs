@@ -45,7 +45,7 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
 - **Volume Envelope:** Substitute or blend with the volume envelope of the output.
 - **Protec Voiceless Consonants:** Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.
 - **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.
-- **Pitch extraction algorithm:** Select between [rvmpe, crepe, mangio-crepe or other](https://docs.applio.org/faq/rvc/#pitch-extraction-differences)
+- **Pitch extraction algorithm:** Select between [rvmpe, crepe, mangio-crepe or other](https://docs.applio.org/faq/rvc/#f0-extraction-methods)
 ==- 
 
 !!!primary What should I do if my output audio sounds [robotic](https://docs.applio.org/faq/rvc/#artifacting)?

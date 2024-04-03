@@ -30,7 +30,7 @@ How to use the Tensorboard for correct training? Check out the [Tensorboard](./t
 
 --- 
 ||| Step 3: Feature Extraction
-1. Select an [F0 method](https://docs.applio.org/faq/rvc/#pitch-extraction-differences) that suits your needs.
+1. Select an [F0 method](https://docs.applio.org/faq/rvc/#f0-extraction-methods) that suits your needs.
 2. **(optional)** modify [Hop lenght](https://docs.applio.org/get-started/inferencing/#advanced-settings), lower value, higher smoothness of pitch change but slower training and vice versa.
 |||
 
