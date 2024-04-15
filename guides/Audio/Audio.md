@@ -17,4 +17,3 @@ Download the music in .WAV format, or if it's in .mp3 format, convert it to .WAV
 - ### [UVR5](/guides\Audio\UVR.md)
 - ### [MVSEP](/guides\Audio\MVSEP.md)
 - ### [KaraFan](/guides\Audio\Karafan.md)
-- ### [Music Source Separation](/guides\Audio\Music.md)
