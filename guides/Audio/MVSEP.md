@@ -37,6 +37,3 @@ In some cases, you will see the option of aggressiveness, for better results you
 !!!warning Warning
 Unlike doing it locally, here you will have to wait in a queue, this may take time depending on the queue at that moment.
 !!!
-
-- [If you don’t want to wait, you can use this alternative, but keep in mind that not all models can be used there.](/guides\Audio\Music.md)
-
