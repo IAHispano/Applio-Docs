@@ -51,7 +51,9 @@ You can change the **type of wav or the MP3 bitrate** in **Additional settings**
 1. First, we go to the [UVR Colab](https://colab.research.google.com/github/Eddycrack864/UVR5-NO-UI/blob/main/UVR5_NO_UI.ipynb).
 
 2. In our Google Drive, we created the folder **Separar** where we will put our songs to separate, and **Vocales** where our already separated song will be stored.
-
+!!!info
+Now you can download the music that you want to separate from Colab. go to the **YouTube Audio Downloader for Separation** cell, just place the link of the song in **video_url** and run that cell. Your song will be stored in the folders that you created in your Drive.
+!!!
 3. Run the **Installation** cell to start cloning the repository to the colab and mount drive.
 
 4. Run the cell of your choice: **BS Reformer, MDX23C, MDX-NET, VR ARCH, Demucs**.
