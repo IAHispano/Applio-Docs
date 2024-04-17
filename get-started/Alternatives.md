@@ -44,10 +44,12 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
  !!!
 
  ### 5. How to export my model to my Google Drive?
- To save your model, there are two ways to do it:
+ To save your model, there are three ways to do it:
  - **Finished Model:** go to the **Export Model** section in the **Train** tab, click on the **Refresh** button and select the pth and the added index of the model to export. Finally, click on the **Upload** button, your model will be found in the **ApplioExported** folder ready to be used.
  
  - **Model to continue training:** if you want to save all the archives of your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell, your model folder will be found inside the **ApplioBackup** folder.
+
+ - **Manual (NOT RECOMENDED):** click on :file_folder: in Colab and locate the **added index** of your model in the `program/logs/model` folder, and the **.pth** files are in the `program/logs/zips` folder so you can download them. If you want to save your model folder in your Drive, you just need to cancel the **Start Applio** cell and run the **Mount Drive** cell to be able to move it to your Google Drive.
 
  (If you want to retrain place the name of your model in the **Load a Backup** cell and run it. Then, insert the name of your model and enter a higher number of epochs)
 
