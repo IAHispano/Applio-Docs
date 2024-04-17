@@ -23,12 +23,12 @@ A Dataset is a set of audio files compressed into a .zip file used by RVC for vo
 
 ==- Noise Gate
  Is a tool that helps reduce background noise in an audio recording, first select your audio and go to the effect section under the Steve Daulton option and select noise gate. Then set the following parameters
- ![](/../assets/Noise_Gate.png)
+ ![](../../assets/Noise_Gate.png)
 ==-
 
 ==- Truncating silence
  This tool is used to remove silences from our dataset, now go back to the effect section under the special option and select truncate silence. Then set the following parameters: 
- ![](/../assets/Truncate.png)
+ ![](../../assets/Truncate.png)
 ==-
 
 !!!warning Before truncate silence
@@ -36,7 +36,7 @@ The dataset should only contain speech; any other type of sound should be remove
 !!!
 
 4. Finally, we export our already processed audio and it’s ready for [training](/get-started\training.md/).
-![](/../assets/Guardar.png)
+![](../../assets/Guardar.png)
 
 !!!info Make sure to export your dataset as a single audio file, or if you split it, ensure that each audio segment has a duration of 10 to 15 seconds per audio.
 !!!

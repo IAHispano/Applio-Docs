@@ -6,7 +6,7 @@ order: B
 
 # Infer & Download models
 
-- Downloading a [voice model](/voice-models) is as simple as going to the **Download** tab.
+- Downloading a [voice model](../Voice-Models/Voice-Models.md) is as simple as going to the **Download** tab.
 
 ![**Manual loading alternative:** unzip the downloaded .zip file and **drag the two files into the Drop files box**. Now you can search for models from Applio by simply entering the character name to search in the **Search Model** section, then copy the model link or download it.](/assets/download_models.png)
 

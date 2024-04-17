@@ -19,7 +19,7 @@ Basically, it’s the frequency that our audio can reach, which is measured in K
      - Bits per Samples
      - Channels (Mono or Stereo)
 
- ![](/../assets/Audio-Analyzer.png)
+ ![](../../assets/Audio-Analyzer.png)
 
 3. Now that we’ve seen in the **Spectrogram** image that our audio has an audio frequency of 22050 KHz, we multiply it by two, and we would have our sample rate.
 
