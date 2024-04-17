@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766560635215">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766643989959">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -16,7 +16,7 @@
     <!-- Primary Meta Tags -->
     <title>Infer &amp; Download models</title>
     <meta name="title" content="Infer & Download models">
-    <meta name="description" content="Downloading a voice model is as simple as going to the \"download\" tab.">
+    <meta name="description" content="Downloading a voice model is as simple as going to the Download tab.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.applio.org/get-started/inferencing/">
@@ -25,24 +25,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.applio.org/get-started/inferencing/">
     <meta property="og:title" content="Infer & Download models">
-    <meta property="og:description" content="Downloading a voice model is as simple as going to the \"download\" tab.">
+    <meta property="og:description" content="Downloading a voice model is as simple as going to the Download tab.">
     <meta property="og:image" content="https://docs.applio.org/assets/download_models.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.applio.org/get-started/inferencing/">
     <meta property="twitter:title" content="Infer & Download models">
-    <meta property="twitter:description" content="Downloading a voice model is as simple as going to the \"download\" tab.">
+    <meta property="twitter:description" content="Downloading a voice model is as simple as going to the Download tab.">
     <meta property="twitter:image" content="https://docs.applio.org/assets/download_models.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.766560635215" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.766643989959" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766560635215" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766643989959" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766560635215" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766643989959" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -216,11 +216,11 @@
     </h1>
 </doc-anchor-target>
 <ul>
-<li>Downloading a <a href="/voice-models">voice model</a> is as simple as going to the <strong>&quot;download&quot;</strong> tab.</li>
+<li>Downloading a <a href="/voice-models">voice model</a> is as simple as going to the <strong>Download</strong> tab.</li>
 </ul>
 <p><figure class="content-center">
-    <img src="../../assets/download_models.png" alt="Manual loading alternative: unzip the downloaded .zip file and drag the two files into the corresponding box below.">
-    <figcaption class="caption"><strong>Manual loading alternative:</strong> unzip the downloaded .zip file and <strong>drag the two files into the corresponding box below.</strong></figcaption>
+    <img src="../../assets/download_models.png" alt="Manual loading alternative: unzip the downloaded .zip file and drag the two files into the Drop files box. Now you can search for models from Applio by simply entering the character name to search in the Search Model section, then copy the model link or download it.">
+    <figcaption class="caption"><strong>Manual loading alternative:</strong> unzip the downloaded .zip file and <strong>drag the two files into the Drop files box</strong>. Now you can search for models from Applio by simply entering the character name to search in the <strong>Search Model</strong> section, then copy the model link or download it.</figcaption>
 </figure>
 </p>
 <div class="flex mb-6">
@@ -235,7 +235,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Downloading files from mega may fail!, this is due to malfunction of the dependency.</p>
+<p>Applio can only download models from Google Drive, Huggingface, <a href="https://applio.org/models">Applio Web</a>, Discord, Yandex, Pixeldrain and Mediafire. Downloading files from mega may fail!, this is due to malfunction of the dependency.</p>
         </div>
     </div>
 </div>
@@ -285,11 +285,12 @@
     </div>
 </div>
 <ul>
-<li><strong>Recommendation:</strong> having a <strong>clean acapella</strong> helps to get better results. but if the model downloaded in its name mentions the words rvmpe, crepe or mangio-crepe click on the <strong>advanced options box</strong>. Furthermore, this section has the following:</li>
+<li><strong>Recommendation:</strong> having a <strong>clean acapella</strong> helps to get better results. but if the model downloaded in its name mentions the words rvmpe or crepe click on the <strong>advanced options box</strong>. Furthermore, this section has the following:</li>
 </ul>
 <doc-panel id="advanced-settings" collapsed>
     <template #title><strong>Advanced Settings</strong></template>
 <ul>
+<li><strong>Export Format:</strong> Select the format to export the audio.</li>
 <li><strong>Split Audio:</strong> Basically cuts the audio into parts to make the inference by parts and then joins them together.</li>
 <li><strong>Autotune:</strong> Apply a soft autotune to your inferences, recommended for singing conversions.</li>
 <li><strong>Clean Audio:</strong> Clean your audio output using noise detection algorithms, recommended for speaking audios.</li>
@@ -300,7 +301,7 @@
 <li><strong>Volume Envelope:</strong> Substitute or blend with the volume envelope of the output.</li>
 <li><strong>Protec Voiceless Consonants:</strong> Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.</li>
 <li><strong>Hop Length:</strong> Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.</li>
-<li><strong>Pitch extraction algorithm:</strong> Select between <a href="https://docs.applio.org/faq/rvc/#f0-extraction-methods">rvmpe, crepe, mangio-crepe or other</a></li>
+<li><strong>Pitch extraction algorithm:</strong> Select between <a href="https://docs.applio.org/faq/rvc/#f0-extraction-methods">rvmpe, crepe or other</a></li>
 </ul>
 </doc-panel>
 <div class="flex mb-6">

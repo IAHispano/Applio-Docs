@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766560635215">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766643989959">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.766560635215" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.766643989959" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766560635215" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766643989959" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766560635215" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.766560635215" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766643989959" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.766643989959" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -285,10 +285,10 @@
 <ol start="3">
 <li>You can <a href="../training/">train</a> models while checking <a href="../tensorboard/">Tensorboard</a>, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></li>
 </ol>
-<doc-anchor-target id="how-to-upload-my-dataset-in-colab">
+<doc-anchor-target id="4-how-to-upload-my-dataset-in-colab">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-upload-my-dataset-in-colab">#</doc-anchor-trigger>
-        <span>How to upload my dataset in Colab?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-how-to-upload-my-dataset-in-colab">#</doc-anchor-trigger>
+        <span>4. How to upload my dataset in Colab?</span>
     </h3>
 </doc-anchor-target>
 <p>To load your dataset in Colab, there are two ways to do it:</p>
@@ -315,12 +315,40 @@
         </div>
     </div>
 </div>
-<ol start="4">
-<li>Click on <span class="docs-emoji">&#x1F4C1;</span> in Colab and locate your trained model in the <code v-pre>program/logs/model</code> folder, and the .pth files are in the <code v-pre>program/logs/zips</code> folder. If you want to save your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before run <strong>Start Applio</strong> cell.</li>
-</ol>
+<doc-anchor-target id="5-how-to-export-my-model-to-my-google-drive">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-how-to-export-my-model-to-my-google-drive">#</doc-anchor-trigger>
+        <span>5. How to export my model to my Google Drive?</span>
+    </h3>
+</doc-anchor-target>
+<p>To save your model, there are two ways to do it:</p>
 <ul>
-<li>(If you want to retrain place the name of your model in the <strong>Load a Backup</strong> cell and run it. Then, insert the name of your model and enter a higher number of epochs)</li>
+<li><p><strong>Finished Model:</strong> go to the <strong>Export Model</strong> section in the <strong>Train</strong> tab, click on the <strong>Refresh</strong> button and select the pth and the added index of the model to export. Finally, click on the <strong>Upload</strong> button, your model will be found in the <strong>ApplioExported</strong> folder ready to be used.</p>
+</li>
+<li><p><strong>Model to continue training:</strong> if you want to save all the archives of your model folder in your Drive, you just need to run the <strong>Mount Drive</strong> and <strong>AutoBackup</strong> cell before run <strong>Start Applio</strong> cell, your model folder will be found inside the <strong>ApplioBackup</strong> folder.</p>
+</li>
 </ul>
+<p>(If you want to retrain place the name of your model in the <strong>Load a Backup</strong> cell and run it. Then, insert the name of your model and enter a higher number of epochs)</p>
+<doc-anchor-target id="code-to-be-afk">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-to-be-afk">#</doc-anchor-trigger>
+        <span>Code to be afk</span>
+    </h3>
+</doc-anchor-target>
+<p>To run this code in Colab, we have to press the keys <strong>Ctrl + Shift + i</strong> to open the <strong>developer tools</strong> option and the following window will open. In case another window is displayed, we can locate it by selecting the <strong>Console</strong> option, so in this way Colab will not disconnect during the separation process. First, we put <strong>Allow pasting</strong>, then we press enter and only then it will let us enter the code.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">function ClickConnect() {
+var iconElement = document.getElementById(&quot;toggle-header-button&quot;);
+if (iconElement) {
+var clickEvent = new MouseEvent (&quot;click&quot;, {
+bubbles: true, cancelable: true,
+view: window
+});
+iconElement.dispatchEvent (clickEvent);
+}
+}
+setInterval(ClickConnect, 6000);</code></pre>
+</doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="huggingface">
 <template #title>Huggingface</template>
