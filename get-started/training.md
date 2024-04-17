@@ -64,6 +64,9 @@ Once configured, press **_'Start training'_** to start the process, everything i
 1. Once training is completed, generate the index file by clicking the "Train Feature Index" button.
 |||
 
+!!!info
+Now you can export your trained model directly from the Applio interface, go to the **Export Model** section in the **train** tab, click on the **Refresh** button and select the **pth and the [added index](https://docs.applio.org/faq/rvc/#added-index)** of the model to export.
+!!!
 
 - (If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number of [epoch](https://docs.applio.org/faq/rvc/#epoch).)
 

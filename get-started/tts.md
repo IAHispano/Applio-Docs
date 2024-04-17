@@ -9,7 +9,7 @@ icon: typography
 
 - Select our **model with its respective index**.
 
-- Select the **model of TTS** depending on the language you want and enter the text to convert.
+- Select the **model of TTS** depending on the language you want and enter the text or add a **txt file** in the box below to convert.
 
 - Finally we click on **convert** and wait for the result
 -![](/assets/TTS.png)-

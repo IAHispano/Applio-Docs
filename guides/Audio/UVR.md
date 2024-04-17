@@ -52,7 +52,7 @@ You can change the **type of wav or the MP3 bitrate** in **Additional settings**
 
 2. In our Google Drive, we created the folder **Separar** where we will put our songs to separate, and **Vocales** where our already separated song will be stored.
 !!!info
-Now you can download the music that you want to separate from Colab. go to the **YouTube Audio Downloader for Separation** cell, just place the link of the song in **video_url** and run that cell. Your song will be stored in the folders that you created in your Drive.
+Now you can download the music that you want to separate from Colab, go to the **YouTube Audio Downloader for Separation** cell, just place the link of the song in **video_url** and song name in **audio_name**, then run that cell. Your song will be stored in the **Separar** folder that you created in your Drive.
 !!!
 3. Run the **Installation** cell to start cloning the repository to the colab and mount drive.
 
@@ -81,6 +81,6 @@ Now you can download the music that you want to separate from Colab. go to the *
 - If you wish, you can change the **Segment Size** and the **Overlap** in case of **MDX23C** and **MDX-NET**, the **windows size** and the **aggression setting** for **VR Arc** to your preference or leave it as it is.
 !!!
 
-5. Now we go to the **Vocals folder**, there we find our separate audios, we download the audio with the name of the **song-Vocals**, in case you want the instrumental is **song-Instrumental**.
+5. Now we go to the **Vocales folder**, there we find our separate audios, we download the audio with the name of the **song-Vocals**, in case you want the instrumental is **song-Instrumental**.
 :::
 +++ 

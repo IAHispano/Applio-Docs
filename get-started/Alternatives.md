@@ -33,7 +33,7 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
 
  3. You can [train](/get-started\training.md/) models while checking [Tensorboard](/get-started\tensorboard.md), do [inference](/get-started\inferencing.md/), or use [TTS](/get-started\tts.md/)
 
- ### How to upload my dataset in Colab?
+ ### 4. How to upload my dataset in Colab?
  To load your dataset in Colab, there are two ways to do it:
 
  - Place your audio in a folder on your Google Drive, run the **Mount Drive** cell in Colab and click on :file_folder: in Colab. Then navigate to your dataset folder, copy the path, it should look like this `/content/drive/MyDrive/dataset folder` and paste it into the **dataset path**.
@@ -42,9 +42,32 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
 
  !!!info Mark the **Save Only Latest** option before training to prevent it from filling up your Colab storage.
  !!!
- 4. Click on :file_folder: in Colab and locate your trained model in the `program/logs/model` folder, and the .pth files are in the `program/logs/zips` folder. If you want to save your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell.
 
- -  (If you want to retrain place the name of your model in the **Load a Backup** cell and run it. Then, insert the name of your model and enter a higher number of epochs)
+ ### 5. How to export my model to my Google Drive?
+ To save your model, there are two ways to do it:
+ - **Finished Model:** go to the **Export Model** section in the **Train** tab, click on the **Refresh** button and select the pth and the added index of the model to export. Finally, click on the **Upload** button, your model will be found in the **ApplioExported** folder ready to be used.
+ 
+ - **Model to continue training:** if you want to save all the archives of your model folder in your Drive, you just need to run the **Mount Drive** and **AutoBackup** cell before run **Start Applio** cell, your model folder will be found inside the **ApplioBackup** folder.
+
+ (If you want to retrain place the name of your model in the **Load a Backup** cell and run it. Then, insert the name of your model and enter a higher number of epochs)
+
+ ### Code to be afk
+
+ To run this code in Colab, we have to press the keys **Ctrl + Shift + i** to open the **developer tools** option and the following window will open. In case another window is displayed, we can locate it by selecting the **Console** option, so in this way Colab will not disconnect during the separation process. First, we put **Allow pasting**, then we press enter and only then it will let us enter the code.
+
+ ``` js
+ function ClickConnect() {
+ var iconElement = document.getElementById("toggle-header-button");
+ if (iconElement) {
+ var clickEvent = new MouseEvent ("click", {
+ bubbles: true, cancelable: true,
+ view: window
+ });
+ iconElement.dispatchEvent (clickEvent);
+ }
+ }
+ setInterval(ClickConnect, 6000);
+```
 +++ Huggingface
 ## What is Huggingface?
 Hugging Face is a company specialized in artificial intelligence that has distinguished itself through its work in developing tools and models for **natural language processing (NLP)**. This has made it one of the leading online communities and platforms for cutting edge NLP model research, development and distribution.

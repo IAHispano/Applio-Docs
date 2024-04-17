@@ -6,12 +6,12 @@ order: B
 
 # Infer & Download models
 
-- Downloading a [voice model](/voice-models) is as simple as going to the **"download"** tab.
+- Downloading a [voice model](/voice-models) is as simple as going to the **Download** tab.
 
-![**Manual loading alternative:** unzip the downloaded .zip file and **drag the two files into the corresponding box below.**](/assets/download_models.png)
+![**Manual loading alternative:** unzip the downloaded .zip file and **drag the two files into the Drop files box**. Now you can search for models from Applio by simply entering the character name to search in the **Search Model** section, then copy the model link or download it.](/assets/download_models.png)
 
 !!!warning
-Downloading files from mega may fail!, this is due to malfunction of the dependency.
+Applio can only download models from Google Drive, Huggingface, [Applio Web](https://applio.org/models), Discord, Yandex, Pixeldrain and Mediafire. Downloading files from mega may fail!, this is due to malfunction of the dependency.
 !!!
 
 ---
@@ -32,9 +32,10 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
 
 !!!primary Make sure the path and audio name don't contain spaces or special characters.
 !!!
-- **Recommendation:** having a **clean acapella** helps to get better results. but if the model downloaded in its name mentions the words rvmpe, crepe or mangio-crepe click on the **advanced options box**. Furthermore, this section has the following:
+- **Recommendation:** having a **clean acapella** helps to get better results. but if the model downloaded in its name mentions the words rvmpe or crepe click on the **advanced options box**. Furthermore, this section has the following:
 
 ==- **Advanced Settings**
+- **Export Format:** Select the format to export the audio.
 - **Split Audio:** Basically cuts the audio into parts to make the inference by parts and then joins them together.
 - **Autotune:** Apply a soft autotune to your inferences, recommended for singing conversions.
 - **Clean Audio:** Clean your audio output using noise detection algorithms, recommended for speaking audios.
@@ -45,7 +46,7 @@ Downloading files from mega may fail!, this is due to malfunction of the depende
 - **Volume Envelope:** Substitute or blend with the volume envelope of the output.
 - **Protec Voiceless Consonants:** Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.
 - **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.
-- **Pitch extraction algorithm:** Select between [rvmpe, crepe, mangio-crepe or other](https://docs.applio.org/faq/rvc/#f0-extraction-methods)
+- **Pitch extraction algorithm:** Select between [rvmpe, crepe or other](https://docs.applio.org/faq/rvc/#f0-extraction-methods)
 ==- 
 
 !!!primary What should I do if my output audio sounds [robotic](https://docs.applio.org/faq/rvc/#artifacting)?

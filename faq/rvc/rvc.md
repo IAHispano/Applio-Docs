@@ -43,7 +43,7 @@ An Epoch is the number of iterations performed during training to complete one f
 
 - **Rmvpe:** Model with Crepe and PM features, fast and quality tone processing with low probability of distortion.
 
-- **FPCE:** Fpce is a alternative hybrid method that works similarly to f0 with the difference of a slightly more optimized processing and taking less context from the input audio for a "particular" conversion.
+- **Fcpe:** Fpce is a alternative hybrid method that works similarly to f0 with the difference of a slightly more optimized processing and taking less context from the input audio for a "particular" conversion.
 
 ==-
 ==- Batch Size
