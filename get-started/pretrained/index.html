@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766788235652">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766788377233">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.766788235652" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.766788377233" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766788235652" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766788377233" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766788235652" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766788377233" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -284,11 +284,15 @@
     </h3>
 </doc-anchor-target>
 <p>Works well with Russian datasets and also helps models of other languages to pronounce Russian well. Supports <strong>all the sample rates</strong>.</p>
-<ul>
-<li><strong>32k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-32k/tree/main">SnowieV3.1-32k</a></li>
-<li><strong>40k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-40k/tree/main">SnowieV3.1-40k</a></li>
-<li><strong>48k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-48k/tree/main">SnowieV3.1-48k</a></li>
-</ul>
+<blockquote>
+<p><strong>32k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-32k/tree/main">https://huggingface.co/MUSTAR/SnowieV3.1-32k/tree/main</a></p>
+</blockquote>
+<blockquote>
+<p><strong>40k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-40k/tree/main">https://huggingface.co/MUSTAR/SnowieV3.1-40k/tree/main</a></p>
+</blockquote>
+<blockquote>
+<p><strong>48k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-48k/tree/main">https://huggingface.co/MUSTAR/SnowieV3.1-48k/tree/main</a></p>
+</blockquote>
 <doc-anchor-target id="snowiev3-x-rin_e3-by-mustar">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#snowiev3-x-rin_e3-by-mustar">#</doc-anchor-trigger>
@@ -298,93 +302,7 @@
 <p>Works well with Russian or Japanese language datasets and also helps models of other languages to pronounce Russian or Japanese well. This only supports <strong>40k</strong> sample rate.</p>
 <p>Make sure to select the sample rate according to the sample rate of the custom pretraineds.</p>
 <blockquote>
-<p><a href="https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/tree/main">https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/tree/main</a>
-=======</p>
-</blockquote>
-<hr>
-<doc-anchor-target id="icon-slidersorder-e">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#icon-slidersorder-e">#</doc-anchor-trigger>
-        <span>icon: sliders
-order: E</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="custom-pretraineds">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-pretraineds">#</doc-anchor-trigger>
-        <span>Custom Pretraineds</span>
-    </h1>
-</doc-anchor-target>
-<ul>
-<li>In the training tab, check the <strong>&#x27;Custom Pretrained&#x27;</strong> box, upload the files, and select it in the <strong>Pretrained G/D Path boxes</strong>.</li>
-</ul>
-<p><figure class="content-center">
-    <img src="../../assets/load_pretrained.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="what-are-custom-pretraineds">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-are-custom-pretraineds">#</doc-anchor-trigger>
-        <span>What are custom pretraineds?</span>
-    </h2>
-</doc-anchor-target>
-<p>Those are pretraineds trained by AI enthusiasts, unlike the original pretraineds, were created using long higher-quality datasets. Additionally, they yield better results in models.</p>
-<doc-anchor-target id="ov2-super-by-simplcup-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ov2-super-by-simplcup-1">#</doc-anchor-trigger>
-        <span>Ov2 Super by SimplCup</span>
-    </h3>
-</doc-anchor-target>
-<p>Works well for small and English datasets. Additionally, it allows models to train with very few epochs compared to regular pretrains. This only supports <strong>32k and 40k</strong> sample rates.</p>
-<blockquote>
-<p><a href="https://huggingface.co/ORVC/Ov2Super/tree/main">https://huggingface.co/ORVC/Ov2Super/tree/main</a></p>
-</blockquote>
-<doc-anchor-target id="rin-e3-by-mustar-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rin-e3-by-mustar-1">#</doc-anchor-trigger>
-        <span>RIN E3 by Mustar</span>
-    </h3>
-</doc-anchor-target>
-<p>Yields good results with clean and English datasets, but it is more sensitive to noise. This only supports <strong>40k</strong> sample rate.</p>
-<blockquote>
-<p><a href="https://huggingface.co/MUSTAR/RIN_E3/tree/main">https://huggingface.co/MUSTAR/RIN_E3/tree/main</a></p>
-</blockquote>
-<doc-anchor-target id="snowiev3-by-mustar-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#snowiev3-by-mustar-1">#</doc-anchor-trigger>
-        <span>SnowieV3 by Mustar</span>
-    </h3>
-</doc-anchor-target>
-<p>Works well with Russian datasets and also helps models of other languages to pronounce Russian well. Supports <strong>all the sample rates</strong>.</p>
-<ul>
-<li><strong>32k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-32k/tree/main">SnowieV3.1-32k</a></li>
-<li><strong>40k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-40k/tree/main">SnowieV3.1-40k</a></li>
-<li><strong>48k</strong>: <a href="https://huggingface.co/MUSTAR/SnowieV3.1-48k/tree/main">SnowieV3.1-48k</a></li>
-</ul>
-<doc-anchor-target id="snowiev3-x-rin_e3-by-mustar-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#snowiev3-x-rin_e3-by-mustar-1">#</doc-anchor-trigger>
-        <span>SnowieV3 X RIN_E3 by Mustar</span>
-    </h3>
-</doc-anchor-target>
-<p>Works well with Russian or Japanese language datasets and also helps models of other languages to pronounce Russian or Japanese well. This only supports <strong>40k</strong> sample rate.</p>
-<p>Make sure to select the sample rate according to the sample rate of the custom pretraineds.</p>
-<blockquote>
 <p><a href="https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/tree/main">https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/tree/main</a></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>af1ef719174b1c782c1ed3dc586019044ec41fae:Get-Started/Pretrained.md</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 </blockquote>
 
                                 
