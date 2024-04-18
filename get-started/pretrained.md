@@ -1,4 +1,3 @@
-<<<<<<< HEAD:get-started/pretrained.md
 ---
 icon: sliders
 order: E
