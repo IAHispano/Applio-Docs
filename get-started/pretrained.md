@@ -3,15 +3,36 @@ icon: sliders
 order: E
 ---
 
-# Custom Pretraineds
+# Pretrained
 
-- In the training tab, check the **'Custom Pretrained'** box, upload the files, and select it in the **Pretrained G/D Path boxes**.
+## What are pretraineds?
 
-![](/assets/load_pretrained.png)
+When it comes to training, you have two main options: building a model from the ground up or fine-tuning an already existing one. These pre-trained models are designed to streamline your training process, saving time and enhancing the overall quality of your results.
 
-## What are custom pretraineds?
+![](../assets/Pretrained.png)
+_Simply put, the image illustrates that having a pre-trained model saves you effort during subsequent model training._
 
-Those are pretraineds trained by AI enthusiasts, unlike the original pretraineds, were created using long higher-quality datasets. Additionally, they yield better results in models.
+## How to create pretraineds?
+
+When creating a pretrained model, you have two primary options to consider.
+
+Firstly, you can either initiate a fine-tuning process on another pretrained model, which could be one of the originals, or start building one from scratch.
+
+Should you opt for building from scratch, the ideal approach involves gathering a substantial amount of moderately clean data; it doesn't necessarily have to be perfectly pristine. Subsequently, fine-tune this model with high-quality data.
+
+An essential consideration is to construct datasets devoid of copyrighted material.
+
+Alternatively, if you choose to fine-tune a pretrained model, the crux lies in the quality of the audio inputs. You can tailor it to a specific language, incorporate diverse speakers, and even integrate various accents. The customization possibilities are vast. However, it's crucial to strike a balance; avoid overtraining the pretrained model. The more effectively you fine-tune it now, the less training it will necessitate later during usage.
+
+To embark on building a model from scratch, conduct standard training while disabling the Pretrained option. For fine-tuning, engage in ordinary training while loading the desired pretrained model to fine-tune it.
+
+## How to use pretraineds?
+
+In the training tab, check the **'Custom Pretrained'** box, upload the files, and select it in the **Pretrained G/D Path boxes**.
+
+![](../assets/load_pretrained.png)
+
+## Where to find pretraineds?
 
 ### Ov2 Super by SimplCup
 
