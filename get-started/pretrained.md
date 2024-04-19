@@ -66,6 +66,6 @@ Works well with Russian or Japanese language datasets and also helps models of o
 
 Works well with Korean and some types of Japanese voices. Unlike typical pre-trained models, it has a very wide vocal range, which should be very helpful for those covering songs, this only supports **32k** sample rate.
 
-> **32K**: https://huggingface.co/SeoulStreamingStation/KLMv7s/resolve/main/KLMv7s_32k.zip
+> https://huggingface.co/SeoulStreamingStation/KLMv7s/resolve/main/KLMv7s_32k.zip
 
 Make sure to select the sample rate according to the [sample rate](https://docs.applio.org/guides/datasets/sample-rate/#what-is-sample-rate) of the custom pretraineds.
