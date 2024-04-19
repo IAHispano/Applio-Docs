@@ -60,6 +60,12 @@ Works well with Russian datasets and also helps models of other languages to pro
 
 Works well with Russian or Japanese language datasets and also helps models of other languages to pronounce Russian or Japanese well. This only supports **40k** sample rate.
 
-Make sure to select the sample rate according to the sample rate of the custom pretraineds.
-
 > https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/tree/main
+
+### KLM v7 by SeoulStreamingStation
+
+Works well with Korean and some types of Japanese voices. Unlike typical pre-trained models, it has a very wide vocal range, which should be very helpful for those covering songs, this only supports **32k** sample rate.
+
+> **32K**: https://huggingface.co/SeoulStreamingStation/KLMv7s/resolve/main/KLMv7s_32k.zip
+
+Make sure to select the sample rate according to the [sample rate](https://docs.applio.org/guides/datasets/sample-rate/#what-is-sample-rate) of the custom pretraineds.

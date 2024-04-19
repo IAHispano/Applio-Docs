@@ -17,3 +17,5 @@ One of the main features of applio for user comfort is a simple to understand in
 - **How to use and understand the Tensorboard:**[Tensorboard Guide](/get-started/tensorboard)
 
 - **Use the Audio Analyzer Tool for your datasets:** [Audio Analyzer Guide](/get-started/audio-analyzer/)
+
+- **Combine models to create a new one:** [Voice Blender Guide](/get-started\Voice-Blender.md)

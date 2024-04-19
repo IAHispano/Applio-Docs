@@ -40,9 +40,6 @@ On Windows 11, you must allow first the execution of the **BAT file**:
 
 6. Now, you can launch **KaraFan.pyw** by double-clicking on it.
 
-## How To Update?
-Simply **Run the Setup.py** file !
-
 ### STRUCTURE 📂
 After installation, you'll find new folders at the root of the folder you have chosen with the following structure :
 
@@ -56,19 +53,22 @@ Folder                      | Function
 / Results                   | Here you will find your extracted audio files (or another one)
 
 ## How To Use?
-1. Place your audio in the **music folder** and copy the **path of your song** that you want to separate and the path of the **folder** where the separated song will be stored.
+1. Place your audio in the **Music folder** and copy the **path of your song** that you want to separate and the path of the **folder** where the separated song will be stored.
 
 2. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
 
-||| To effectively separate the instrumental from the vocals
+||| To separate the instrumental from the vocals
 ![](../../assets/Musica.png)
-||| In case you want to separate the voice from a YouTuber’s video or other typoe of video
+||| To separate other typoe of audios
 ![](../../assets/Youtuber.png)
 |||
 
 3. We click on **Start** and it will begin to separate the chosen song. At the end of the process, the message **Processing DONE** will appear at the end of the interface.
 
-4. Now we go to the **Vocals** folder and we will find a folder with the name of our song or audio. There we will find a list of audios, we download the audio with the name **Vocal Final**, in case you want the instrumental one that says **Music Final**.
+4. Now we go to the **Results** folder and we will find a folder with the name of our song or audio. There we will find a list of audios, we download the audio with the name **Vocal Final**, in case you want the instrumental one that says **Music Final**.
+
+## How To Update?
+Simply **Run the Setup.py** file!
 
 For more information, visit the [GitHub repository](https://github.com/Captain-FLAM/KaraFan).
 +++ Google Colab
@@ -87,9 +87,9 @@ The Colab only lasts 30 minutes in execution. Additionally, it is possible that 
 
 6. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
 
-||| To effectively separate the instrumental from the vocals
+||| To separate the instrumental from the vocals
 ![](../../assets/Musica.png)
-||| In case you want to separate the voice from a YouTuber’s video or other typoe of video
+||| To separate other type of audios
 ![](../../assets/Youtuber.png)
 |||
 
