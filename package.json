@@ -1,5 +1,22 @@
 {
+  "name": "applio-docs",
+  "version": "3.1.1",
+  "description": "Documentation for the Applio project",
+  "main": "index.md",
+  "scripts": {
+    "start": "retype start",
+    "build": "retype build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAHispano/applio-docs.git"
+  },
+  "author": "IAHispano",
+  "license": "Attribution-NonCommercial 4.0 International",
   "dependencies": {
     "retype": "^0.2.0"
+  },
+  "devDependencies": {
+    "retype-cli": "^0.2.0"
   }
 }
