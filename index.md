@@ -4,7 +4,7 @@ icon: home
 
 # Home
 
-![Applio Banner](assets/Applio-Banner.png)
+![At the forefront of innovation as an open-source ecosystem that hosts cutting-edge AI voice cloning technologies.](assets/Applio-Banner.png)
 
 :::content-center
 
