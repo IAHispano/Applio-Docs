@@ -4,7 +4,7 @@ icon: home
 
 # Home
 
-![Applio Banner](assets/Applio_Banner.png)
+![Applio Banner](assets/Applio-Banner.png)
 
 :::content-center
 

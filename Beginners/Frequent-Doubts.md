@@ -15,6 +15,6 @@ As mentioned at the end of the text, to use applio locally on your computer you 
 
 ---
 ### How do I install Applio?
-- Downloading applio is a very simple process, **[you can watch this video tutorial](https://youtu.be/Jikp-u55uyg?si=RJDb7ij0CwDmlkvQ)** or view the **[installation section.](/get-started\Installation.md)**
+- Downloading applio is a very simple process, **[you can watch this video tutorial](https://youtu.be/Jikp-u55uyg?si=RJDb7ij0CwDmlkvQ)** or view the **[installation section.](/get-started/Installation.md)**
 
 - There is also a **[Google Colab alternative](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)**, if you do not have much idea how colab works or how to perform some actions within the environment you can have a look at the section of **[other alternatives.](/get-started/Alternatives/)**
