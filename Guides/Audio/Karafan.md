@@ -88,9 +88,9 @@ The Colab only lasts 30 minutes in execution. Additionally, it is possible that 
 6. Now place the settings you want to apply, try the ones you want the most, but if you want to effectively separate the instrumental or sounds from the vocals, I recommend the following settings:
 
 ||| To separate the instrumental from the vocals
-![](../../assets/Musica.png)
+![](../../assets/Karafan-Vocals.png)
 ||| To separate other type of audios
-![](../../assets/Youtuber.png)
+![](../../assets/Karafan-Other.png)
 |||
 
 7. We click on **Start** and it will begin to separate the chosen song. At the end of the process, the message **Processing DONE** will appear at the end of the interface.

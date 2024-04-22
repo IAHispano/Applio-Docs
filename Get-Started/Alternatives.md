@@ -140,7 +140,8 @@ make run-applio
 
 Upload your audio in .wav format using the **Dataset Maker** or click on :file_folder: and setup it manually to `Applio/assets/datasets` creating inside a folder for the program to read it.
 !!!info Mark the **Save Only Latest** option before training to prevent it from filling up your storage.
-!!! 7. Run tensorboard in another terminal, click on :icon-terminal: and enter the following commands:
+!!! 
+7. Run tensorboard in another terminal, click on :icon-terminal: and enter the following commands:
 
 ```js
 cd /notebooks/Applio
@@ -150,7 +151,7 @@ make run-tensorboard
 8. Click on :file_folder: and locate your trained model in the `Applio/logs/model` folder, and the .pth files are in the `Applio/logs/zips` folder.
 
 - (If you want to retrain insert the name of your model and enter a higher number of epochs)
-  !!!warning Warning
-  Make sure to set the [batch size](https://docs.applio.org/faq/rvc/#batch-size) according to the VRAM of your chosen GPU.
-  !!!
-  +++
+!!!warning Warning
+Make sure to set the [batch size](https://docs.applio.org/faq/rvc/#batch-size) according to the VRAM of your chosen GPU.
+!!!
++++
