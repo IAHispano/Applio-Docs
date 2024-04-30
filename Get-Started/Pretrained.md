@@ -70,8 +70,10 @@ Works well with Korean and some types of Japanese voices. Unlike typical pre-tra
 
 ### TITAN by blaise-tk
 
-It gives cleaner results compared to the original pretrained, also handles the accent better. Like Ov2 Super, it allows models to be trained with few epochs, it only supports **40k** sample rate.
+It gives cleaner results compared to the original pretrained, also handles the accent better. Like Ov2 Super, it allows models to be trained with few epochs, it only supports **32K and 40k** sample rate.
 
-> https://huggingface.co/blaise-tk/TITAN/tree/main/models/medium/40k/pretrained
+> **32K**: https://huggingface.co/blaise-tk/TITAN/tree/main/models/medium/32k/pretrained
+
+> **40K**: https://huggingface.co/blaise-tk/TITAN/tree/main/models/medium/40k/pretrained
 
 Make sure to select the sample rate according to the [sample rate](https://docs.applio.org/guides/datasets/sample-rate/#what-is-sample-rate) of the custom pretraineds.
