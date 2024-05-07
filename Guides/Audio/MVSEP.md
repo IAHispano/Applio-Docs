@@ -17,7 +17,6 @@ Here you will learn how to Separate the Vocals and the Instrumental of songs wit
 - MDX23C (to remove vocals and instrumental)
 - **BSReformer V2 (vocals, instrumental)**
   - ver 2024,04 (the best to remove instrumental and vocals)
-  - viperx edition (to remove instrumental and vocals)
 - MVSep MelBand Reformer (to remove vocals and instrumental)
 - **MDX B (vocals, instrumental)** 
   - UVR-MDX-NET Voc FT (to remove instrumental and vocals)

@@ -17,10 +17,12 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
 It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.
 !!!
 
-1.  Enter [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb) and just **run the 2 cells**.
+1. Enter [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb) and just **run the 2 cells**.
     ![](../assets/Colab.png)
 
-2.  Then a **public link** will be given to us where we can enter the interface.
+2. Due to recent issues with Gradio links, a **shared_tunnel** has been implemented. If you select this option, you’ll need to access the **shared link** and enter the **Password IP**. If you leave it unchecked, a **public link** will appear to enter the interface, in case it doesn't appear, use the other method.
+
+    ![](../assets/tunel.png)
 
 !!!info In case you want to **train**, you should run the **Extra cells** before run **Start Applio** cell. Otherwise, simply run the **Install Applio** and **Start Applio** cells.
 !!!

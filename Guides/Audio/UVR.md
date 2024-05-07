@@ -51,12 +51,14 @@ You can change the **type of wav or the MP3 bitrate** in **Additional settings**
 1. First, we go to the [UVR Colab](https://colab.research.google.com/github/Eddycrack864/UVR5-NO-UI/blob/main/UVR5_NO_UI.ipynb).
 
 2. In our Google Drive, we created the folder **Separar** where we will put our songs to separate, and **Vocales** where our already separated song will be stored.
-!!!info
-Now you can download the music that you want to separate from Colab, go to the **YouTube Audio Downloader for Separation** cell, just place the link of the song in **video_url** and song name in **audio_name**, then run that cell. Your song will be stored in the **Separar** folder that you created in your Drive.
-!!!
+
 3. Run the **Installation** cell to start cloning the repository to the colab and mount drive.
 
-4. Run the cell of your choice: **BS Reformer, MDX23C, MDX-NET, VR ARCH, Demucs**.
+4. In case you want to separate directly from YouTube, place the link in the **audio input**, otherwise leave it as it is.
+!!!info
+Also you can download the music that you want to separate from Colab, go to the **YouTube Audio Downloader for Separation** cell, just place the link of the song in **video_url** and song name in **audio_name**, then run that cell. Your song will be stored in the **Separar** folder that you created in your Drive.
+!!!
+5. Run the cell of your choice: **BS Reformer, MDX23C, MDX-NET, VR ARCH, Demucs**.
 
 :::
 
@@ -81,6 +83,6 @@ Now you can download the music that you want to separate from Colab, go to the *
 - If you wish, you can change the **Segment Size** and the **Overlap** in case of **MDX23C** and **MDX-NET**, the **windows size** and the **aggression setting** for **VR Arc** to your preference or leave it as it is.
 !!!
 
-5. Now we go to the **Vocales folder**, there we find our separate audios, we download the audio with the name of the **song-Vocals**, in case you want the instrumental is **song-Instrumental**.
+6. Now we go to the **Vocales folder**, there we find our separate audios, we download the audio with the name of the **song-Vocals**, in case you want the instrumental is **song-Instrumental**.
 :::
 +++ 
