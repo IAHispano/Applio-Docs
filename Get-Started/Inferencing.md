@@ -11,7 +11,7 @@ order: B
 ![**Manual loading alternative:** unzip the downloaded .zip file and **drag the two files into the Drop files box**. Now you can search for models from Applio by simply entering the character name to search in the **Search Model** section, then copy the model link or download it.](/assets/Download-Models.png)
 
 !!!warning
-Applio can only download models from Google Drive, Huggingface, [Applio Web](https://applio.org/models), Discord, Yandex, Pixeldrain and Mediafire. Downloading files from mega may fail!, this is due to malfunction of the dependency.
+Applio can only download models from Google Drive, Hugging Face, [Applio Web](https://applio.org/models), Discord, Yandex, Pixeldrain and Mediafire. Downloading files from mega may fail!, this is due to malfunction of the dependency.
 !!!
 
 ---
@@ -39,6 +39,7 @@ Applio can only download models from Google Drive, Huggingface, [Applio Web](htt
 - **Split Audio:** Basically cuts the audio into parts to make the inference by parts and then joins them together.
 - **Autotune:** Apply a soft autotune to your inferences, recommended for singing conversions.
 - **Clean Audio:** Clean your audio output using noise detection algorithms, recommended for speaking audios.
+- **Upscale Audio:** Upscale the audio to a higher quality, recommended for low-quality audios.
 - **Clean Strenght:** The more you increase it the more it will clean up, but it will be more compressed.
 - **Pitch:** Adjust the tone of the model, for male it is - and female it is +. For male to female is -12 and female to male is +12. 
 - **Filter Radius:** Applies respiration filtering to the results, the value represents the filter radius and respiration reduction to avoid artifacts.
@@ -47,6 +48,7 @@ Applio can only download models from Google Drive, Huggingface, [Applio Web](htt
 - **Protec Voiceless Consonants:** Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.
 - **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.
 - **Pitch extraction algorithm:** Select between [rvmpe, crepe or other](https://docs.applio.org/faq/rvc/#f0-extraction-methods)
+- **(optional) Embedder Model:** select the Embedder model (hubert or contentvec).
 ==- 
 
 !!!primary What should I do if my output audio sounds [robotic](https://docs.applio.org/faq/rvc/#artifacting)?

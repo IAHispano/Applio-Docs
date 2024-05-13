@@ -9,4 +9,4 @@ Go to the **Voice Blender** section, place the Model Name of your new model, dra
 
 -![](/assets/voiceblander.png)-
 
-Your new pth file can be found in Applio/logs, ready for use in [inference](/get-started/inferencing.md). Please note that being a mixed model, it won’t have an index.
+Your new pth file can be found in `Applio/logs`, ready for use in [inference](/get-started/inferencing.md). Please note that being a mixed model, it won’t have an index.

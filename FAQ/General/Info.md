@@ -13,7 +13,7 @@ Common questions and information about RVC/Applio in general
 Link: [Training and Inference without WebUI](https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/myinfer-v2-0528.py)
 ==-
 ==- **How to share a model/How to use others models?**
-Share the pth file in the weights folder, not the one in logs. Future versions will use a zip file. Do not copy large pth files; use the ckpt tab to extract a smaller model for sharing. Compress it into a zip and upload it to Drive or Huggingface if you want to publish your model in Ai Hispano, go to the :envelope_with_arrow:`publish-a-model` section and execute the /model command and fill in the corresponding data of your model
+Share the pth file in the zips folder, not the one in logs. Do not copy large pth files; use the ckpt tab to extract a smaller model for sharing. Compress it into a zip and upload it to Drive or Hugging Face if you want to publish your model in Ai Hispano, go to the :envelope_with_arrow:`publish-a-model` section and execute the /model command and fill in the corresponding data of your model
 ==-
 ==- **Test previous model and continue Training**
 ### - How can I use the saved model in the middle of training?
