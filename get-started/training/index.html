@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768356861765">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768938848503">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.768356861765" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768938848503" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768356861765" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768938848503" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768356861765" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768938848503" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -232,14 +232,16 @@
         </div>
     </div>
 </div>
-<p>How to use the Tensorboard for correct training? Check out the <a href="../tensorboard/">Tensorboard</a> section.</p>
+<ul>
+<li><a href="../alternatives/">If you don’t have an NVIDIA GPU, you can try Applio Colab or Applio No UI Colab. Check the other alternatives section.</a></li>
+</ul>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
         <span>Step 1: Dataset Preparation</span>
     </div>
     <div class="px-5 py-3 docs-columns-content">
 <ol>
-<li>upload your audio in .wav format using the <strong>Dataset Maker</strong> or setup it manually to <code v-pre>applio/assets/datasets</code> creating inside a folder for the program to read it.</li>
+<li>Upload your audio in .wav format using the <strong>Dataset Maker (if it is a single audio)</strong> or setup it manually (various audios) to <code v-pre>applio/assets/datasets</code> creating inside a folder for the program to read it.</li>
 </ol>
     </div>
 </div>
@@ -275,7 +277,7 @@
     </div>
 </div>
 <ul>
-<li><p>you can select one of the <strong>3 available frequencies</strong> according to the audio <code v-pre>(38k, 40k, 48k)</code>, this will help to avoid filtering out more artifacts or background noise.</p>
+<li><p>you can select one of the <strong>3 available frequencies</strong> according to the audio <code v-pre>(32k, 40k, 48k)</code>, this will help to avoid filtering out more artifacts or background noise.</p>
 </li>
 <li><p><a href="../../guides/datasets/sample-rate/">don&#x27;t know how to check sample rate?, check the sample rate section</a></p>
 </li>
@@ -289,6 +291,7 @@
 <ol>
 <li>Select an <a href="https://docs.applio.org/faq/rvc/#f0-extraction-methods">F0 method</a> that suits your needs.</li>
 <li><strong>(optional)</strong> modify <a href="https://docs.applio.org/get-started/inferencing/#advanced-settings">Hop lenght</a>, lower value, higher smoothness of pitch change but slower training and vice versa.</li>
+<li><strong>(optional)</strong> select the Embedder model (hubert or contentvec)</li>
 </ol>
     </div>
 </div>
@@ -320,15 +323,34 @@
 <ul>
 <li><strong>Pitch Guidance:</strong> Gives variation of pitch.</li>
 <li><a href="https://docs.applio.org/faq/rvc/#pretrained">Pretrained:</a> Uses the <a href="https://docs.applio.org/faq/rvc/#what-is-rvc">RVC</a> pretrained.</li>
-<li><strong>Save Only Lates:</strong> Save a single file with information.</li>
-<li><strong>Save Every Weights:</strong> Saves a D/G file of the process when a cycle of <strong>&#x27;Save Every Epoch&#x27;</strong> is completed.</li>
+<li><strong>Save Only Latest:</strong> Save a single D/G file with information.</li>
+<li><strong>Save Every Weights:</strong> Save the weights of the model when a cycle of &#x27;Save Every Epoch&#x27; is completed.</li>
 <li><a href="../pretrained/">Custom Pretrained:</a> Uses the Custom Pretrained that are loaded.</li>
 <li><strong>GPU Settings:</strong> Allows to choose GPUs (only for users who have more than one GPU).</li>
+<li><strong>Overtraining Detector:</strong> Mark it only if you will train for more than 200 epochs.</li>
+<li><strong>Overtraining Threshold:</strong> Set the maximum number of epochs you want your model to stop training if no improvement is detected.</li>
 </ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Mark the <strong>Save Only Latest</strong> option before training to prevent it from filling up your storage.</h5>
+        </div>
+    </div>
+</div>
 <hr>
 <p>Once configured, press <strong><em>&#x27;Start training&#x27;</em></strong> to start the process, everything is registered in the <strong>CMD.</strong></p>
 <ul>
-<li><a href="../tensorboard/">don’t forget to check TensorBoard while training your model., check the tensorboard section</a></li>
+<li><a href="../tensorboard/">don&#x27;t know how to use Tensorboard for correct training? Check out the Tensorboard section</a></li>
 </ul>
 <hr>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
@@ -338,6 +360,7 @@
     <div class="px-5 py-3 docs-columns-content">
 <ol>
 <li>Once training is completed, generate the index file by clicking the &quot;Train Feature Index&quot; button.</li>
+<li>Your trained model is located in the <code v-pre>logs/model folder</code>, and the <a href="https://docs.applio.org/faq/rvc/#pth">.pth</a> files are in the <code v-pre>logs/zips</code> folder.</li>
 </ol>
     </div>
 </div>
@@ -358,14 +381,19 @@
         </div>
     </div>
 </div>
-<ul>
-<li><p>(If you want to retrain, enter the same name of the model and locate in which stage the save files are left, enter a higher number of <a href="https://docs.applio.org/faq/rvc/#epoch">epoch</a>.)</p>
-</li>
-<li><p>Your trained model is located in the logs/model folder, and the <a href="https://docs.applio.org/faq/rvc/#pth">.pth</a> files are in the logs/zips folder.</p>
-</li>
-<li><p><a href="../alternatives/">If you don’t have an NVIDIA GPU, you can try Applio Colab. Check the other alternatives section.</a></p>
-</li>
-</ul>
+<hr>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Optional Step: Resume training</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<ol>
+<li>Open Applio if you have closed it.</li>
+<li>Then, in the Applio interface, input your <strong>model name</strong>, use the same <strong>sample rate</strong>, and proceed to the last part of the train tab. Set the same <strong><a href="https://docs.applio.org/faq/rvc/#batch-size">batch size</a></strong>, <strong><a href="https://docs.applio.org/get-started/pretrained/#how-to-use-pretraineds">pretrained</a> (if you used)</strong> and increase the number of epochs you want to train.</li>
+<li>Once configured, press <strong><em>&#x27;Start training&#x27;</em></strong> to start the process, everything is registered in the <strong>CMD.</strong></li>
+</ol>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->

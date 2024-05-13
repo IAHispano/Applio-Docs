@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768356861765">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768938848503">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.768356861765" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768938848503" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768356861765" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768938848503" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768356861765" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768356861765" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768938848503" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768938848503" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -218,15 +218,15 @@
 </doc-anchor-target>
 <p>Thanks to our team, we were able to bring Applio to other places for your convenience</p>
 <doc-tabs>
-<doc-tab v-cloak id="google-colab">
-<template #title>Google Colab</template>
+<doc-tab v-cloak id="google-colab-ui">
+<template #title>Google Colab UI</template>
 <doc-anchor-target id="what-is-google-colab">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-google-colab">#</doc-anchor-trigger>
         <span>What is Google Colab?</span>
     </h2>
 </doc-anchor-target>
-<p>Google Colab <strong>(Google Colaboratory)</strong> is a free cloud based platform that enables writing and executing Python code within an interactive notebook environment. It provides free access to computing resources, including CPUs, <strong>GPUs</strong> and TPUs from Google’s servers, making it particularly useful for machine learning tasks and data analysis. Additionally, Colab offers a Pro subscription, but it’s not highly recommended to pay for it when there are better alternatives available.</p>
+<p>Google Colab <strong>(Google Colaboratory)</strong> is a free cloud based platform that enables writing and executing Python code within an interactive notebook environment. It provides free access to computing resources, including CPUs, <strong>GPUs</strong> and TPUs from Google’s servers, making it particularly useful for machine learning tasks and data analysis. Additionally, Colab offers a Pro subscription, but it’s not highly recommended to pay for it when there are better alternatives available. Some Colabs have an <strong>interface (UI)</strong> through Gradio, providing a simple and user-friendly experience for users, however, these interfaces are not allowed by Google Colab, so there is a possibility of jeopardizing your google account.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -240,7 +240,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Warning</h5>
-<p>It should be noted that Gradio is banned from Colab, so it is preferable to use a secondary or new account to avoid a possible ban. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.</p>
+<p>Please note noted that Gradio is banned from Colab, so it is preferable to use a secondary, a new account or <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio_NoUI.ipynb">Applio No UI Colab</a> to avoid a possible ban. Additionally, it is possible that Colab may disconnect after a few hours due to Google’s limitations.</p>
         </div>
     </div>
 </div>
@@ -251,6 +251,27 @@
 <li><p>Due to recent issues with Gradio links, a <strong>shared_tunnel</strong> has been implemented. If you select this option, you’ll need to access the <strong>shared link</strong> and enter the <strong>Password IP</strong>. If you leave it unchecked, a <strong>public link</strong> will appear to enter the interface, in case it doesn&#x27;t appear, use the other method.</p>
 <p><img src="../../assets/tunel.png" alt="" /></p>
 </li>
+</ol>
+<doc-anchor-target id="extra-cells-only-for-training">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#extra-cells-only-for-training">#</doc-anchor-trigger>
+        <span>Extra cells (only for training)</span>
+    </h3>
+</doc-anchor-target>
+<p>In this section, you will find the following options:</p>
+<ul>
+<li><strong>Mount Drive:</strong> Connects Colab to our Google Drive for performing backups.</li>
+<li><strong>AutoBackup:</strong> Saves our trained model to our drive. Drive needs to be mounted first.</li>
+<li><strong>Load a Backup:</strong> Used to load our model if we want to retrain it. Drive must be mounted.</li>
+<li><strong>Download <a href="https://docs.applio.org/get-started/pretrained/">Custom Pretrains</a>:</strong> Allows direct downloading of custom pretrains to Applio.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="../../assets/extra-colab.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ol start="3">
+<li>You can <a href="../training/">train</a> models while checking <a href="../tensorboard/">Tensorboard</a>, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
@@ -269,31 +290,10 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="extra-cells">
+<doc-anchor-target id="how-to-upload-my-dataset-in-colab">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#extra-cells">#</doc-anchor-trigger>
-        <span>Extra cells</span>
-    </h3>
-</doc-anchor-target>
-<p>In this section, you will find the following options:</p>
-<ul>
-<li><strong>Mount Drive:</strong> Connects Colab to our Google Drive for performing backups.</li>
-<li><strong>AutoBackup:</strong> Saves our trained model to our drive. Drive needs to be mounted first.</li>
-<li><strong>Load a Backup:</strong> Used to load our model if we want to retrain it. Drive must be mounted.</li>
-<li><strong>Download <a href="https://docs.applio.org/get-started/pretrained/">Custom Pretrains</a>:</strong> Allows direct downloading of custom pretrains to Applio.</li>
-</ul>
-<p><figure class="content-center">
-    <img src="../../assets/extra-colab.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<ol start="3">
-<li>You can <a href="../training/">train</a> models while checking <a href="../tensorboard/">Tensorboard</a>, do <a href="../inferencing/">inference</a>, or use <a href="../tts/">TTS</a></li>
-</ol>
-<doc-anchor-target id="4-how-to-upload-my-dataset-in-colab">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-how-to-upload-my-dataset-in-colab">#</doc-anchor-trigger>
-        <span>4. How to upload my dataset in Colab?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-upload-my-dataset-in-colab">#</doc-anchor-trigger>
+        <span>How to upload my dataset in Colab?</span>
     </h3>
 </doc-anchor-target>
 <p>To load your dataset in Colab, there are two ways to do it:</p>
@@ -320,10 +320,10 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="5-how-to-export-my-model-to-my-google-drive">
+<doc-anchor-target id="how-to-export-my-model-to-my-google-drive">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-how-to-export-my-model-to-my-google-drive">#</doc-anchor-trigger>
-        <span>5. How to export my model to my Google Drive?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-export-my-model-to-my-google-drive">#</doc-anchor-trigger>
+        <span>How to export my model to my Google Drive?</span>
     </h3>
 </doc-anchor-target>
 <p>To save your model, there are three ways to do it:</p>
@@ -335,7 +335,19 @@
 <li><p><strong>Manual (NOT RECOMENDED):</strong> click on <span class="docs-emoji">&#x1F4C1;</span> in Colab and locate the <strong>added index</strong> of your model in the <code v-pre>program/logs/model</code> folder, and the <strong>.pth</strong> files are in the <code v-pre>program/logs/zips</code> folder so you can download them. If you want to save your model folder in your Drive, you just need to cancel the <strong>Start Applio</strong> cell and run the <strong>Mount Drive</strong> cell to be able to move it to your Google Drive.</p>
 </li>
 </ul>
-<p>(If you want to retrain place the name of your model in the <strong>Load a Backup</strong> cell and run it. Then, insert the name of your model and enter a higher number of epochs)</p>
+<doc-anchor-target id="how-to-resume-training-in-google-colab">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-resume-training-in-google-colab">#</doc-anchor-trigger>
+        <span>How to resume training in Google Colab?</span>
+    </h3>
+</doc-anchor-target>
+<p>If the model still needs training, simply do the following:</p>
+<ul>
+<li><p>Run the same cells as before, but now you’ll need to enter your <strong>model name</strong> in <strong>Load a backup</strong> and run it.</p>
+</li>
+<li><p>Then, in the Applio interface, input your <strong>model name</strong>, use the same <strong>sample rate</strong>, and proceed to the last part of the train tab. Set the same <strong><a href="https://docs.applio.org/faq/rvc/#batch-size">batch size</a></strong>, <strong><a href="https://docs.applio.org/get-started/pretrained/#how-to-use-pretraineds">pretrained</a> (if you used)</strong> and increase the number of epochs you want to train.</p>
+</li>
+</ul>
 <doc-anchor-target id="code-to-be-afk">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#code-to-be-afk">#</doc-anchor-trigger>
@@ -358,19 +370,159 @@
 setInterval(ClickConnect, 6000);</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab v-cloak id="huggingface">
-<template #title>Huggingface</template>
-<doc-anchor-target id="what-is-huggingface">
+<doc-tab v-cloak id="google-colab-no-ui">
+<template #title>Google Colab No UI</template>
+<doc-anchor-target id="what-is-google-colab-1">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-huggingface">#</doc-anchor-trigger>
-        <span>What is Huggingface?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-google-colab-1">#</doc-anchor-trigger>
+        <span>What is Google Colab?</span>
+    </h2>
+</doc-anchor-target>
+<p>Google Colab <strong>(Google Colaboratory)</strong> is a free cloud based platform that enables writing and executing Python code within an interactive notebook environment. Some Colabs do not use <strong>interfaces (No UI)</strong> because their use is banned in Google Colab, which means that the entire process is done directly from the notebook using cells, making it challenging for some users.</p>
+<ul>
+<li>Enter <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio_NoUI.ipynb">Applio No UI Colab</a> and run the <strong>Installation</strong> cell.</li>
+</ul>
+<doc-anchor-target id="how-to-infer-in-google-colab-no-ui">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-infer-in-google-colab-no-ui">#</doc-anchor-trigger>
+        <span>How to <a href="https://docs.applio.org/faq/rvc/#inference">infer</a> in Google Colab No UI?</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p>First, you’ll need to upload the audio you want to use to your Google Drive. Make sure the audio name don&#x27;t contain spaces or special characters.</p>
+</li>
+<li><p>Place the <strong>Google Drive or Hugging Face</strong> model link in the <strong>model_link</strong> and run the <strong>Download model</strong> cell.</p>
+</li>
+<li><p>Click on <span class="docs-emoji">&#x1F4C1;</span> in Colab, then navigate to your audio, copy the path, it should look like this: <code v-pre>/content/drive/MyDrive/audio name.wav</code> and paste it into the <strong>input_path</strong>. Finally run the <strong>Run inference</strong> cell.</p>
+</li>
+</ol>
+<doc-panel id="advanced-settings" collapsed>
+    <template #title><strong>Advanced Settings</strong></template>
+<ul>
+<li><strong>Export_format:</strong> Select the format to export the audio.</li>
+<li><strong>F0method:</strong> Select between <a href="https://docs.applio.org/faq/rvc/#f0-extraction-methods">rvmpe, crepe or other</a></li>
+<li><strong>f0up_key:</strong> Adjust the tone of the model, for male it is - and female it is +. For male to female is -12 and female to male is +12.</li>
+<li><strong>Filter_radius:</strong> Applies respiration filtering to the results, the value represents the filter radius and respiration reduction to avoid artifacts.</li>
+<li><strong>Rms_mix_rate:</strong> Substitute or blend with the volume envelope of the output.</li>
+<li><strong>Protect:</strong> Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.</li>
+<li><strong>Index_rate:</strong> It is the one in charge of controlling the index, the larger the ratio, the more single the dataset but it can result in artifacts, so it is better to leave it as it is by default.</li>
+<li><strong>Hop_length:</strong> Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.</li>
+<li><strong>Clean_strenght:</strong> The more you increase it the more it will clean up, but it will be more compressed.</li>
+<li><strong>Split_audio:</strong> Basically cuts the audio into parts to make the inference by parts and then joins them together.</li>
+<li><strong>Clean_audio:</strong> Clean your audio output using noise detection algorithms, recommended for speaking audios.</li>
+<li><strong>Autotune:</strong> Apply a soft autotune to your inferences, recommended for singing conversions.</li>
+</ul>
+</doc-panel>
+<doc-anchor-target id="how-to-train-in-google-colab-no-ui">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-train-in-google-colab-no-ui">#</doc-anchor-trigger>
+        <span>How to train in Google Colab No UI?</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p>Place your audio in a folder on your Google Drive and click on <span class="docs-emoji">&#x1F4C1;</span> in Colab, then navigate to your dataset folder, copy the path, it should look like this <code v-pre>/content/drive/MyDrive/dataset name folder</code> and paste it into the <strong>dataset_path</strong>, make sure the audio and folder name don&#x27;t contain spaces or special characters. Also, specify the <a href="https://docs.applio.org/guides/datasets/sample-rate/"><strong>sample rate</strong></a> and run the <strong>Preprocess Dataset</strong> cell.</p>
+</li>
+<li><p>Next, in the <strong>Extract Features</strong> section, set the <a href="https://docs.applio.org/faq/rvc/#f0-extraction-methods"><strong>f0method</strong></a> and <strong>hop_length</strong>, and run that cell.</p>
+</li>
+<li><p>Afterward, run the <strong>Generate <a href="https://docs.applio.org/faq/rvc/#added-index">index</a> file</strong> cell.</p>
+</li>
+<li><p>In the <strong>Train</strong> section, before run that cell you should set the following:</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>Total_epoch:</strong> The number of epochs needed varies based on your dataset. Monitor progress using TensorBoard; typically, models perform well around 200-400 epochs.</p>
+</li>
+<li><p><a href="https://docs.applio.org/faq/rvc/#batch-size"><strong>Batch_size:</strong></a> Adjust the batch size according to your preference; a batch size of 8 is mostly recommended.</p>
+</li>
+<li><p><strong>Save_every_epoch:</strong> Set this value between 10 and 50 to determine how often the model&#x27;s state is saved during training.</p>
+</li>
+</ul>
+<doc-panel id="other-options" collapsed>
+    <template #title><strong>Other Options</strong></template>
+<ul>
+<li><strong>Pitch_guidance:</strong> Gives variation of pitch.</li>
+<li><strong>auto_backups (recomended):</strong> Keep this checked it if you want to save a copy of your model in your Google Drive after training completes.</li>
+<li><a href="https://docs.applio.org/faq/rvc/#pretrained">Pretrained:</a> Uses the <a href="https://docs.applio.org/faq/rvc/#what-is-rvc">RVC</a> pretrained.</li>
+<li><strong>tensorboard:</strong> Keep this checked; it will determine if the model is overfitting.</li>
+<li><strong>Save Only Latest:</strong> Save a single D/G file with information.</li>
+<li><strong>Save Every Weights:</strong> Save the weights of the model when a cycle of &#x27;Save Every Epoch&#x27; is completed.</li>
+<li><strong>overtraining_detector:</strong> Mark it only if you will train for more than 200 epochs.</li>
+<li><strong>overtraining_threshold:</strong> Set the maximum number of epochs you want your model to stop training if no improvement is detected.</li>
+<li><a href="../pretrained/">Custom_pretrained:</a> Keep this checked if you want to use the Custom Pretrained that are loaded.</li>
+</ul>
+</doc-panel>
+<ul>
+<li><a href="../tensorboard/">don&#x27;t know how to use Tensorboard for correct training? Check out the Tensorboard section</a></li>
+</ul>
+<ol start="5">
+<li>Finally your trained model will be located in your Google Drive within the <strong>RVC_Backup folder</strong>.</li>
+</ol>
+<doc-anchor-target id="how-to-use-custom-pretrained-in-goggle-colab-no-ui">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-custom-pretrained-in-goggle-colab-no-ui">#</doc-anchor-trigger>
+        <span>How to use custom pretrained in Goggle Colab No UI?</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><p>Download the <a href="https://docs.applio.org/get-started/pretrained/#where-to-find-pretraineds">pretrained</a> you want to use and upload the d.pth and g.pth files to your Google Drive.</p>
+</li>
+<li><p>Click on <span class="docs-emoji">&#x1F4C1;</span> in Colab, and create a new folder named <strong>pretrained_custom</strong> inside the <strong>pretraineds</strong> folder located in <strong>Applio/rvc/pretraineds</strong>.</p>
+</li>
+<li><p>Locate your pretrained model on your Google Drive and drag it into the newly created folder.</p>
+</li>
+<li><p>Finally, copy the path of G.pth and paste it into <strong>g_pretrained_path</strong>, and do the same for D.pth into <strong>d_pretrained_path</strong>. It should look like this: <code v-pre>/content/Applio/rvc/pretraineds/pretraineds_custom/G48k.pth</code> and <code v-pre>/content/Applio/rvc/pretraineds/pretraineds_custom/D48k.pth</code>, make sure to select the sample rate according to the <a href="https://docs.applio.org/guides/datasets/sample-rate/#what-is-sample-rate">sample rate</a> of the custom pretraineds.</p>
+</li>
+</ul>
+<doc-anchor-target id="how-to-resume-training-in-google-colab-no-ui">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-resume-training-in-google-colab-no-ui">#</doc-anchor-trigger>
+        <span>How to resume training in Google Colab No UI?</span>
+    </h3>
+</doc-anchor-target>
+<p>If the model still needs training, simply do the following:</p>
+<ul>
+<li><p>Run the <strong>Installation</strong> cell as before, but now you’ll need to enter your <strong>model name</strong> in <strong>Load a backup</strong> cell and run it.</p>
+</li>
+<li><p>Then, in the <strong>Set training variables</strong> cell, input your <strong>model_name</strong>, use the same <strong>sample_rate</strong> and <strong>hop_length</strong> amd run it.</p>
+</li>
+<li><p>Finally in the <strong>Train</strong> set the same <strong><a href="https://docs.applio.org/faq/rvc/#batch-size">batch size</a></strong>, <strong><a href="https://docs.applio.org/get-started/pretrained/#how-to-use-pretraineds">custom_pretrained</a> (if you used)</strong>, increase the number of <strong>total_epoch</strong> you want to train and other seetting that you used before and run that cell.</p>
+</li>
+</ul>
+<doc-anchor-target id="code-to-be-afk-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-to-be-afk-1">#</doc-anchor-trigger>
+        <span>Code to be afk</span>
+    </h3>
+</doc-anchor-target>
+<p>To run this code in Colab, we have to press the keys <strong>Ctrl + Shift + i</strong> to open the <strong>developer tools</strong> option and the following window will open. In case another window is displayed, we can locate it by selecting the <strong>Console</strong> option, so in this way Colab will not disconnect during the separation process. First, we put <strong>Allow pasting</strong>, then we press enter and only then it will let us enter the code.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">function ClickConnect() {
+  var iconElement = document.getElementById(&quot;toggle-header-button&quot;);
+  if (iconElement) {
+    var clickEvent = new MouseEvent(&quot;click&quot;, {
+      bubbles: true,
+      cancelable: true,
+      view: window,
+    });
+    iconElement.dispatchEvent(clickEvent);
+  }
+}
+setInterval(ClickConnect, 6000);</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="hugging-face">
+<template #title>Hugging Face</template>
+<doc-anchor-target id="what-is-hugging-face">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-hugging-face">#</doc-anchor-trigger>
+        <span>What is Hugging Face?</span>
     </h2>
 </doc-anchor-target>
 <p>Hugging Face is a company specialized in artificial intelligence that has distinguished itself through its work in developing tools and models for <strong>natural language processing (NLP)</strong>. This has made it one of the leading online communities and platforms for cutting edge NLP model research, development and distribution.</p>
 <ol>
-<li><p>First you need to create a huggingface account.</p>
+<li><p>First you need to create a hugging Face account.</p>
 </li>
-<li><p>Then enter <a href="https://huggingface.co/spaces/IAHispano/Applio">Applio Huggingface Space</a> and duplicate the space, that is all. If you don&#x27;t want to use huggingface you can use <a href="https://applio.org/playground">Applo playground</a>.</p>
+<li><p>Then enter <a href="https://huggingface.co/spaces/IAHispano/Applio">Applio Hugging Face Space</a> and duplicate the space, that is all. If you don&#x27;t want to use hugging Face you can use <a href="https://applio.org/playground">Applo playground</a>.</p>
 </li>
 </ol>
 <p><figure class="content-center">
@@ -496,8 +648,18 @@ make run-tensorboard</code></pre>
 <ol start="8">
 <li>Click on <span class="docs-emoji">&#x1F4C1;</span> and locate your trained model in the <code v-pre>Applio/logs/model</code> folder, and the .pth files are in the <code v-pre>Applio/logs/zips</code> folder.</li>
 </ol>
+<doc-anchor-target id="how-to-resume-training-in-paperspace">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-resume-training-in-paperspace">#</doc-anchor-trigger>
+        <span>How to resume training in Paperspace?</span>
+    </h3>
+</doc-anchor-target>
+<p>If the model still needs training, simply do the following:</p>
 <ul>
-<li>(If you want to retrain insert the name of your model and enter a higher number of epochs)</li>
+<li><p>Entering the last 3 commands from step 4.</p>
+</li>
+<li><p>Then, in the Applio interface, input your <strong>model name</strong>, use the same <strong>sample rate</strong>, and proceed to the last part of the train tab. Set the same <strong><a href="https://docs.applio.org/faq/rvc/#batch-size">batch size</a></strong>, <strong><a href="https://docs.applio.org/get-started/pretrained/#how-to-use-pretraineds">pretrained</a> (if you used)</strong> and increase the number of epochs you want to train.</p>
+</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
