@@ -28,7 +28,7 @@ Here you will learn how to install Applio via the official repository.
 **If you encounter an error during execution, you can try the precompiled (Zip or Exe) version of Applio.**
 +++ Zip
 If you encounter an error during execution, you can try the precompiled **(Zip)** version of Applio. 
-- Download the zip [here](https://huggingface.co/IAHispano/Applio/resolve/main/Compiled/ApplioV3.1.1.zip?download=true) 
+- Download the zip [here](https://huggingface.co/IAHispano/Applio/resolve/main/Compiled/ApplioV3.5.0.zip?download=true) 
 - Extract it 
 - Click on `run-applio.bat`, that’s all.
 !!!warning Before executing run-applio:
@@ -40,7 +40,7 @@ If you encounter an error during execution, you can try the precompiled **(Zip)*
 **If you are having problems trying to run the executable, try with the Exe format.**
 +++ Exe
 If you encounter an error during execution, you can try the precompiled **(Exe)** version of Applio. 
-- Download [here](https://huggingface.co/IAHispano/Applio/resolve/main/Compiled/ApplioV3.1.1.exe)
+- Download [here](https://huggingface.co/IAHispano/Applio/resolve/main/Compiled/ApplioV3.5.0.exe)
 - Open the executable so it can extract the program files
 - Click on `run-applio.bat`, that’s all.
 !!!warning Before installing:
