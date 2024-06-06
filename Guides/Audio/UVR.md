@@ -64,6 +64,7 @@ Also you can download the music that you want to separate from Colab, go to the 
 
 - **BS Reformer**
   - BS-Reformer-Viperx-1297 (the best to remove instrumental and vocals)
+  - Mel-Reformer-Viperx-1143 (to remove instrumental and vocals)
 - **MDX23C**
   - MDX23C 8KFFT instVoc HQ2 (one of the best to remove the instrumental and vocals)
   - MDX23C 8KFFT InstVoc HQ (one of the best to remove vocals and instrumental)
@@ -72,6 +73,7 @@ Also you can download the music that you want to separate from Colab, go to the 
   - UVR-MDX-NET Crowd HQ 1 (to remove crowd from vocals)
 - **VR Arch models**
   - UVR-DeEcho-DeReverb (to remove reverb from vocals)
+  - UVR-BVE-4B_SN-44100-1 (to separate 2 or more voices singing at the same time)
   - 5_Hp-Karaoke-UVR (to remove choruses from vocals)
   - UVR-DeNoise (to remove noise from vocals)
 - **Demucs**
