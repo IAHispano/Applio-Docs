@@ -48,7 +48,7 @@ Applio can only download models from Google Drive, Hugging Face, [Applio Web](ht
 - **Protec Voiceless Consonants:** Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.
 - **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.
 - **Pitch extraction algorithm:** Select between [rvmpe, crepe or other](https://docs.applio.org/faq/rvc/#f0-extraction-methods)
-- **(optional) Embedder Model:** select the Embedder model (hubert or contentvec).
+- **(optional) Embedder Model:** select the Embedder model (contentvec, japanese-hubert-base, chinese-hubert-large or custom).
 ==- 
 
 !!!primary What should I do if my output audio sounds [robotic](https://docs.applio.org/faq/rvc/#artifacting)?

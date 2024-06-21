@@ -32,6 +32,10 @@ In the training tab, check the **'Custom Pretrained'** box, upload the files, an
 
 ![](../assets/Load-Pretrained.png)
 
+!!!info 
+Now you can download the custom pretrained models directly from the **Download** tab in Applio, just select the **Pretrained** model you want to download, choose the **Sample Rate**, and click on **Download**.
+!!!
+
 ## Where to find pretraineds?
 
 ### Ov2 Super by SimplCup
@@ -66,7 +70,7 @@ Works well with Russian or Japanese language datasets and also helps models of o
 
 Works well with Korean and some types of Japanese voices. Unlike typical pre-trained models, it has a very wide vocal range, which should be very helpful for those covering songs, it supports **all the sample rates**.
 
-> https://huggingface.co/SeoulStreamingStation/KLMv7s/resolve/main/KLMv7s_Batch2.zip
+> https://huggingface.co/SeoulStreamingStation/KLM4/tree/main
 
 ### TITAN by blaise-tk
 

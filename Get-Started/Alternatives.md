@@ -138,6 +138,7 @@ Google Colab **(Google Colaboratory)** is a free cloud based platform that enabl
 - **tensorboard:** Keep this checked; it will determine if the model is overfitting.
 - **Save Only Latest:** Save a single D/G file with information.
 - **Save Every Weights:** Save the weights of the model when a cycle of 'Save Every Epoch' is completed.
+- **Sync Graph:** Synchronize the graph of the tensorbaord. Only enable this setting if you are training a new model.
 - **overtraining_detector:** Mark it only if you will train for more than 200 epochs.
 - **overtraining_threshold:** Set the maximum number of epochs you want your model to stop training if no improvement is detected.
 - [Custom_pretrained:](/get-started/pretrained.md) Keep this checked if you want to use the Custom Pretrained that are loaded.

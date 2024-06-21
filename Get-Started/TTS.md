@@ -11,6 +11,8 @@ icon: typography
 
 - Select the **model of TTS** depending on the language you want and enter the text or add a **txt file** in the box below to convert.
 
+- Select the **TTS Speed** (increase or decrease TTS speed).
+
 - Finally we click on **convert** and wait for the result
 -![](/assets/TTS.png)-
 
@@ -28,7 +30,7 @@ icon: typography
 - **Protec Voiceless Consonants:** Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.
 - **Hop Length:** Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.
 - **Pitch extraction algorithm:** Select between [rvmpe, crepe or other](https://docs.applio.org/faq/rvc/#f0-extraction-methods)
-- **(optional) Embedder Model:** select the Embedder model (hubert or contentvec).
+- **(optional) Embedder Model:** select the Embedder model (contentvec, japanese-hubert-base, chinese-hubert-large or custom).
 ==- 
 
 - Applio also features ElevenLabs TTS. Check the [Plugins section](/get-started/plugins.md) for more information.

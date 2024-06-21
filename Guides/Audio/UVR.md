@@ -82,7 +82,7 @@ Also you can download the music that you want to separate from Colab, go to the 
 
 !!!info Before Processing
 - You can choose the **output format** format of your separate audio.
-- If you wish, you can change the **Segment Size** and the **Overlap** in case of **MDX23C** and **MDX-NET**, the **windows size** and the **aggression setting** for **VR Arc** to your preference or leave it as it is.
+- If you wish, you can change the **Overlap** in case of **BS Reformer**, the **Segment Size** and the **Overlap** in case of **MDX23C** and **MDX-NET**, the **windows size** and the **aggression setting** for **VR Arc**, the **Shifts** and **Overlap** in case of **Demucs** to your preference or leave it as it is.
 !!!
 
 6. Now we go to the **Vocales folder**, there we find our separate audios, we download the audio with the name of the **song-Vocals**, in case you want the instrumental is **song-Instrumental**.

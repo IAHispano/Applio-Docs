@@ -33,7 +33,7 @@ Training is only for **NVDIA GPUs**, If you don’t have a compatible GPU, the T
 ||| Step 3: Feature Extraction
 1. Select an [F0 method](https://docs.applio.org/faq/rvc/#f0-extraction-methods) that suits your needs.
 2. **(optional)** modify [Hop lenght](https://docs.applio.org/get-started/inferencing/#advanced-settings), lower value, higher smoothness of pitch change but slower training and vice versa.
-3. **(optional)** select the Embedder model (hubert or contentvec)
+3. **(optional)** select the Embedder model (contentvec, japanese-hubert-base, chinese-hubert-large or custom)
 |||
 
 ---
@@ -57,6 +57,7 @@ Configure the training parameters according to your needs.
 - **Save Every Weights:** Save the weights of the model when a cycle of 'Save Every Epoch' is completed.
 - [Custom Pretrained:](/get-started/pretrained.md) Uses the Custom Pretrained that are loaded.
 - **GPU Settings:** Allows to choose GPUs (only for users who have more than one GPU).
+- **Sync Graph:** Synchronize the graph of the tensorbaord. Only enable this setting if you are training a new model.
 - **Overtraining Detector:** Mark it only if you will train for more than 200 epochs.
 - **Overtraining Threshold:** Set the maximum number of epochs you want your model to stop training if no improvement is detected.
 !!!info Mark the **Save Only Latest** option before training to prevent it from filling up your storage.
