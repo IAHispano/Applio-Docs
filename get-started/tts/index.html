@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.770997790097">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.772329329982">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.770997790097" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.772329329982" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.770997790097" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.772329329982" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.770997790097" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.772329329982" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -222,6 +222,8 @@
 </li>
 <li><p>Select the <strong>model of TTS</strong> depending on the language you want and enter the text or add a <strong>txt file</strong> in the box below to convert.</p>
 </li>
+<li><p>Select the <strong>TTS Speed</strong> (increase or decrease TTS speed).</p>
+</li>
 <li><p>Finally we click on <strong>convert</strong> and wait for the result
 <figure class="content-center">
     <img src="../../assets/tts.png" alt="" class="w-full">
@@ -246,7 +248,7 @@
 <li><strong>Protec Voiceless Consonants:</strong> Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts.</li>
 <li><strong>Hop Length:</strong> Denotes the duration it takes for the system to transition to a significant pitch change. Smaller hop lengths require more time for inference and training but tend to yield higher pitch accuracy.</li>
 <li><strong>Pitch extraction algorithm:</strong> Select between <a href="https://docs.applio.org/faq/rvc/#f0-extraction-methods">rvmpe, crepe or other</a></li>
-<li><strong>(optional) Embedder Model:</strong> select the Embedder model (hubert or contentvec).</li>
+<li><strong>(optional) Embedder Model:</strong> select the Embedder model (contentvec, japanese-hubert-base, chinese-hubert-large or custom).</li>
 </ul>
 </doc-panel>
 <ul>
